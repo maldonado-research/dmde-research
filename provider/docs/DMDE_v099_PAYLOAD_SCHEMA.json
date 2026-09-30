@@ -1,0 +1,22 @@
+{
+  "schema_version": "DMDE-SPECTRAL-TENSOR-PAYLOAD-v0.9.9",
+  "description": "Provider-facing separable source payload for stopped-muon spectral BBN run. IDs are blinded.",
+  "arrays": {
+    "card_id": "scalar string blind id",
+    "t_s": "time grid in seconds",
+    "y_t_over_tau": "dimensionless t/tau grid",
+    "x": "dimensionless x=2E_nu/m_mu grid, 0<=x<=1",
+    "E_MeV": "neutrino energy grid corresponding to x",
+    "Fe": "Michel spectrum 12*x^2*(1-x)",
+    "Fmu": "Michel spectrum 2*x^2*(3-2*x)",
+    "A_t": "B_mumu*Y0*exp(-t/tau)/tau in 1/s",
+    "Q_EM_over_s": "integrated EM energy source per entropy in MeV/s",
+    "Q_nu_over_s": "integrated neutrino energy source per entropy in MeV/s",
+    "Q_pi_charged_over_s": "charged-pion source; must be identically zero"
+  },
+  "firewalls": {
+    "do_not_encode_as_negative_dark_radiation": true,
+    "do_not_use_energy_only_for_final_BBN_unless_equivalence_gate_passes": "|Yp_spectral - Yp_energy_only| < 1e-4 per card",
+    "charged_pion_source_must_be_zero": true
+  }
+}
