@@ -1,0 +1,84 @@
+{
+  "schema": "DMDE-v0.9.20-public-verification-summary-2026-09-05",
+  "verification_date": "2026-09-05",
+  "status": "PASS",
+  "scope": "Fresh local software and artifact verification for publication; no production physics run or independent backend replication",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "zlib": "1.2.12",
+    "warnings_as_errors": true
+  },
+  "provider_artifact": {
+    "filename": "DMDE_v0920_PROVIDER_DISPATCH_READY_SOURCE_FROZEN_WEAK5_GATED.zip",
+    "bytes": 377648,
+    "sha256": "2daa4fa4c9d8654520ac8be0bd7a13197f447e85d4f10f36e7ba944c15d22b9b",
+    "members": 74
+  },
+  "full_software_suite": {
+    "test_methods": 67,
+    "passed": 67,
+    "failed": 0,
+    "status": "PASS",
+    "elapsed_seconds": 504.597,
+    "fixture_scope": "Synthetic conformance and adversarial software fixtures; not physical output",
+    "reproduction_scope": "The 67-test run used the local analyst test harness. Its private fixtures and scoring material are not distributed in the public provider packet. Provider-side validators and source-pair calculation code remain available in the public archive."
+  },
+  "deep_source_payload_validation": {
+    "payloads_checked": 2,
+    "passed": 2,
+    "status": "PASS"
+  },
+  "frozen_pair_geometry": {
+    "status": "PASS",
+    "geometry_receipt_byte_identical": true,
+    "precision_design_csv_byte_identical": true
+  },
+  "pair_geometry_unit_tests": {
+    "test_methods": 6,
+    "passed": 6,
+    "status": "PASS",
+    "included_in_full_suite_count": true
+  },
+  "provider_internal_manifest": {
+    "entries_checked": 73,
+    "complete_coverage": true,
+    "byte_counts_match": true,
+    "sha256_match": true,
+    "status": "PASS"
+  },
+  "provider_archive_safety": {
+    "full_crc_read": "PASS",
+    "path_safety": "PASS",
+    "case_folded_duplicate_check": "PASS",
+    "symlink_member_check": "PASS"
+  },
+  "provider_private_material_scan": {
+    "checks": 12,
+    "content_or_path_hits": 0,
+    "status": "PASS",
+    "scope": "Defined frozen private-material markers and forbidden provider paths; scan receipt marker names excluded from self-matching"
+  },
+  "canonical_archive_reconstruction": {
+    "reconstructions": 2,
+    "each_byte_identical_to_supplied_provider": true,
+    "status": "PASS",
+    "method": "Sorted unchanged member files, fixed timestamps and regular-file permissions, compression level 9, stored NPZ payloads; not an end-to-end release-builder execution"
+  },
+  "source_identity": {
+    "payloads_checked": 2,
+    "payload_bytes_unchanged_from_exact_v0919_parent": true,
+    "source_cards_manifest_and_schema_unchanged": true,
+    "status": "PASS"
+  },
+  "original_supplied_files_unchanged": true,
+  "limitations": [
+    "This release validates the specified source identities, software contracts, and reproduced false-pass rejection cases. A passing suite is not proof of physical completeness or of the DMDE hypothesis.",
+    "Production momentum-dependent neutrino transport, corrected weak rates, and BBN predictions remain pending external execution. No new production Yp, D/H, or Neff result is claimed.",
+    "The frozen-pair result concerns source geometry and numerical precision; it does not determine the sign or size of an abundance response.",
+    "Internally consistent fabricated evidence and untested failure modes are not excluded by this verification.",
+    "The audit-only five-process Born envelope does not separately export the inverse three-body weak process and does not certify backend-specific physical corrections.",
+    "The public provider archive is preserved byte for byte. Fresh deep-validation receipts differ from historical receipts in a very small floating-point residual; acceptance outcomes are unchanged. Geometry and precision-design receipts reproduce byte for byte.",
+    "Private unblinding and scoring material, synthetic raw-evidence fixtures, internal complete packs, and local paths are not included in this public summary."
+  ]
+}
