@@ -1,0 +1,105 @@
+{
+  "schema_version": "DMDE-RAW-EVIDENCE-CONTRACT-v0.9.20",
+  "archive_format": "canonical ZIP",
+  "manifest_path": "DMDE_RAW_EVIDENCE_MANIFEST.csv",
+  "manifest_columns": ["path", "role", "bytes", "sha256"],
+  "required_role_paths": {
+    "contract": "DMDE_RAW_EVIDENCE_CONTRACT.json",
+    "source_identity": "evidence/source_identity.json",
+    "backend_identity": "evidence/backend_identity.json",
+    "solver_config": "evidence/solver_config.json",
+    "environment_lock": "evidence/environment.lock",
+    "invocation": "evidence/invocation.txt",
+    "stdout_log": "logs/stdout.log",
+    "stderr_log": "logs/stderr.log",
+    "bridge_history": "bridge/history.npz",
+    "bridge_metadata": "bridge/metadata.json",
+    "backend_code_artifact": "backend/code_artifact.bin",
+    "operator_probe_receipt": "evidence/operator_probe_receipt.json",
+    "weak_rate_closure_metadata": "evidence/weak_rate_closure_metadata.json",
+    "weak_rates": "evidence/weak_rates.csv",
+    "bbn_rate_input": "bbn/rate_input.csv",
+    "bbn_code_artifact": "bbn/code_artifact.bin",
+    "bbn_config": "bbn/config.json",
+    "bbn_canary_contract": "DMDE_v0920_BBN_CANARY.json",
+    "bbn_canary_baseline_input": "bbn_canary/replays/baseline_rate_input.csv",
+    "bbn_canary_baseline_output": "bbn_canary/replays/baseline_output.json",
+    "bbn_canary_summary": "bbn_canary/replays/canary_summary.csv",
+    "bbn_canary_np_1pct": "bbn_canary/replays/np_plus_1pct_rate_input.csv",
+    "bbn_canary_np_1pct_output": "bbn_canary/replays/np_plus_1pct_output.json",
+    "bbn_canary_np_0p5pct": "bbn_canary/replays/np_plus_0p5pct_rate_input.csv",
+    "bbn_canary_np_0p5pct_output": "bbn_canary/replays/np_plus_0p5pct_output.json",
+    "bbn_canary_pn_1pct": "bbn_canary/replays/pn_plus_1pct_rate_input.csv",
+    "bbn_canary_pn_1pct_output": "bbn_canary/replays/pn_plus_1pct_output.json",
+    "bbn_canary_pn_0p5pct": "bbn_canary/replays/pn_plus_0p5pct_rate_input.csv",
+    "bbn_canary_pn_0p5pct_output": "bbn_canary/replays/pn_plus_0p5pct_output.json",
+    "bbn_abundance_history": "bbn/abundance_history.csv",
+    "final_outputs": "evidence/final_outputs.json"
+  },
+  "contract_required_identity": [
+    "blind_id", "source_payload_sha256", "bridge history/metadata hashes",
+    "backend family/name/version and exact code-artifact/environment hashes",
+    "run class", "run role", "timestamps", "integer zero exit status",
+    "all required evidence hashes including operator probe, weak-rate closure, BBN code/config, four input canaries and outputs, and abundance history"
+  ],
+  "strict_csv_contracts": {
+    "bbn/rate_input.csv": [
+      "time_s", "T_gamma_MeV", "H_s_inv",
+      "lambda_n_to_p_s_inv", "lambda_p_to_n_s_inv"
+    ],
+    "bbn/abundance_history.csv": ["time_s", "Yp_mass_fraction", "DH_x1e5"],
+    "bbn_canary/replays/*_rate_input.csv": [
+      "time_s", "T_gamma_MeV", "H_s_inv",
+      "lambda_n_to_p_s_inv", "lambda_p_to_n_s_inv"
+    ]
+  },
+  "solver_config_required_strings": [
+    "momentum_grid_description", "spectral_source_treatment",
+    "source_rhs_stage", "source_rhs_units", "source_rhs_export_method",
+    "source_rhs_production_callable", "source_rhs_adapter",
+    "source_rhs_impulse_test_command",
+    "state_normalization_density_definition",
+    "transport_stepper_production_callable", "transport_stepper_source_toggle",
+    "operator_probe_command", "weak_rate_production_callable",
+    "weak_rate_canonical_process_map",
+    "weak_rate_born_sentinel_definition", "bbn_consumption_canary_command",
+    "collision_treatment", "oscillation_treatment", "weak_rate_treatment",
+    "background_to_bbn_bridge", "bbn_network", "nuclear_rate_set",
+    "refinement_settings"
+  ],
+  "bridge_metadata_crosslinks": [
+    "momentum_grid_description", "spectral_source_treatment",
+    "source_rhs_stage", "source_rhs_units", "source_rhs_export_method",
+    "source_rhs_production_callable", "source_rhs_adapter",
+    "source_rhs_impulse_test_command",
+    "state_normalization_density_definition",
+    "transport_stepper_production_callable", "transport_stepper_source_toggle",
+    "operator_probe_command", "weak_rate_production_callable",
+    "weak_rate_canonical_process_map",
+    "weak_rate_born_sentinel_definition", "bbn_consumption_canary_command",
+    "collision_treatment", "oscillation_treatment",
+    "background_to_bbn_bridge", "nuclear_rate_set", "neutron_lifetime_s"
+  ],
+  "controlled_configuration_fingerprint": {
+    "algorithm": "SHA-256 of canonical UTF-8 JSON",
+    "covers": "backend family/name/version, exact transport code artifact, environment lock, BBN code/config hashes, fixed canary window/fractions, and every solver_config physics/configuration field; momentum_bins, run_role, momentum_grid_description, and standard_model_control result evidence are excluded; refinement_settings remains controlled",
+    "coarse_fine_requirement": "must be identical within one blind-card refinement pair"
+  },
+  "security": {
+    "real_nonempty_zip": true,
+    "crc_and_streamed_member_hashes": "required",
+    "encrypted_members": "forbidden",
+    "symlinks_directories_devices": "forbidden",
+    "unsafe_noncanonical_paths": "forbidden",
+    "duplicate_or_casefold_colliding_names": "forbidden",
+    "manifest_coverage": "every non-manifest member exactly once",
+    "comments_extra_fields_trailing_bytes": "forbidden",
+    "bounded_members_sizes_and_compression_ratio": "required"
+  },
+  "causal_gates": {
+    "operator_probe": "eight bridge-bound initial-state hashes plus source-on/off h and h/2 responses",
+    "weak_rate": "exact five-process ontology, independent all-five Born process sentinels, direction-total normalization, late neutron-decay normalization, optional momentum-integrand closure",
+    "bbn_consumption": "byte-identical baseline replay plus exact +1%/+0.5% n-to-p and p-to-n perturbations in 1.2>=T_gamma>=0.5 MeV, signed above-noise near-linear DeltaYp"
+  },
+  "scope": "Byte integrity, role completeness, identity/configuration linkage, source-to-stepper witness linkage, spectrum-to-weak-rate sentinels, BBN consumption canary, and production-marker firewall. Passing does not prove backend physical correctness or independent execution; it establishes a replayable declared causal chain."
+}

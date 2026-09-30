@@ -1,0 +1,78 @@
+{
+  "schema_version": "DMDE-WEAK-RATE-CAUSAL-CLOSURE-v0.9.20",
+  "scope": "Independent neutron-lifetime-normalized finite-electron-mass Born sentinels for all five canonical weak processes, exact process ontology, direction-total normalization, late neutron-decay normalization, and optional production momentum-integrand sum closure.",
+  "required_npz_fields": {
+    "history_1d": [
+      "t_s",
+      "T_gamma_MeV",
+      "p_per_q_MeV",
+      "lambda_n_to_p_s_inv",
+      "lambda_p_to_n_s_inv"
+    ],
+    "momentum_1d": [
+      "q_grid",
+      "q_weights"
+    ],
+    "occupation_2d_Nt_Nq": [
+      "f_nue",
+      "f_nuebar"
+    ],
+    "process_2d": {
+      "lambda_n_to_p_process_s_inv": "shape (Nt,3)",
+      "lambda_p_to_n_process_s_inv": "shape (Nt,2)"
+    },
+    "scalar": [
+      "neutron_lifetime_s"
+    ]
+  },
+  "canonical_process_ontology": {
+    "n_to_p_in_exact_column_order": [
+      "nu_e+n->p+e-",
+      "e++n->p+nuebar",
+      "n->p+e-+nuebar"
+    ],
+    "p_to_n_in_exact_column_order": [
+      "nuebar+p->n+e+",
+      "e-+p->n+nue"
+    ]
+  },
+  "born_lane": {
+    "constants_MeV": {
+      "m_e": 0.51099895,
+      "Delta_np": 1.29333236
+    },
+    "normalization": "A=(tau_n*I0)^-1",
+    "I0": "integral from m_e to Delta_np of E*sqrt(E^2-m_e^2)*(Delta_np-E)^2 dE",
+    "integration_variable": "p=q*p_per_q_MeV and dp=p_per_q_MeV*q_weights",
+    "electron_positron_distribution": "zero-chemical-potential Fermi-Dirac at T_gamma",
+    "neutrino_blocking": "returned f_nue and f_nuebar are used for incoming occupation and outgoing Pauli blocking",
+    "process_formulas_without_common_A_dp": {
+      "nu_e+n->p+e-": "p^2*f_nue*E_plus*p_plus*(1-f_FD(E_plus)); E_plus=p+Delta_np",
+      "e++n->p+nuebar": "p^2*E_minus*p_minus*f_FD(E_minus)*(1-f_nuebar); E_minus=p-Delta_np and E_minus>=m_e",
+      "n->p+e-+nuebar": "p^2*E_decay*p_decay*(1-f_FD(E_decay))*(1-f_nuebar); E_decay=Delta_np-p and E_decay>=m_e",
+      "nuebar+p->n+e+": "p^2*f_nuebar*E_minus*p_minus*(1-f_FD(E_minus)); E_minus=p-Delta_np and E_minus>=m_e",
+      "e-+p->n+nue": "p^2*E_plus*p_plus*f_FD(E_plus)*(1-f_nue); E_plus=p+Delta_np"
+    },
+    "process_relative_band": 0.25,
+    "direction_total_relative_band": 0.1,
+    "non_negligible_floor": "max(1e-18 s^-1, 1e-10 times the sentinel history peak)"
+  },
+  "late_decay_gate": {
+    "process": "n->p+e-+nuebar",
+    "temperature_max_MeV": 0.05,
+    "requirement": "abs(lambda_decay*tau_n-1)<=0.005 at every late node"
+  },
+  "optional_integrand_contract": {
+    "all_or_none": true,
+    "required_if_momentum_integrands_present_is_true": {
+      "lambda_n_to_p_process_integrand_s_inv_per_q": "shape (Nt,3,Nq)",
+      "lambda_p_to_n_process_integrand_s_inv_per_q": "shape (Nt,2,Nq)",
+      "lambda_n_to_p_process_nongrid_s_inv": "shape (Nt,3)",
+      "lambda_p_to_n_process_nongrid_s_inv": "shape (Nt,2)"
+    },
+    "closure": "lambda_process=sum_q(q_weights*integrand)+nongrid",
+    "relative_tolerance": 5e-10,
+    "absolute_tolerance_s_inv": 1e-14
+  },
+  "interpretation_limit": "This is an audit-only Born envelope. Corrected production rates remain authoritative inside the envelopes. Passing does not validate radiative, recoil, weak-magnetism, finite-nucleon-mass, plasma, nuclear-network, or full transport physics. The frozen five-column ontology does not separately export the inverse three-body p+e-+nuebar->n channel."
+}
