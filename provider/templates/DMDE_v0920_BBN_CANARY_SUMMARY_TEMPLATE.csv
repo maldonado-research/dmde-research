@@ -1,0 +1,6 @@
+run_id,rate_field,perturbation_fraction,T_gamma_min_MeV,T_gamma_max_MeV,input_sha256,output_sha256,Yp_model,DeltaYp
+baseline,none,0,0.5,1.2,FILL,FILL,FILL,0
+np_plus_1pct,lambda_n_to_p_s_inv,0.01,0.5,1.2,FILL,FILL,FILL,FILL
+np_plus_0p5pct,lambda_n_to_p_s_inv,0.005,0.5,1.2,FILL,FILL,FILL,FILL
+pn_plus_1pct,lambda_p_to_n_s_inv,0.01,0.5,1.2,FILL,FILL,FILL,FILL
+pn_plus_0p5pct,lambda_p_to_n_s_inv,0.005,0.5,1.2,FILL,FILL,FILL,FILL

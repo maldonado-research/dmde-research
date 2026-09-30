@@ -1,0 +1,98 @@
+{
+  "schema_version": "DMDE-BBN-CONSUMPTION-CANARY-v0.9.20",
+  "code": {
+    "path": "bbn/code_artifact.bin",
+    "sha256": "FILL_LOWERCASE_SHA256"
+  },
+  "config": {
+    "path": "bbn/config.json",
+    "sha256": "FILL_LOWERCASE_SHA256"
+  },
+  "production": {
+    "rate_input": {
+      "path": "bbn/rate_input.csv",
+      "sha256": "FILL_LOWERCASE_SHA256"
+    },
+    "output": {
+      "path": "evidence/final_outputs.json",
+      "sha256": "FILL_LOWERCASE_SHA256"
+    }
+  },
+  "baseline_replay": {
+    "rate_input": {
+      "path": "bbn_canary/replays/baseline_rate_input.csv",
+      "sha256": "FILL_LOWERCASE_SHA256"
+    },
+    "output": {
+      "path": "bbn_canary/replays/baseline_output.json",
+      "sha256": "FILL_LOWERCASE_SHA256"
+    }
+  },
+  "canary_summary": {
+    "path": "bbn_canary/replays/canary_summary.csv",
+    "sha256": "FILL_LOWERCASE_SHA256"
+  },
+  "deterministic_noise_floor_Yp": "FILL_POSITIVE_VALUE_BELOW_1E-3",
+  "runs": [
+    {
+      "run_id": "np_plus_1pct",
+      "rate_field": "lambda_n_to_p_s_inv",
+      "perturbation_fraction": 0.01,
+      "T_gamma_min_MeV": 0.5,
+      "T_gamma_max_MeV": 1.2,
+      "rate_input": {
+        "path": "bbn_canary/replays/np_plus_1pct_rate_input.csv",
+        "sha256": "FILL_LOWERCASE_SHA256"
+      },
+      "output": {
+        "path": "bbn_canary/replays/np_plus_1pct_output.json",
+        "sha256": "FILL_LOWERCASE_SHA256"
+      }
+    },
+    {
+      "run_id": "np_plus_0p5pct",
+      "rate_field": "lambda_n_to_p_s_inv",
+      "perturbation_fraction": 0.005,
+      "T_gamma_min_MeV": 0.5,
+      "T_gamma_max_MeV": 1.2,
+      "rate_input": {
+        "path": "bbn_canary/replays/np_plus_0p5pct_rate_input.csv",
+        "sha256": "FILL_LOWERCASE_SHA256"
+      },
+      "output": {
+        "path": "bbn_canary/replays/np_plus_0p5pct_output.json",
+        "sha256": "FILL_LOWERCASE_SHA256"
+      }
+    },
+    {
+      "run_id": "pn_plus_1pct",
+      "rate_field": "lambda_p_to_n_s_inv",
+      "perturbation_fraction": 0.01,
+      "T_gamma_min_MeV": 0.5,
+      "T_gamma_max_MeV": 1.2,
+      "rate_input": {
+        "path": "bbn_canary/replays/pn_plus_1pct_rate_input.csv",
+        "sha256": "FILL_LOWERCASE_SHA256"
+      },
+      "output": {
+        "path": "bbn_canary/replays/pn_plus_1pct_output.json",
+        "sha256": "FILL_LOWERCASE_SHA256"
+      }
+    },
+    {
+      "run_id": "pn_plus_0p5pct",
+      "rate_field": "lambda_p_to_n_s_inv",
+      "perturbation_fraction": 0.005,
+      "T_gamma_min_MeV": 0.5,
+      "T_gamma_max_MeV": 1.2,
+      "rate_input": {
+        "path": "bbn_canary/replays/pn_plus_0p5pct_rate_input.csv",
+        "sha256": "FILL_LOWERCASE_SHA256"
+      },
+      "output": {
+        "path": "bbn_canary/replays/pn_plus_0p5pct_output.json",
+        "sha256": "FILL_LOWERCASE_SHA256"
+      }
+    }
+  ]
+}

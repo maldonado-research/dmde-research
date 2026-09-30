@@ -1,0 +1,59 @@
+{
+  "schema_version": "DMDE-RAW-EVIDENCE-CONTRACT-v0.9.20",
+  "blind_id": "FILL",
+  "source_payload_sha256": "FILL",
+  "bridge": {
+    "history_path": "bridge/history.npz",
+    "history_sha256": "FILL",
+    "metadata_path": "bridge/metadata.json",
+    "metadata_sha256": "FILL"
+  },
+  "backend": {
+    "family": "FILL",
+    "name": "FILL",
+    "version_or_commit": "FILL",
+    "identity_path": "evidence/backend_identity.json",
+    "identity_sha256": "FILL",
+    "environment_path": "evidence/environment.lock",
+    "environment_sha256": "FILL",
+    "code_artifact_path": "backend/code_artifact.bin",
+    "code_artifact_sha256": "FILL"
+  },
+  "run": {
+    "class": "production",
+    "role": "coarse_or_fine",
+    "started_utc": "FILL",
+    "completed_utc": "FILL",
+    "exit_code": 0,
+    "invocation_path": "evidence/invocation.txt",
+    "invocation_sha256": "FILL",
+    "stdout_path": "logs/stdout.log",
+    "stdout_sha256": "FILL",
+    "stderr_path": "logs/stderr.log",
+    "stderr_sha256": "FILL"
+  },
+  "evidence": {
+    "source_identity": {"path": "evidence/source_identity.json", "sha256": "FILL"},
+    "solver_config": {"path": "evidence/solver_config.json", "sha256": "FILL"},
+    "operator_probe_receipt": {"path": "evidence/operator_probe_receipt.json", "sha256": "FILL"},
+    "weak_rate_closure_metadata": {"path": "evidence/weak_rate_closure_metadata.json", "sha256": "FILL"},
+    "weak_rates": {"path": "evidence/weak_rates.csv", "sha256": "FILL"},
+    "bbn_rate_input": {"path": "bbn/rate_input.csv", "sha256": "FILL"},
+    "bbn_code_artifact": {"path": "bbn/code_artifact.bin", "sha256": "FILL"},
+    "bbn_config": {"path": "bbn/config.json", "sha256": "FILL"},
+    "bbn_canary_contract": {"path": "DMDE_v0920_BBN_CANARY.json", "sha256": "FILL"},
+    "bbn_canary_baseline_input": {"path": "bbn_canary/replays/baseline_rate_input.csv", "sha256": "FILL"},
+    "bbn_canary_baseline_output": {"path": "bbn_canary/replays/baseline_output.json", "sha256": "FILL"},
+    "bbn_canary_summary": {"path": "bbn_canary/replays/canary_summary.csv", "sha256": "FILL"},
+    "bbn_canary_np_1pct": {"path": "bbn_canary/replays/np_plus_1pct_rate_input.csv", "sha256": "FILL"},
+    "bbn_canary_np_1pct_output": {"path": "bbn_canary/replays/np_plus_1pct_output.json", "sha256": "FILL"},
+    "bbn_canary_np_0p5pct": {"path": "bbn_canary/replays/np_plus_0p5pct_rate_input.csv", "sha256": "FILL"},
+    "bbn_canary_np_0p5pct_output": {"path": "bbn_canary/replays/np_plus_0p5pct_output.json", "sha256": "FILL"},
+    "bbn_canary_pn_1pct": {"path": "bbn_canary/replays/pn_plus_1pct_rate_input.csv", "sha256": "FILL"},
+    "bbn_canary_pn_1pct_output": {"path": "bbn_canary/replays/pn_plus_1pct_output.json", "sha256": "FILL"},
+    "bbn_canary_pn_0p5pct": {"path": "bbn_canary/replays/pn_plus_0p5pct_rate_input.csv", "sha256": "FILL"},
+    "bbn_canary_pn_0p5pct_output": {"path": "bbn_canary/replays/pn_plus_0p5pct_output.json", "sha256": "FILL"},
+    "bbn_abundance_history": {"path": "bbn/abundance_history.csv", "sha256": "FILL"},
+    "final_outputs": {"path": "evidence/final_outputs.json", "sha256": "FILL"}
+  }
+}

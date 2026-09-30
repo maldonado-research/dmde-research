@@ -1,0 +1,7 @@
+{
+  "family": "FILL",
+  "name": "FILL",
+  "version_or_commit": "FILL_IMMUTABLE_COMMIT",
+  "code_artifact_sha256": "FILL_SHA256_OF_backend/code_artifact.bin",
+  "repository": "FILL"
+}

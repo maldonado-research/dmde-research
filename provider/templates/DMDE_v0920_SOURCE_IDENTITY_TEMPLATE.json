@@ -1,0 +1,8 @@
+{
+  "schema_version": "DMDE-SOURCE-IDENTITY-v0.9.20",
+  "blind_id": "FILL",
+  "source_payload_sha256": "FILL",
+  "source_card_json_sha256": "bcc692b7a00a0e4abda928f41d03fd297a897cda073eb2dbc826679d654faa8b",
+  "source_payload_manifest_sha256": "ab54ff079904584c932ff6ef281332161229457448eef6f36f8058b121635f2b",
+  "source_payload_schema_document_sha256": "28aac0408a3f9c26378ab807f70d8cff731e5f51c9f76f7fbf88626ac6f00960"
+}

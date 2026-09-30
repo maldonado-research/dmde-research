@@ -1,0 +1,35 @@
+{
+  "schema_version": "DMDE-WEAK-RATE-CAUSAL-CLOSURE-v0.9.20",
+  "bridge_history_sha256": "FILL_LOWERCASE_SHA256",
+  "weak_rate_production_callable": "FILL_MODULE_AND_SYMBOL",
+  "weak_rate_code_sha256": "FILL_LOWERCASE_SHA256",
+  "weak_rate_config_sha256": "FILL_LOWERCASE_SHA256",
+  "n_to_p_process_labels": [
+    "nu_e+n->p+e-",
+    "e++n->p+nuebar",
+    "n->p+e-+nuebar"
+  ],
+  "p_to_n_process_labels": [
+    "nuebar+p->n+e+",
+    "e-+p->n+nue"
+  ],
+  "born_normalization": "A=(tau_n*I0)^-1",
+  "electron_positron_distribution": "zero-chemical-potential Fermi-Dirac at T_gamma",
+  "born_processes_checked": [
+    "nu_e+n->p+e-",
+    "e++n->p+nuebar",
+    "n->p+e-+nuebar",
+    "nuebar+p->n+e+",
+    "e-+p->n+nue"
+  ],
+  "born_blocking_convention": "returned f_nue/f_nuebar for neutrino blocking; zero-chemical-potential Fermi-Dirac e-/e+ at T_gamma",
+  "born_process_relative_band": 0.25,
+  "born_direction_total_relative_band": 0.1,
+  "born_non_negligible_floor_relative_to_peak": 1e-10,
+  "born_non_negligible_floor_absolute_s_inv": 1e-18,
+  "late_decay_relative_tolerance": 0.005,
+  "late_temperature_max_MeV": 0.05,
+  "momentum_integrands_present": false,
+  "integrand_sum_relative_tolerance": 5e-10,
+  "integrand_sum_absolute_tolerance_s_inv": 1e-14
+}
