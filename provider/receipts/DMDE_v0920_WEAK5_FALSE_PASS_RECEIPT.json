@@ -1,0 +1,44 @@
+{
+  "schema": "DMDE-v0.9.20-weak5-candidate-false-pass-receipt",
+  "status": "REPRODUCED",
+  "counterexample_scope": "isolated synthetic software fixture; not a physics result and not an allegation about an external backend",
+  "legacy_v0919": {
+    "provider_return_firewall_status": "PASS",
+    "fine_bridge_status": "PASS",
+    "fine_raw_evidence_status": "PASS",
+    "machine_refinement_status": "PASS",
+    "eplus_n_returned_peak_s_inv": 0.0,
+    "eminus_p_returned_peak_s_inv": 0.0,
+    "beta_returned_all_temperatures_s_inv": 0.0011371389583807142
+  },
+  "independent_born_at_T_gamma_5_MeV": {
+    "eplus_n_s_inv": 1607.3057609847017,
+    "eminus_p_s_inv": 1241.0766156987074,
+    "blocked_beta_s_inv": 0.00032310439421560504,
+    "n_to_p_complete_total_s_inv": 3214.750676215067,
+    "p_to_n_complete_total_s_inv": 2482.046029047485,
+    "returned_n_to_p_fraction_of_complete": 0.5000218949506127,
+    "returned_p_to_n_fraction_of_complete": 0.49997840431393065
+  },
+  "candidate_v0920": {
+    "status": "FAIL",
+    "errors": [
+      "canonical e++n->p+nuebar column fails independent Born 25% process band",
+      "canonical n->p+e-+nuebar column fails independent Born 25% process band",
+      "canonical e-+p->n+nue column fails independent Born 25% process band",
+      "canonical n_to_p total fails independent Born 10% direction-total band",
+      "canonical p_to_n total fails independent Born 10% direction-total band"
+    ],
+    "eplus_n_max_relative_error": 1.0,
+    "eminus_p_max_relative_error": 1.0,
+    "blocked_beta_max_relative_error": 2.519416572290277,
+    "n_to_p_total_max_relative_error": 0.49997810504938733,
+    "p_to_n_total_max_relative_error": 0.7165999543019856
+  },
+  "prototype_tests": {
+    "tests_run": 7,
+    "failures": 0,
+    "errors": 0,
+    "result": "PASS"
+  }
+}

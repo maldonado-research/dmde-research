@@ -1,0 +1,13 @@
+marker,hit_count,paths,status
+original_card_4Q7N,0,,PASS
+original_card_8M2K,0,,PASS
+private_label_4Q7N,0,,PASS
+private_label_8M2K,0,,PASS
+unblinding_filename,0,,PASS
+oracle_filename,0,,PASS
+threshold_filename,0,,PASS
+compensation_filename,0,,PASS
+private_scorer_filename,0,,PASS
+private_label_column,0,,PASS
+oracle_key,0,,PASS
+forbidden_provider_path,0,,PASS

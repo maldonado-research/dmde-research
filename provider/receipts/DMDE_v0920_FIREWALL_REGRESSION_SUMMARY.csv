@@ -1,0 +1,22 @@
+gate,expected,observed,status
+production-default synthetic fixture,reject,reject,PASS
+full frozen source identity mutation,reject,reject,PASS
+endpoint clipping,reject,reject,PASS
+higher Michel-moment null direction,reject,reject,PASS
+process-rate sum mismatch,reject,reject,PASS
+zero or distorted returned distributions,reject,reject,PASS
+Hubble scale-factor or coordinate inconsistency,reject,reject,PASS
+malformed or non-NPZ bridge,reject,reject,PASS
+plain README-only or unsafe raw ZIP,reject,reject,PASS
+missing code artifact or BBN evidence,reject,reject,PASS
+raw solver configuration contradiction,reject,reject,PASS
+raw weak-rate semantic mismatch,reject,reject,PASS
+lineage hash timestamp or negating claim,reject,reject,PASS
+self-reported convergence mismatch,reject,reject,PASS
+Standard Model control nonconvergence,reject,reject,PASS
+between-node local oscillation,reject,reject,PASS
+negative nonfinite or schema-invalid history,reject,reject,PASS
+private scorer after failed firewall,blocked,blocked,PASS
+missing zero doubled or flavor-corrupted actual source RHS,reject,reject,PASS
+missing actual-source callable or adapter provenance,reject,reject,PASS
+unphysical negative-energy antineutrino sentinel branch,reject,reject,PASS
