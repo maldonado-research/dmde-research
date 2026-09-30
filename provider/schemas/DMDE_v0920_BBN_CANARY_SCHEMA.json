@@ -1,0 +1,74 @@
+{
+  "schema_version": "DMDE-BBN-CONSUMPTION-CANARY-v0.9.20",
+  "scope": "Byte-identity baseline replay plus signed, near-linear BBN sensitivity to exact weak-rate input perturbations.",
+  "required_top_level_fields": [
+    "schema_version",
+    "code",
+    "config",
+    "production",
+    "baseline_replay",
+    "canary_summary",
+    "deterministic_noise_floor_Yp",
+    "runs"
+  ],
+  "file_reference": {
+    "exact_fields": [
+      "path",
+      "sha256"
+    ],
+    "path_rule": "nonempty safe POSIX path relative to the contract directory; no symlinks",
+    "hash_rule": "lowercase SHA-256 of exact file bytes"
+  },
+  "baseline_identity": {
+    "rate_input": "baseline replay bytes must equal production BBN input bytes",
+    "output": "baseline replay bytes must equal production BBN output bytes"
+  },
+  "rate_input_columns_exact": [
+    "time_s",
+    "T_gamma_MeV",
+    "H_s_inv",
+    "lambda_n_to_p_s_inv",
+    "lambda_p_to_n_s_inv"
+  ],
+  "canonical_runs_in_exact_order": [
+    {
+      "run_id": "np_plus_1pct",
+      "rate_field": "lambda_n_to_p_s_inv",
+      "perturbation_fraction": 0.01
+    },
+    {
+      "run_id": "np_plus_0p5pct",
+      "rate_field": "lambda_n_to_p_s_inv",
+      "perturbation_fraction": 0.005
+    },
+    {
+      "run_id": "pn_plus_1pct",
+      "rate_field": "lambda_p_to_n_s_inv",
+      "perturbation_fraction": 0.01
+    },
+    {
+      "run_id": "pn_plus_0p5pct",
+      "rate_field": "lambda_p_to_n_s_inv",
+      "perturbation_fraction": 0.005
+    }
+  ],
+  "derivation": {
+    "temperature_window_inclusive_MeV": [
+      0.5,
+      1.2
+    ],
+    "inside_window": "multiply only the named rate field by 1+perturbation_fraction",
+    "outside_window": "target rate remains baseline-identical",
+    "all_other_columns": "baseline-identical at every row"
+  },
+  "response_gates": {
+    "np_DeltaYp_sign": "negative",
+    "pn_DeltaYp_sign": "positive",
+    "absolute_DeltaYp": "strictly greater than declared deterministic_noise_floor_Yp",
+    "ratio_abs_DeltaYp_1pct_over_0p5pct": [
+      1.5,
+      2.5
+    ]
+  },
+  "interpretation_limit": "Passing establishes that the declared BBN execution responds to the supplied weak-rate histories. It does not validate the nuclear reaction network or its rates."
+}
