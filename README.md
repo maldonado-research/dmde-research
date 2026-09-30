@@ -1,5 +1,8 @@
 # DMDE Research
 
+[Readable project overview](https://maldonado-research.github.io/projects/dmde/) · [All research projects](https://maldonado-research.github.io/)
+
+
 **Dark matter–dark energy working hypothesis · v0.9.20 methods/software checkpoint**
 
 Research by **Ricardo Maldonado**. This repository makes the published DMDE source specification and validation tools easier to inspect, cite, and reproduce.
