@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "Please cite the archived Zenodo DMDE v0.9.20 research release when using these source specifications and validation methods."
+type: software
+title: "DMDE Triplepoint + CosmoGate: Five-Channel Weak-Rate Closure and Frozen-Pair Differential-Response Design"
+authors:
+  - family-names: Maldonado
+    given-names: Ricardo
+    orcid: "https://orcid.org/0009-0009-3937-6527"
+version: "0.9.20"
+date-released: "2026-09-05"
+doi: "10.5281/zenodo.22399940"
+url: "https://zenodo.org/records/22399940"
+repository-code: "https://github.com/maldonado-research/dmde-research"
+license: CC-BY-4.0
+keywords:
+  - dark matter
+  - dark energy
+  - neutrino transport
+  - Big Bang nucleosynthesis
+  - weak reactions
+  - reproducibility
+abstract: "Working-hypothesis methods/software checkpoint for two frozen particle-injection scenarios. Provides public source payloads, execution validators, and conditional pair-response mathematics. Contains no validated production helium, deuterium, or effective-neutrino-number prediction and no independent backend replication."

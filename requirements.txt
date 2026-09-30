@@ -1,0 +1,2 @@
+# Reproduction example matching the documented NumPy verification version.
+numpy==2.3.5

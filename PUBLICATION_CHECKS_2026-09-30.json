@@ -1,0 +1,22 @@
+{
+  "prepared_date": "2026-09-30",
+  "research_version": "0.9.20",
+  "archival_doi": "10.5281/zenodo.22399940",
+  "check_environment": {"python": "3.12.14", "numpy": "2.3.5"},
+  "fresh_public_checks": {
+    "original_provider_archive_crc": "PASS",
+    "original_provider_archive_sha256": "2daa4fa4c9d8654520ac8be0bd7a13197f447e85d4f10f36e7ba944c15d22b9b",
+    "provider_members_equal_to_original_archive": 74,
+    "provider_manifest_entries_verified": 73,
+    "published_artifact_entries_verified": 4,
+    "published_artifact_manifest_identity": "PASS",
+    "frozen_payloads_passed_deep_validation": 2,
+    "source_pair_geometry": "PASS",
+    "delta_ln_neutrino_amplitude": 0.008654677649784786,
+    "delta_ln_electromagnetic_amplitude": 0.00000398597101534914,
+    "em_to_neutrino_log_contrast_ratio": 0.000460556842974765
+  },
+  "scope": "File identity and public source-only checks. These are not transport/BBN production runs, physical confirmation, or independent backend replication.",
+  "private_67_test_suite": "Not included and not rerun for this GitHub packaging task.",
+  "repository_publication_status": "This receipt records local preparation checks; verify repository and release publication separately."
+}
