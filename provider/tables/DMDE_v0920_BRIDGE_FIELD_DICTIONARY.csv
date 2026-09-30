@@ -1,0 +1,85 @@
+container,field,dtype,shape,unit,definition,gate
+NPZ,schema_version,string,scalar,none,bridge contract identifier,exact v0.9.20
+NPZ,blind_id,string,scalar,none,frozen blind card identifier,exact two-card set
+NPZ,source_payload_sha256,string,scalar,none,frozen payload digest,exact identity table
+NPZ,source_card_version,string,scalar,none,frozen source-card schema,exact v0.9.4
+NPZ,source_payload_schema,string,scalar,none,canonical return payload contract,exact v0.9.8 separable
+NPZ,source_package_version,string,scalar,none,dispatch package identity,exact v0.9.20
+NPZ,source_card_json_sha256,string,scalar,none,frozen source-card document digest,exact identity table
+NPZ,source_payload_manifest_sha256,string,scalar,none,frozen payload-manifest digest,exact identity table
+NPZ,source_payload_schema_document_sha256,string,scalar,none,historical schema-document digest,exact identity table
+NPZ,source_tau_s,float64,scalar,s,frozen LLP lifetime,exact identity table
+NPZ,source_m_mu_MeV,float64,scalar,MeV,frozen muon mass used by source,exact identity table
+NPZ,source_mass_MeV,float64,scalar,MeV,frozen parent mass,exact identity table
+NPZ,source_Y0,float64,scalar,entropy-normalized yield,frozen initial comoving yield,exact identity table
+NPZ,source_epsilon,float64,scalar,none,frozen source-card epsilon,exact identity table
+NPZ,source_B_mumu,float64,scalar,probability,frozen muon-pair probability,exact identity table
+NPZ,source_B_ee_plus_EMlike_neutral_effective,float64,scalar,probability,complementary effective branch,exact identity table and branch sum
+NPZ,source_native_muon_multiplicity,float64,scalar,muons per decay,average primary muons in native adapter,equals 2 B_mumu
+NPZ,source_native_pion_multiplicity,float64,scalar,pions per decay,native charged-pion multiplicity,exact zero
+NPZ,source_f_EM_integrated,float64,scalar,fraction,integrated electromagnetic energy fraction,exact identity and closure
+NPZ,source_f_nu_integrated,float64,scalar,fraction,integrated neutrino energy fraction,exact identity and closure
+NPZ,source_lifetime_factor,float64,scalar,lifetimes,source cutoff t over tau,exact 18
+NPZ,neutron_lifetime_s,float64,scalar,s,network neutron lifetime,broad range and cross-artifact equality
+NPZ,Yp_model,float64,scalar,mass fraction,final helium-4 mass fraction,physical range and refinement
+NPZ,DH_x1e5_model,float64,scalar,1e-5,final deuterium-to-hydrogen times 1e5,physical range and refinement
+NPZ,Neff_CMB_model,float64,scalar,none,CMB-era effective neutrino number,physical range and refinement
+NPZ,t_s,float64,Nt,s,elapsed physical time from source start,zero start increasing and coverage
+NPZ,scale_factor,float64,Nt,relative,positive expansion scale factor,increasing and integral H closure
+NPZ,T_gamma_MeV,float64,Nt,MeV,photon temperature history,positive decreasing start/end and refinement
+NPZ,q_grid,float64,Nq,coordinate units,fixed momentum-coordinate nodes,positive increasing endpoint and preflight
+NPZ,q_weights,float64,Nq,coordinate units,quadrature cell weights,positive moment gates
+NPZ,p_per_q_MeV,float64,Nt,MeV per q,physical conversion p=q times p_per_q,positive coordinate closure and refinement
+NPZ,source_dYdt_s_inv,float64,Nt,s^-1,positive truncated decay-source magnitude Y0 exp(-t/tau)/tau and zero after 18 tau,formula and integral closure
+NPZ,source_muon_pair_dYdt_s_inv,float64,Nt,s^-1,positive muon-pair yield-source magnitude B_mumu times source_dYdt,formula closure
+NPZ,source_Q_EM_over_s_MeV_s_inv,float64,Nt,MeV s^-1 per entropy,electromagnetic energy-source magnitude,formula closure
+NPZ,source_Q_nu_over_s_MeV_s_inv,float64,Nt,MeV s^-1 per entropy,neutrino energy-source magnitude,formula closure
+NPZ,source_Q_pi_charged_over_s_MeV_s_inv,float64,Nt,MeV s^-1 per entropy,charged-pion energy source,exact zero
+NPZ,source_rhs_nue_dYdt_dq_s_inv,float64,Nt x Nq,s^-1 per q,actual canonical pre-collision pre-oscillation nu_e injection RHS,Michel k0-k5 number energy pair and cutoff closure
+NPZ,source_rhs_nuebar_dYdt_dq_s_inv,float64,Nt x Nq,s^-1 per q,actual canonical pre-collision pre-oscillation anti-nu_e injection RHS,nu-antinu equality and Michel closure
+NPZ,source_rhs_numu_dYdt_dq_s_inv,float64,Nt x Nq,s^-1 per q,actual canonical pre-collision pre-oscillation nu_mu injection RHS,Michel k0-k5 number energy pair and cutoff closure
+NPZ,source_rhs_numubar_dYdt_dq_s_inv,float64,Nt x Nq,s^-1 per q,actual canonical pre-collision pre-oscillation anti-nu_mu injection RHS,nu-antinu equality and Michel closure
+NPZ,source_rhs_nutau_dYdt_dq_s_inv,float64,Nt x Nq,s^-1 per q,actual canonical pre-collision pre-oscillation nu_tau injection RHS,exact zero within numerical ceiling
+NPZ,source_rhs_nutaubar_dYdt_dq_s_inv,float64,Nt x Nq,s^-1 per q,actual canonical pre-collision pre-oscillation anti-nu_tau injection RHS,exact zero within numerical ceiling
+NPZ,f_nue,float32 or float64,Nt x Nq,occupation,nu_e phase-space occupation,separate bounded initial FD shape and M3 positive E3 and refinement
+NPZ,f_nuebar,float32 or float64,Nt x Nq,occupation,anti-nu_e phase-space occupation,separate bounded initial M3 positive E3 and refinement
+NPZ,f_numu,float32 or float64,Nt x Nq,occupation,nu_mu phase-space occupation,separate bounded initial M3 positive E3 and refinement
+NPZ,f_numubar,float32 or float64,Nt x Nq,occupation,anti-nu_mu phase-space occupation,separate bounded initial M3 positive E3 and refinement
+NPZ,f_nutau,float32 or float64,Nt x Nq,occupation,nu_tau phase-space occupation,separate bounded initial M3 positive E3 and refinement
+NPZ,f_nutaubar,float32 or float64,Nt x Nq,occupation,anti-nu_tau phase-space occupation,separate bounded initial M3 positive E3 and refinement
+NPZ,lambda_n_to_p_s_inv,float64,Nt,s^-1,total corrected neutron-to-proton rate,positive sanity raw linkage and refinement
+NPZ,lambda_p_to_n_s_inv,float64,Nt,s^-1,total corrected proton-to-neutron rate,nonnegative sanity raw linkage and refinement
+NPZ,lambda_n_to_p_process_s_inv,float64,Nt x 3,s^-1,canonical corrected n-to-p process groups,nonnegative exact-label sum Born-sentinel and late-decay closure
+NPZ,lambda_p_to_n_process_s_inv,float64,Nt x 2,s^-1,canonical corrected p-to-n process groups,nonnegative exact-label sum and Born-sentinel closure
+NPZ,H_s_inv,float64,Nt,s^-1,Hubble history,positive radiation sanity scale-factor closure raw linkage and refinement
+JSON,momentum_coordinate_kind,string,scalar,none,whether q is comoving or physical,enum and conversion closure
+JSON,momentum_grid_description,string,scalar,none,run-specific nodes and refinement description,row raw and bridge linkage
+JSON,spectral_source_treatment,string,scalar,none,implemented momentum-resolved source treatment,row raw and bridge linkage
+JSON,source_rhs_stage,string,scalar,none,stage at which canonical source RHS was exported,exact pre_collision_pre_oscillation
+JSON,source_rhs_units,string,scalar,none,canonical source RHS units,exact dY_per_dt_dq_s^-1
+JSON,source_rhs_export_method,string,scalar,none,how the actual production injection RHS was exported,nonplaceholder controlled raw crosslink
+JSON,source_rhs_production_callable,string,scalar,none,module and symbol used by production transport,nonplaceholder controlled raw crosslink
+JSON,source_rhs_adapter,string,scalar,none,native normalization to canonical dY per dt dq mapping,nonplaceholder controlled raw crosslink
+JSON,source_rhs_impulse_test_command,string,scalar,none,command exercising the same production source callable,nonplaceholder controlled raw crosslink
+JSON,collision_treatment,string,scalar,none,implemented collision operator,row raw and bridge linkage
+JSON,oscillation_treatment,string,scalar,none,implemented flavor evolution,row raw and bridge linkage
+JSON,weak_rate_processes,string,scalar,none,included neutron/proton processes,nonplaceholder and controlled equality
+JSON,weak_rate_corrections,string,scalar,none,radiative recoil finite-mass blocking and plasma treatment,nonplaceholder and controlled equality
+JSON,n_to_p_process_labels,array,3,none,canonical labels matching n-to-p process columns,exact v0.9.20 order
+JSON,p_to_n_process_labels,array,2,none,canonical labels matching p-to-n process columns,exact v0.9.20 order
+JSON,production_or_synthetic,string,scalar,none,run classification,production required by default
+NPZ,state_normalization_density_MeV3,float64,Nt,MeV^3,declared reference density used to normalize every separate neutrino species,positive controlled definition
+NPZ,state_dYdq_species,float64,Nt x Nq,yield per q,canonical state advanced by the transport stepper,f-to-state weighted L1 and peak closure for all six species
+NPZ,source_stepper_target_t_over_tau,float64,8,none,fixed operator-probe targets,exact [0 .25 .5 1 2 4 8 16]
+NPZ,source_stepper_time_index,float64 or int64,8,index,nearest unique bridge rows at fixed targets,deterministic nearest-row rule
+NPZ,source_stepper_sample_t_s,float64,8,s,selected bridge sample times,exact row linkage
+NPZ,source_stepper_h_s,float64,8,s,production step size for source on/off witness,positive and source-window contained
+NPZ,source_stepper_h2_s,float64,8,s,refined production step size,exact h/2
+NPZ,source_stepper_initial_state_dYdq_species,float64,8 x Nq,yield per q,initial state supplied to each paired production step,exact selected bridge-state linkage
+NPZ,source_stepper_on_off_h_h2_state_dYdq_species,float64,8 x Nq,yield per q,paired source-enabled/disabled production-stepper outputs,response weighted-L1 k0-k5 and h/h2 convergence
+JSON,state_dYdq_definition,string,scalar,none,canonical occupation-to-yield mapping,exact declared formula
+JSON,state_normalization_density_definition,string,scalar,none,physical definition and degrees-of-freedom convention,nonplaceholder controlled raw crosslink
+JSON,transport_stepper_production_callable,string,scalar,none,module and symbol for main production stepper,nonplaceholder controlled raw crosslink
+JSON,transport_stepper_source_toggle,string,scalar,none,exact source-only on/off delta,nonplaceholder controlled raw crosslink
+JSON,operator_probe_command,string,scalar,none,command producing paired h and h/2 witness,nonplaceholder receipt crosslink
+JSON,weak_rate_production_callable,string,scalar,none,module and symbol for production weak-rate evaluation,nonplaceholder weak-metadata crosslink

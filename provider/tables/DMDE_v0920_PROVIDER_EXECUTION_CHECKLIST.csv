@@ -1,0 +1,20 @@
+gate,requirement,status
+payload_identity,Validate both payload bytes and analytic source laws,required
+native_mapping,Use N_mu=2*B_mumu and zero pion multiplicity; omit direct-neutrino columns,required
+exact_source_constants,Use frozen tau mass Y0 B_mumu and m_mu values,required
+endpoint_domain,Cover physical m_mu/2 endpoint through 18*tau,required
+higher_moments,Pass Michel E^k moments k=0..5 plus direct all-node source-shape gates,required
+actual_source_rhs,Export six canonical pre-collision pre-oscillation dY/(dt dq) arrays from the production source callable and pass source-operator closure,required
+source_shape_time,Pass all-node weighted-L1 CDF support exact-cutoff and 5e-5 time-integral gates,required
+canonical_state,Export six state_dYdq histories and the declared positive normalization-density mapping,required
+stepper_witness,Replay eight selected bridge states source on/off at h and h/2 through the production stepper,required
+spectral_transport,Evolve momentum distributions with collisions and flavor treatment,required
+spectral_weak_rates,Use separate nue/nuebar histories in direct n<->p rates,required
+weak_rate_closure,Map exactly five process groups and pass all-five Born process plus direction-total and late neutron-decay gates,required
+BBN_network,Run a real nuclear network and export its exact rate/background inputs,required
+BBN_consumption,Return byte-identical baseline replay and four signed near-linear input canaries,required
+paired_refinement,Reduce all protected time and momentum cell-width metrics by at least 10 percent,required
+raw_evidence,Return valid self-manifesting role-complete ZIP per run,required
+standard_model_control,Include converged control summary with identical backend family,required
+energy_only,Optional comparison only; never a substitute,optional
+private_material,Do not request infer or include private labels/oracle,prohibited

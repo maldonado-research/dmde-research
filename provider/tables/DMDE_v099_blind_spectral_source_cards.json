@@ -1,0 +1,94 @@
+[
+  {
+    "schema_version": "DMDE-SPECTRAL-SOURCE-CARD-v0.9.4",
+    "blind_id": "DMDE-SPEC-V099-4Q7N",
+    "role": "SPECTRAL_PROVIDER_CARD",
+    "mass_MeV": 277.99963884121235,
+    "tau_s": 41.6389283854468,
+    "Y0": 8.860480645619068e-06,
+    "epsilon": 3.56674733117115e-12,
+    "f_EM_integrated": 0.7748109285557294,
+    "f_nu_integrated": 0.2251890714442705,
+    "charged_pion_open": false,
+    "Q_charged_pion_over_s": 0.0,
+    "m_mu_MeV": 105.6583755,
+    "B_mumu": 0.45576845213314143,
+    "B_ee_plus_EMlike_neutral_effective": 0.5442315478668586,
+    "source_contract": {
+      "x_definition": "x = 2 E_nu / m_mu, 0 <= x <= 1",
+      "Fe": "12*x^2*(1-x)",
+      "Fmu": "2*x^2*(3-2*x)",
+      "dY_nue_dt_dx": "B_mumu * Y0*exp(-t/tau)/tau * Fe(x)",
+      "dY_nuebar_dt_dx": "B_mumu * Y0*exp(-t/tau)/tau * Fe(x)",
+      "dY_numu_dt_dx": "B_mumu * Y0*exp(-t/tau)/tau * Fmu(x)",
+      "dY_numubar_dt_dx": "B_mumu * Y0*exp(-t/tau)/tau * Fmu(x)",
+      "Q_EM_over_s": "f_EM*m_R*Y0*exp(-t/tau)/tau",
+      "Q_nu_over_s": "f_nu*m_R*Y0*exp(-t/tau)/tau",
+      "Q_charged_pion_over_s": "0",
+      "do_not_encode_as_negative_dark_radiation": true,
+      "do_not_use_energy_only_for_final_BBN_unless_equivalence_gate_passes": true
+    },
+    "validation_moments": {
+      "int_Fe_dx": 1.0,
+      "int_Fmu_dx": 1.0,
+      "mean_x_Fe": 0.6,
+      "mean_x_Fmu": 0.7,
+      "mean_E_nue_MeV": 31.69751265,
+      "mean_E_numu_MeV": 36.980431425
+    },
+    "schema_version_v098_payload": "DMDE-SPECTRAL-SEPARABLE-PAYLOAD-v0.9.8",
+    "payload_notes": {
+      "x_definition": "x=2E_nu/m_mu; 0<=x<=1",
+      "time_grid": "payload y=t/tau grid from 0 to 18; exact law should be used if backend can call it",
+      "charged_pion_firewall": "Q_pi_charged/s = 0 by sub-pion kinematics",
+      "energy_only_status": "paused for final BBN unless |Yp_spectral - Yp_energy_only| < 1e-4 is demonstrated",
+      "blind_protocol": "provider should not infer target labels; return outputs for all cards"
+    }
+  },
+  {
+    "schema_version": "DMDE-SPECTRAL-SOURCE-CARD-v0.9.4",
+    "blind_id": "DMDE-SPEC-V099-8M2K",
+    "role": "SPECTRAL_PROVIDER_CARD",
+    "mass_MeV": 274.1040707119773,
+    "tau_s": 41.6389283854468,
+    "Y0": 9.004023547926291e-06,
+    "epsilon": 3.6031025183658363e-12,
+    "f_EM_integrated": 0.7732979776139741,
+    "f_nu_integrated": 0.2267020223860258,
+    "charged_pion_open": false,
+    "Q_charged_pion_over_s": 0.0,
+    "m_mu_MeV": 105.6583755,
+    "B_mumu": 0.4524010438328144,
+    "B_ee_plus_EMlike_neutral_effective": 0.5475989561671857,
+    "source_contract": {
+      "x_definition": "x = 2 E_nu / m_mu, 0 <= x <= 1",
+      "Fe": "12*x^2*(1-x)",
+      "Fmu": "2*x^2*(3-2*x)",
+      "dY_nue_dt_dx": "B_mumu * Y0*exp(-t/tau)/tau * Fe(x)",
+      "dY_nuebar_dt_dx": "B_mumu * Y0*exp(-t/tau)/tau * Fe(x)",
+      "dY_numu_dt_dx": "B_mumu * Y0*exp(-t/tau)/tau * Fmu(x)",
+      "dY_numubar_dt_dx": "B_mumu * Y0*exp(-t/tau)/tau * Fmu(x)",
+      "Q_EM_over_s": "f_EM*m_R*Y0*exp(-t/tau)/tau",
+      "Q_nu_over_s": "f_nu*m_R*Y0*exp(-t/tau)/tau",
+      "Q_charged_pion_over_s": "0",
+      "do_not_encode_as_negative_dark_radiation": true,
+      "do_not_use_energy_only_for_final_BBN_unless_equivalence_gate_passes": true
+    },
+    "validation_moments": {
+      "int_Fe_dx": 1.0,
+      "int_Fmu_dx": 1.0,
+      "mean_x_Fe": 0.6,
+      "mean_x_Fmu": 0.7,
+      "mean_E_nue_MeV": 31.69751265,
+      "mean_E_numu_MeV": 36.980431425
+    },
+    "schema_version_v098_payload": "DMDE-SPECTRAL-SEPARABLE-PAYLOAD-v0.9.8",
+    "payload_notes": {
+      "x_definition": "x=2E_nu/m_mu; 0<=x<=1",
+      "time_grid": "payload y=t/tau grid from 0 to 18; exact law should be used if backend can call it",
+      "charged_pion_firewall": "Q_pi_charged/s = 0 by sub-pion kinematics",
+      "energy_only_status": "paused for final BBN unless |Yp_spectral - Yp_energy_only| < 1e-4 is demonstrated",
+      "blind_protocol": "provider should not infer target labels; return outputs for all cards"
+    }
+  }
+]
