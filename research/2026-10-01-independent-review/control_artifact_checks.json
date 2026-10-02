@@ -1,0 +1,48 @@
+{
+  "runs": [
+    {
+      "run": "current-4bf97d5-sm-large-amax8",
+      "rows": 500,
+      "zero_rows": 64,
+      "padding_leading_only": true,
+      "active_first_row": 64,
+      "active_first_temperature": 9.902563801654264,
+      "history_max_baryon_absolute_error": 1.6537882174816332e-12,
+      "final_baryon_absolute_error": 1.6489032361732825e-12
+    },
+    {
+      "run": "current-4bf97d5-sm-small",
+      "rows": 500,
+      "zero_rows": 64,
+      "padding_leading_only": true,
+      "active_first_row": 64,
+      "active_first_temperature": 9.902563801654264,
+      "history_max_baryon_absolute_error": 1.6513457268274578e-12,
+      "final_baryon_absolute_error": 1.6493473253831326e-12
+    },
+    {
+      "run": "pinned-908028d-sm-small",
+      "rows": 500,
+      "zero_rows": 64,
+      "padding_leading_only": true,
+      "active_first_row": 64,
+      "active_first_temperature": 9.902563801654264,
+      "history_max_baryon_absolute_error": 1.6513457268274578e-12,
+      "final_baryon_absolute_error": 1.6493473253831326e-12
+    }
+  ],
+  "shared_shipped_cache_data_paths": [
+    "primat/data/cache_plasma_weak/plasma/QED_pressure_correction_e2.txt",
+    "primat/data/cache_plasma_weak/plasma/QED_pressure_correction_e3.txt",
+    "primat/data/cache_plasma_weak/plasma/electron_thermo_0c03542043bd1b1a.txt",
+    "primat/data/cache_plasma_weak/weak/nTOp_1b03b1ca694b89b0.txt",
+    "primat/data/cache_plasma_weak/weak/nTOp_4a901fa9a22a2694.txt",
+    "primat/data/cache_plasma_weak/weak/nTOp_585ee290ba44a0c7.txt",
+    "primat/data/cache_plasma_weak/weak/nTOp_5dbab56da97fd9f4.txt",
+    "primat/data/cache_plasma_weak/weak/nTOp_6ac655a20b5a175c.txt"
+  ],
+  "changed_shared_shipped_cache_data_paths": [],
+  "final_verifier_stdout_only_preserves_dossier_bytes": true,
+  "final_control_artifact_manifest_entries": 42,
+  "final_control_artifact_manifest_all_match": true
+}

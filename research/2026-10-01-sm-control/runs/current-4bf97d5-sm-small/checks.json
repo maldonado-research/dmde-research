@@ -1,0 +1,11 @@
+{
+  "all_finite_final_abundances": true,
+  "baryon_number_abs_error": 1.6493473253831326e-12,
+  "baryon_number_sum_A_Y": 1.0000000000016493,
+  "elapsed_seconds": 1.572357082999929,
+  "physical_helium_fraction": true,
+  "positive_deuterium_ratio": true,
+  "positive_final_abundances": true,
+  "source_clean": true,
+  "source_status_after": ""
+}

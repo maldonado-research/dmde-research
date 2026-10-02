@@ -1,0 +1,62 @@
+{
+  "method": "independent_rates.py electron-energy scipy.quad vs producer NumPy Gauss-Legendre",
+  "python_version": "3.12.14",
+  "numpy_version": "2.3.5",
+  "scipy_version": "1.17.0",
+  "comparisons": [
+    {
+      "T_MeV": 10.0,
+      "max_abs_relative_difference": 4.884981308350689e-15
+    },
+    {
+      "T_MeV": 5.0,
+      "max_abs_relative_difference": 3.9968028886505635e-15
+    },
+    {
+      "T_MeV": 2.0,
+      "max_abs_relative_difference": 3.3306690738754696e-15
+    },
+    {
+      "T_MeV": 1.0,
+      "max_abs_relative_difference": 3.774758283725532e-15
+    },
+    {
+      "T_MeV": 0.8,
+      "max_abs_relative_difference": 3.552713678800501e-15
+    },
+    {
+      "T_MeV": 0.5,
+      "max_abs_relative_difference": 3.552713678800501e-15
+    },
+    {
+      "T_MeV": 0.3,
+      "max_abs_relative_difference": 3.552713678800501e-15
+    },
+    {
+      "T_MeV": 0.25,
+      "max_abs_relative_difference": 3.774758283725532e-15
+    },
+    {
+      "T_MeV": 0.2,
+      "max_abs_relative_difference": 4.218847493575595e-15
+    },
+    {
+      "T_MeV": 0.1,
+      "max_abs_relative_difference": 4.6629367034256575e-15
+    },
+    {
+      "T_MeV": 0.08,
+      "max_abs_relative_difference": 3.552713678800501e-15
+    },
+    {
+      "T_MeV": 0.05,
+      "max_abs_relative_difference": 4.6629367034256575e-15
+    },
+    {
+      "T_MeV": 0.02,
+      "max_abs_relative_difference": 5.10702591327572e-15
+    }
+  ],
+  "max_abs_relative_difference": 5.10702591327572e-15,
+  "i0_relative_difference": 4.440892098500626e-16
+}
