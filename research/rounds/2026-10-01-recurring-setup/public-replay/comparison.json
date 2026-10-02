@@ -1,0 +1,69 @@
+{
+  "method": "Independent electron-energy scipy.quad vs producer NumPy Gauss-Legendre",
+  "status": "PASS_REFERENCE_CONSISTENCY_ONLY",
+  "scope": "Static Born reference integration only; no production BBN or DMDE inference.",
+  "python_version": "3.12.14",
+  "numpy_version": "2.3.5",
+  "scipy_version": "1.16.3",
+  "source_sha256": {
+    "independent_rates.py": "6f1b0df821ef6b2ac2d75ff16d5cedf220e4c8c7078331e280777372ae7a2b63",
+    "compare_with_producer.py": "48d2d18a27fb342f13a70a401258b1a1d55d249d1dff8c494ab576c0118fd0b6",
+    "equilibrium_audit.py": "bd5e9074ab288bc2ace55cc9e92357f460ec44963b5b22f43623a53a6b70705b"
+  },
+  "comparisons": [
+    {
+      "T_MeV": 10.0,
+      "max_abs_relative_difference": 4.884981308350689e-15
+    },
+    {
+      "T_MeV": 5.0,
+      "max_abs_relative_difference": 3.9968028886505635e-15
+    },
+    {
+      "T_MeV": 2.0,
+      "max_abs_relative_difference": 3.3306690738754696e-15
+    },
+    {
+      "T_MeV": 1.0,
+      "max_abs_relative_difference": 3.774758283725532e-15
+    },
+    {
+      "T_MeV": 0.8,
+      "max_abs_relative_difference": 3.552713678800501e-15
+    },
+    {
+      "T_MeV": 0.5,
+      "max_abs_relative_difference": 3.552713678800501e-15
+    },
+    {
+      "T_MeV": 0.3,
+      "max_abs_relative_difference": 3.552713678800501e-15
+    },
+    {
+      "T_MeV": 0.25,
+      "max_abs_relative_difference": 3.774758283725532e-15
+    },
+    {
+      "T_MeV": 0.2,
+      "max_abs_relative_difference": 4.218847493575595e-15
+    },
+    {
+      "T_MeV": 0.1,
+      "max_abs_relative_difference": 4.6629367034256575e-15
+    },
+    {
+      "T_MeV": 0.08,
+      "max_abs_relative_difference": 3.552713678800501e-15
+    },
+    {
+      "T_MeV": 0.05,
+      "max_abs_relative_difference": 4.6629367034256575e-15
+    },
+    {
+      "T_MeV": 0.02,
+      "max_abs_relative_difference": 5.10702591327572e-15
+    }
+  ],
+  "max_abs_relative_difference": 5.10702591327572e-15,
+  "i0_relative_difference": 4.440892098500626e-16
+}

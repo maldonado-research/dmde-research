@@ -19,6 +19,9 @@ solve is performed by this maintenance script. A pass is a reproduction result.
 Historical numerical-source and dossier hashes remain strict. Later documentation
 changes are recorded separately: the old documentation review does not cover
 changed text, while a new scientific conclusion still requires its own review.
+The [setup verification dossier](rounds/2026-10-01-recurring-setup/README.md)
+preserves the clean-commit replay, raw public outputs and 11 mocked orchestration
+checks. It does not establish GitHub-hosted execution or an active AI scheduler.
 
 From the repository root, using an environment with NumPy 2.3.5 and SciPy 1.16.3:
 

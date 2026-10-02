@@ -1,0 +1,20 @@
+{
+  "ROUND_RECEIPT.json": "bcda688cf0fa1e5eb26f0afbc30031f8e8d72e5be12151735233f424360d2042",
+  "comparison.json": "dcfdbe374f8e6ca0e76cd92ff3932af5607f12fdb3a085abbb7a5ebea3c5e4f2",
+  "deep-payloads.log": "d699227a8cb30bea8bee71e7634ab1a3d07bc592ed9ad056ad9427bf6a954624",
+  "deep.csv": "c4281ae7c537a50aff5ad79c74d8a7225da69cbbfa6df152b5f95bda13ba681f",
+  "deep.json": "713a9a1b5255c2f7f0465d8a11ee998553c3429cb24e7883f49ef351bd59a5ba",
+  "equilibrium/equilibrium_audit.json": "477e92211a7f44136df1e23c951146224a1f8e690b794298fbe569440687000b",
+  "equilibrium/equilibrium_rates.csv": "65b8e85c876d596a1c56d1d4f9a90ddd50da8cebb8e9f478eaaab2b7ad39ce45",
+  "equilibrium-report.log": "f57fdc3dd02e5738555fb6ad3c685c95677667d1c0552a16fc93f98bbf65c116",
+  "equilibrium-tests.log": "14eea08f3fa12c827e6715001d360427b572424da0f0c90bfa125461da901bb2",
+  "geometry.json": "3d983f6000d1800467a7fcc6019f203c894fb3e8f1581a027c9f5bf2830ccebd",
+  "historical-controls.json": "855c85c09e2ed26078ef92b4b675e47ea60b711350c1f43d771be24647b3a510",
+  "independent-comparison.log": "dcfdbe374f8e6ca0e76cd92ff3932af5607f12fdb3a085abbb7a5ebea3c5e4f2",
+  "independent-integration.log": "ea29bd2e9f0245655e3b8382495b58867426d0d1ef45f9c7e2c72dbc20426771",
+  "independent.json": "ea29bd2e9f0245655e3b8382495b58867426d0d1ef45f9c7e2c72dbc20426771",
+  "pair-geometry.log": "8fc568fe9d9b6cd8aff7ae38d85bded8cc44c133717d00d7ea87f6e30e4b173f",
+  "precision.csv": "0194cf64db2c347355b781aa32f3fff8abc3fb8a584e0ef122199d47e65e3a53",
+  "release-integrity.log": "9c8619f267f33d4fc96c055e3a3d574b96cf3e95fd8c6c7e141c4eb0df930ffb",
+  "saved-sm-controls.log": "855c85c09e2ed26078ef92b4b675e47ea60b711350c1f43d771be24647b3a510"
+}

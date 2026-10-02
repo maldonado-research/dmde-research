@@ -1,0 +1,32 @@
+{
+  "status": "PASS_SETUP_CONTROLS_ONLY",
+  "source_commit": "bfac4c542fd83c3883cbb7f83cbdd8d74dba2284",
+  "driver_sha256": "78001f3287bf5bf5ec111af869ff79b58ac3469fc6570ba9a2cee1493f53d24d",
+  "public_replay_steps": 8,
+  "equilibrium_tests": 13,
+  "orchestration_mocked_checks": 11,
+  "interface_checks": [
+    {
+      "check": "overwrite",
+      "status": "PASS"
+    },
+    {
+      "check": "outside-generated",
+      "status": "PASS"
+    },
+    {
+      "check": "optimized-python",
+      "status": "PASS"
+    },
+    {
+      "check": "concurrent-round",
+      "status": "PASS"
+    }
+  ],
+  "workflow_yaml_parse": "PASS",
+  "privacy_scope": "Existing public computations and authored orchestration review only; no private/raw inputs.",
+  "github_hosted_execution": "not_verified",
+  "ai_scheduler": "not_connected",
+  "scheduled_workflow": "awaiting_default_branch_activation",
+  "new_physics_result": false
+}

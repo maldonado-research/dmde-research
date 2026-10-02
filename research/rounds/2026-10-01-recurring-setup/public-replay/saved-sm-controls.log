@@ -1,0 +1,57 @@
+{
+  "historical_note_discrepancy": {
+    "explanation": "Original note omits full runtime settings/software/cache provenance. Cause remains undetermined; exact reproduction of its scalar receipt has not been established.",
+    "new_pinned_minus_old_note": {
+      "DoH": 2.5316668637371436e-09,
+      "Neff": 0.0,
+      "YPBBN": 7.112181009044649e-06
+    },
+    "old_note_scalars": {
+      "DoH": 2.435606846544578e-05,
+      "Neff": 3.0439772985579183,
+      "YPBBN": 0.24699183580343323
+    },
+    "relative_difference": {
+      "DoH": 0.00010394398699153137,
+      "Neff": 0.0,
+      "YPBBN": 2.8795206877626634e-05
+    },
+    "source": "provider/docs/DMDE_v0920_PUBLIC_BACKEND_INTEGRATION_AUDIT.md"
+  },
+  "runs": {
+    "current-4bf97d5-sm-large-amax8": {
+      "DoH": 2.4365286436668656e-05,
+      "Neff": 3.0439772985579183,
+      "YPBBN": 0.24700235492652864,
+      "background_component_density_sum_max_rel_error": 0.0,
+      "checks_pass": true,
+      "final_baryon_abs_error": 1.6489032361732825e-12,
+      "first_nuclear_sample_T_MeV": 9.902563801654264,
+      "leading_pre_nuclear_zero_rows": 64,
+      "post_start_evolution_baryon_abs_error": 1.6537882174816332e-12
+    },
+    "current-4bf97d5-sm-small": {
+      "DoH": 2.435860013230952e-05,
+      "Neff": 3.0439772985579183,
+      "YPBBN": 0.24699894798444227,
+      "background_component_density_sum_max_rel_error": 0.0,
+      "checks_pass": true,
+      "final_baryon_abs_error": 1.6493473253831326e-12,
+      "first_nuclear_sample_T_MeV": 9.902563801654264,
+      "leading_pre_nuclear_zero_rows": 64,
+      "post_start_evolution_baryon_abs_error": 1.6513457268274578e-12
+    },
+    "pinned-908028d-sm-small": {
+      "DoH": 2.435860013230952e-05,
+      "Neff": 3.0439772985579183,
+      "YPBBN": 0.24699894798444227,
+      "background_component_density_sum_max_rel_error": 0.0,
+      "checks_pass": true,
+      "final_baryon_abs_error": 1.6493473253831326e-12,
+      "first_nuclear_sample_T_MeV": 9.902563801654264,
+      "leading_pre_nuclear_zero_rows": 64,
+      "post_start_evolution_baryon_abs_error": 1.6513457268274578e-12
+    }
+  },
+  "scope": "Checks of saved upstream SM control artifacts; no DMDE prediction or independent physics replication."
+}

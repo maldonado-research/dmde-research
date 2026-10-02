@@ -1,0 +1,18 @@
+test_arbitrary_occupation_identity_and_extreme_bounds (test_equilibrium_audit.BornEquilibriumTests.test_arbitrary_occupation_identity_and_extreme_bounds) ... ok
+test_clipped_tail_negative_control_survives_balance_check (test_equilibrium_audit.BornEquilibriumTests.test_clipped_tail_negative_control_survives_balance_check) ... ok
+test_closed_form_normalization_against_quadrature (test_equilibrium_audit.BornEquilibriumTests.test_closed_form_normalization_against_quadrature) ... ok
+test_each_reverse_pair_detailed_balance (test_equilibrium_audit.BornEquilibriumTests.test_each_reverse_pair_detailed_balance) ... ok
+test_frozen_provider_integrands_agree_with_independent_reference (test_equilibrium_audit.BornEquilibriumTests.test_frozen_provider_integrands_agree_with_independent_reference) ... ok
+test_high_temperature_beta_quarter_limit (test_equilibrium_audit.BornEquilibriumTests.test_high_temperature_beta_quarter_limit) ... ok
+test_independent_order_and_tail_refinements (test_equilibrium_audit.BornEquilibriumTests.test_independent_order_and_tail_refinements) ... ok
+test_invalid_inputs_fail (test_equilibrium_audit.BornEquilibriumTests.test_invalid_inputs_fail) ... ok
+test_lifetime_scaling_is_common_to_every_process (test_equilibrium_audit.BornEquilibriumTests.test_lifetime_scaling_is_common_to_every_process) ... ok
+test_nonthermal_occupation_cannot_use_thermal_inverse_formula (test_equilibrium_audit.BornEquilibriumTests.test_nonthermal_occupation_cannot_use_thermal_inverse_formula) ... ok
+test_total_detailed_balance_and_omission_negative_control (test_equilibrium_audit.BornEquilibriumTests.test_total_detailed_balance_and_omission_negative_control) ... ok
+test_unequal_temperatures_do_not_obey_common_temperature_balance (test_equilibrium_audit.BornEquilibriumTests.test_unequal_temperatures_do_not_obey_common_temperature_balance) ... ok
+test_vacuum_neutron_lifetime (test_equilibrium_audit.BornEquilibriumTests.test_vacuum_neutron_lifetime) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.080s
+
+OK
