@@ -5,3 +5,8 @@ __pycache__/
 generated/
 returned/
 *.log
+# Private reference material must never be staged into this public checkout.
+new-files/
+attachments/
+HDblast-archive/
+.private/
