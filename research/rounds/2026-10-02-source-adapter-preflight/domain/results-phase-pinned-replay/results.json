@@ -1,0 +1,58 @@
+{
+  "rows": [
+    {
+      "n": 3001,
+      "max_moment_relative_error": 0.005391530883537166,
+      "worst_x": 0.10260000000000001,
+      "worst_flavor": "muon",
+      "worst_k": 5,
+      "all_scanned_rows_k0_to_k5_pass": false,
+      "relative_native_weight_error_max": 4.064688649774162e-06,
+      "dq": 0.01333,
+      "estimated_collision_work_vs_301": 991.0566944964523
+    },
+    {
+      "n": 4001,
+      "max_moment_relative_error": 0.0039869488488955,
+      "worst_x": 0.1027,
+      "worst_flavor": "muon",
+      "worst_k": 5,
+      "all_scanned_rows_k0_to_k5_pass": true,
+      "relative_native_weight_error_max": 1.073991196109958e-05,
+      "dq": 0.009997500000000001,
+      "estimated_collision_work_vs_301": 2348.5843757417474
+    },
+    {
+      "n": 8001,
+      "max_moment_relative_error": 0.0020297794477652786,
+      "worst_x": 0.10120000000000001,
+      "worst_flavor": "muon",
+      "worst_k": 5,
+      "all_scanned_rows_k0_to_k5_pass": true,
+      "relative_native_weight_error_max": 0.00010121187921119379,
+      "dq": 0.0049987500000000015,
+      "estimated_collision_work_vs_301": 18781.631894047063
+    }
+  ],
+  "scope": "source-only callback moments with upstream native quadrature; no transport, collision JIT, production stepper, weak or BBN",
+  "leading_endpoint_error_estimate": {
+    "formula": "max_relative_muon_k5 ~ (48/11)*dq/q_star_initial",
+    "coefficient": 4.363636363636363,
+    "q_star_initial": 10.338415160971971,
+    "dq_allow_for_005": 0.011846100705280384,
+    "full_reference_cap_qmax": 1756.8966825434131,
+    "estimated_odd_full_cap_n": 148311,
+    "estimated_collision_work_vs_301": 119624628.6913744,
+    "warning": "asymptotic phase estimate, not rigorous error bound or achieved convergence; native weight construction also needs conditioning review at this N"
+  },
+  "execution": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "wrapper_sha256": "89a26350883cd20f2cde270c55eead63d7bcf7b4d7061c108b2c1ef8d1a6f366",
+    "callback_module_sha256": "724e1184e9d51fd82d3020f2512368cd5184cf30fc99d5ae5f9de33a3147386d",
+    "predeclaration_sha256": "5402a32f4c6b85244d20b89246dc1fe54857e1e3742e6d75380a1e7bbbc18bc9",
+    "private_inputs": false,
+    "native_constant_overrides": false,
+    "native_collision_execution": false
+  }
+}

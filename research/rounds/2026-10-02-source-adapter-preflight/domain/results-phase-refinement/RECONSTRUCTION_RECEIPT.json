@@ -1,0 +1,6 @@
+{
+  "status": "reconstructed_after_execution",
+  "recorded_executed_wrapper_sha256_matches": true,
+  "reconstruction": "retained corrected wrapper with the explicit int conversion removed; exact bytes match failed attempt hash",
+  "not_contemporaneous_snapshot": true
+}

@@ -106,6 +106,17 @@ execute, while the explicit adapter and evolved trajectories remain open.
 Never mark a scientific gate complete because a protocol or a passing
 maintenance replay exists.
 
+The [2 October source-adapter preflight](rounds/2026-10-02-source-adapter-preflight/README.md)
+adds an exact source callback, fixed reference-entropy map, actual-time boundary
+probes and 12 passing local native-RHS adapter checks. Full-domain source grids
+still fail, the native unsplit derivative mixes the pre-mixing source, and two
+QED expressions violate pressure identities. An isolated corrected component
+reference is supplied; a consistent full EOS and a genuine source-operator
+witness remain prerequisites before a trajectory. Read this later checkpoint
+and the updated queue before reusing the earlier adapter plan. The maintenance
+workflow verifies the new dossier's recorded identities and known failures;
+it does not execute these native solver experiments or launch an AI model.
+
 Compare specified mechanisms against conservation, expansion, BBN/CMB, growth,
 structure and lensing, using matched established controls and dated primary
 sources. Literature is an input to tests, not validation of this hypothesis.

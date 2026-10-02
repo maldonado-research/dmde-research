@@ -14,21 +14,32 @@
       "priority": 1,
       "status": "partially_demonstrated_adapter_requirements_open",
       "question": "Can a pinned transport backend actually consume the declared source and export physically mapped occupation and energy histories?",
-      "route": "Pinned Nudec native emitter and local collision-coupled RHS executed; PRIMAT nonthermal rate adapter and nuDSMC route remain unexecuted.",
-      "gate": "Completion requires demonstrated runtime, source interfaces, physical momentum, stopped-muon support, source-call/production-stepper witnesses and daughter-energy accounting.",
+      "route": "Pinned Nudec native emitter/local collision-coupled RHS and Oct 2 exact-source callback preflight executed; canonical reference mapping and actual-time gate demonstrated on fixed-state fixtures. PRIMAT nonthermal rate adapter and nuDSMC route remain unexecuted.",
+      "gate": "Completion requires a separately reviewed pressure-consistent EOS/thermal-correction treatment, a genuine source-operator witness or separately versioned contract, conservative endpoint-complete quadrature, accepted-step source/energy histories and independently refined zero/small-source trajectories.",
       "demonstrated": [
         "Pinned source audit and native runtime with real Numba collision compilation",
         "Unrenormalized Michel moments on clipped and complete diagnostic grids with refinements",
         "Matched same-state zero/positive-parent gate fixtures, corrected primary multiplicity and preserved erratum",
-        "Separate continuum/source-domain review and explicitly limited reference-history proxy"
+        "Separate continuum/source-domain review and explicitly limited reference-history proxy",
+        "Exact m_mu=105.6583755 source-specific callback with all native transport/EOS/collision mass copies retained and explicit weak-kernel electron-mass role",
+        "Canonical comoving-reference entropy/state/source map, six declared charge-symmetric arrays and pre-mixing callback capture and wrapper canonical conversion, witnessed by the actual fixed-state mixed RHS",
+        "Half-open actual-time source cutoff and source-on/off checks on fixed-state fixtures",
+        "Native-weight endpoint-phase source-only sweep: N3001 fails, N4001/N8001 pass sampled short-window coordinates; independent replay and retained full-domain failures"
       ],
       "remaining": [
-        "Explicit frozen constants and canonical state/source coordinate map",
-        "Endpoint-aware grid/quadrature and independent resolution budget",
-        "Actual evolved-time cutoff and complete pre-mixing source exports",
-        "Canonical reference entropy, accepted-step witnesses and daughter-energy conservation history"
+        "Separately versioned pressure-consistent EOS audit and reviewed thermal-correction derivatives before a conservation/trajectory claim",
+        "Genuine split source-operator/production-stepper witness, or separately versioned semantics for the native immediately mixed response",
+        "Conservative endpoint-complete full-history grid/quadrature with native-weight conditioning and collision runtime budget; sampled short-window source passes are insufficient",
+        "Actual evolved-time cutoff/domain proof, complete accepted-step occupation/background/source exports and daughter-energy conservation history",
+        "Matched zero/small-source trajectories with independent domain, momentum and timestep refinements before weak/BBN handoff"
       ],
-      "next_test": "Review a minimal explicit adapter, then matched zero/small-source evolved trajectories with independent domain/grid/timestep refinements."
+      "pretrajectory_order": [
+        "Separately versioned pressure-consistent EOS/thermal-correction audit",
+        "Genuine split source-operator witness or separately versioned contract",
+        "Conservative full-history grid/quadrature and runtime budget",
+        "Matched zero/small-source evolved trajectories"
+      ],
+      "next_test": "Resolve the pressure-consistent EOS, mixed-operator witness semantics and conservative full-history grid in that order; only then run matched zero/small-source trajectories."
     },
     {
       "id": "small-source-transport",
@@ -37,7 +48,7 @@
       "requires": [
         "transport-capability"
       ],
-      "gate": "Matched zero-source/small-source evolved spectra, source RHS and background; independently refined domain, momentum and timestep."
+      "gate": "After pressure-consistent EOS, source-operator witness and conservative-grid gates, obtain matched zero-source/small-source evolved spectra, actual-time source RHS and full background; independently refine domain, momentum and timestep."
     },
     {
       "id": "six-process-rate-adapter",
@@ -73,6 +84,6 @@
       "gate": "Specified covariant model and conserved background/perturbations before testing expansion, growth, CMB and lensing likelihoods."
     }
   ],
-  "latest_scientific_record": "research/rounds/2026-10-01-transport-source-audit/README.md",
-  "updated_user_date": "2026-10-01"
+  "latest_scientific_record": "research/rounds/2026-10-02-source-adapter-preflight/README.md",
+  "updated_user_date": "2026-10-02"
 }

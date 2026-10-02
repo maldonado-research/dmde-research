@@ -1,0 +1,69 @@
+{
+  "schema": "DMDE-authored-source-grid-diagnostic-predeclaration-v1",
+  "status": "predeclared_before_execution",
+  "upstream_commit": "0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62",
+  "public_inputs": [
+    "official pinned Nudec Python source",
+    "public provider documentation and source cards",
+    "published 2026-10-01 source audit"
+  ],
+  "private_inputs": false,
+  "muon_mass_MeV": 105.6583755,
+  "x_initial": 0.1,
+  "x_cap_reference_only": 16.993868549367075,
+  "q_min": 0.01,
+  "native_n_ladder": [
+    301,
+    1001,
+    3001,
+    10001
+  ],
+  "x_probes": [
+    0.1,
+    0.25,
+    1.0,
+    4.0,
+    10.0,
+    16.993868549367075
+  ],
+  "moment_orders": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "moment_relative_ceiling": 0.005,
+  "diagnostic_test_card": {
+    "Y0": 1e-06,
+    "B_mumu": 0.4,
+    "tau_s": 40.0
+  },
+  "diagnostic_t_over_tau": [
+    0.0,
+    0.001,
+    0.1,
+    1.0,
+    5.0,
+    17.999,
+    18.0,
+    18.001
+  ],
+  "array_grid_n": 3001,
+  "array_coordinates": "x=0.1 for each independent fixed-state snapshot; these are not trajectory rows",
+  "state_snapshot": "three identical f(q)=1/(exp(q/1.00003)+1) occupations copied to antineutrinos",
+  "normalization": "s_ref=s0*(x_initial/x)^3; s0=(2*pi^2/45)*10.75*(1.00003*me/x_initial)^3",
+  "source_callable": "authored frozen_michel registered as Distributions.getDistribution=[frozen_michel], with branches=[2*B_mumu]",
+  "scope": "single frozen-source callback, coordinate, canonical mapping and native-grid source moments only; no production RHS, collision JIT, stepper, transport trajectory, weak rates or nuclear evolution",
+  "negative_controls": [
+    "native unoverridden muon mass against exact frozen nodes",
+    "original clipped-domain formula",
+    "endpoint-moving off-grid discontinuity",
+    "nonuniform l-projection geometry",
+    "modified Simpson weights"
+  ],
+  "transport_electron_mass_MeV": 0.5109989,
+  "frozen_weak_kernel_electron_mass_MeV": 0.51099895,
+  "mass_policy": "native transport/EOS/collision constant copies unchanged; source-specific callback uses exact muon mass only"
+}

@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/workspace/shared/dmde-upstream/nudec-venv/bin/python",
+    "-B",
+    "/workspace/shared/dmde-adapter-runtime/source_adapter_diagnostic.py",
+    "worker",
+    "--out",
+    "/workspace/shared/dmde-adapter-runtime/results-serialization-fix/native_fixed_state",
+    "--source",
+    "/workspace/shared/dmde-upstream/nudec"
+  ],
+  "elapsed_seconds": 5.0515083850004885,
+  "returncode": 0,
+  "source_unchanged": true,
+  "timeout": false
+}

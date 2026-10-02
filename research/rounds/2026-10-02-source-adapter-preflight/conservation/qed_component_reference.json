@@ -1,0 +1,479 @@
+{
+  "component_reference_callable": "qed_component_reference.pressure_consistent_components",
+  "declaration": {
+    "finite_difference_relative_steps": [
+      0.001,
+      0.0005
+    ],
+    "finite_difference_rule": "five-point central, (-f(z+2h)+8f(z+h)-8f(z-h)+f(z-2h))/(12h)",
+    "native_QED_interval": [
+      0.01,
+      20.0
+    ],
+    "native_QED_n": [
+      81,
+      161,
+      321
+    ],
+    "native_derivative_replaced": false,
+    "production_stepper_or_trajectory": false,
+    "reference_Gauss_Legendre_n": [
+      240,
+      480
+    ],
+    "reference_u_interval": [
+      0.0,
+      80.0
+    ],
+    "source_constants_changed": false,
+    "states_x_z": [
+      [
+        0.1,
+        1.00003
+      ],
+      [
+        1.0,
+        1.1
+      ],
+      [
+        4.0,
+        1.4
+      ]
+    ]
+  },
+  "license": "GPL-3.0-only",
+  "native_QED_quadrature_refinement": "Explicit temporary n_QED81/161/321, same endpoints, native functions unchanged, default restored",
+  "native_constants_modified": false,
+  "native_symbols_modified": false,
+  "not_validated": "Full EOS, derivative heat-capacity consistency on finite grid, native Hubble or transport trajectory, weak rates, BBN, observational effects",
+  "observations": [
+    {
+      "corrected_component_reference": {
+        "P2_native": -0.0015747745554039686,
+        "P3_paper": 0.00014159599934092772,
+        "dP2dz_pressure_consistent": -0.0063279737266500645,
+        "rho2_pressure_consistent": -0.004753389010457895,
+        "rho3_pressure_consistent": 0.00042514330743216523
+      },
+      "finite_difference_checks": [
+        {
+          "dP2dz_five_point": -0.006327973726649953,
+          "dP3dz_five_point": 0.0005667223051039296,
+          "h_over_z": 0.001,
+          "rho2_reference_minus_finite_diff_pressure_identity": -1.1188966420050406e-16,
+          "rho3_reference_minus_finite_diff_pressure_identity": 1.0191500421363742e-17
+        },
+        {
+          "dP2dz_five_point": -0.0063279737266504045,
+          "dP3dz_five_point": 0.0005667223051039771,
+          "h_over_z": 0.0005,
+          "rho2_reference_minus_finite_diff_pressure_identity": 3.400058012914542e-16,
+          "rho3_reference_minus_finite_diff_pressure_identity": -3.729655473350135e-17
+        }
+      ],
+      "native_QED_n": 81,
+      "native_components_preserved": {
+        "dP2dz": -0.01750522242039675,
+        "rho2": -0.015930973021665393,
+        "rho3": 4.251177999815603e-06
+      },
+      "native_minus_reference_rho2": -0.011177584011207498,
+      "native_minus_reference_rho2_over_photon": -0.016985852240163947,
+      "native_minus_reference_rho2_over_reference": 2.3514978442992525,
+      "native_minus_reference_rho3": -0.0004208921294323496,
+      "native_minus_reference_rho3_over_photon": -0.0006396025753344824,
+      "native_minus_reference_rho3_over_reference": -0.990000599973001,
+      "reference_dP2dz_minus_complex_step_actual_P2": 3.469446951953614e-18,
+      "rho2_reference_minus_complex_step_pressure_identity": 3.469446951953614e-18,
+      "rho3_reference_minus_complex_step_pressure_identity": 1.0842021724855044e-19,
+      "x": 0.1,
+      "z": 1.00003
+    },
+    {
+      "corrected_component_reference": {
+        "P2_native": -0.0015268049067817687,
+        "P3_paper": 0.0001722683702369285,
+        "dP2dz_pressure_consistent": -0.006408822650516431,
+        "rho2_pressure_consistent": -0.005522900008786306,
+        "rho3_pressure_consistent": 0.000579330944655384
+      },
+      "finite_difference_checks": [
+        {
+          "dP2dz_five_point": -0.006408822650517295,
+          "dP3dz_five_point": 0.0006832721044476344,
+          "h_over_z": 0.001,
+          "rho2_reference_minus_finite_diff_pressure_identity": 9.506284648352903e-16,
+          "rho3_reference_minus_finite_diff_pressure_identity": -8.53267109746092e-17
+        },
+        {
+          "dP2dz_five_point": -0.006408822650516441,
+          "dP3dz_five_point": 0.0006832721044476263,
+          "h_over_z": 0.0005,
+          "rho2_reference_minus_finite_diff_pressure_identity": 1.0408340855860843e-17,
+          "rho3_reference_minus_finite_diff_pressure_identity": -7.643625316022806e-17
+        }
+      ],
+      "native_QED_n": 81,
+      "native_components_preserved": {
+        "dP2dz": -0.015683003586345223,
+        "rho2": -0.01572449903819798,
+        "rho3": 0.000478785904673871
+      },
+      "native_minus_reference_rho2": -0.010201599029411673,
+      "native_minus_reference_rho2_over_photon": -0.01058983083844527,
+      "native_minus_reference_rho2_over_reference": 1.84714534269715,
+      "native_minus_reference_rho3": -0.00010054503998151306,
+      "native_minus_reference_rho3_over_photon": -0.00010437137962188111,
+      "native_minus_reference_rho3_over_reference": -0.1735537190082647,
+      "reference_dP2dz_minus_complex_step_actual_P2": -8.673617379884035e-19,
+      "rho2_reference_minus_complex_step_pressure_identity": 0.0,
+      "rho3_reference_minus_complex_step_pressure_identity": 1.0842021724855044e-19,
+      "x": 1.0,
+      "z": 1.1
+    },
+    {
+      "corrected_component_reference": {
+        "P2_native": -0.0008277535482464122,
+        "P3_paper": 0.00011632096071403661,
+        "dP2dz_pressure_consistent": -0.00384157076082121,
+        "rho2_pressure_consistent": -0.004550445516903282,
+        "rho3_pressure_consistent": 0.0006550803058444803
+      },
+      "finite_difference_checks": [
+        {
+          "dP2dz_five_point": -0.003841570760822203,
+          "dP3dz_five_point": 0.0005510009046853008,
+          "h_over_z": 0.001,
+          "rho2_reference_minus_finite_diff_pressure_identity": 1.3895135042574225e-15,
+          "rho3_reference_minus_finite_diff_pressure_identity": -9.041161916356621e-16
+        },
+        {
+          "dP2dz_five_point": -0.0038415707608205766,
+          "dP3dz_five_point": 0.0005510009046846392,
+          "h_over_z": 0.0005,
+          "rho2_reference_minus_finite_diff_pressure_identity": -8.873110579621368e-16,
+          "rho3_reference_minus_finite_diff_pressure_identity": 2.200930410145574e-17
+        }
+      ],
+      "native_QED_n": 81,
+      "native_components_preserved": {
+        "dP2dz": -0.005645358886263115,
+        "rho2": -0.0070757488925219485,
+        "rho3": 0.00534759433342433
+      },
+      "native_minus_reference_rho2": -0.002525303375618667,
+      "native_minus_reference_rho2_over_photon": -0.0009990631263289038,
+      "native_minus_reference_rho2_over_reference": 0.5549573918065969,
+      "native_minus_reference_rho3": 0.004692514027579849,
+      "native_minus_reference_rho3_over_photon": 0.00185645723994949,
+      "native_minus_reference_rho3_over_reference": 7.163265306122449,
+      "reference_dP2dz_minus_complex_step_actual_P2": 8.673617379884035e-19,
+      "rho2_reference_minus_complex_step_pressure_identity": 8.673617379884035e-19,
+      "rho3_reference_minus_complex_step_pressure_identity": -1.0842021724855044e-19,
+      "x": 4.0,
+      "z": 1.4
+    },
+    {
+      "corrected_component_reference": {
+        "P2_native": -0.0015731882742131623,
+        "P3_paper": 0.0001414305057415747,
+        "dP2dz_pressure_consistent": -0.006324791992353538,
+        "rho2_pressure_consistent": -0.0047517934619001456,
+        "rho3_pressure_consistent": 0.0004249775292696255
+      },
+      "finite_difference_checks": [
+        {
+          "dP2dz_five_point": -0.006324791992353212,
+          "dP3dz_five_point": 0.0005663910432798522,
+          "h_over_z": 0.001,
+          "rho2_reference_minus_finite_diff_pressure_identity": -3.2526065174565133e-16,
+          "rho3_reference_minus_finite_diff_pressure_identity": 4.96564594998361e-17
+        },
+        {
+          "dP2dz_five_point": -0.006324791992354585,
+          "dP3dz_five_point": 0.0005663910432800013,
+          "h_over_z": 0.0005,
+          "rho2_reference_minus_finite_diff_pressure_identity": 1.0477729794899915e-15,
+          "rho3_reference_minus_finite_diff_pressure_identity": -9.942133921692076e-17
+        }
+      ],
+      "native_QED_n": 161,
+      "native_components_preserved": {
+        "dP2dz": -0.01749264331798002,
+        "rho2": -0.015919979823066397,
+        "rho3": 4.249520317652629e-06
+      },
+      "native_minus_reference_rho2": -0.011168186361166252,
+      "native_minus_reference_rho2_over_photon": -0.016971571238576722,
+      "native_minus_reference_rho2_over_reference": 2.35030972004838,
+      "native_minus_reference_rho3": -0.0004207280089519729,
+      "native_minus_reference_rho3_over_photon": -0.0006393531720442483,
+      "native_minus_reference_rho3_over_reference": -0.990000599973001,
+      "reference_dP2dz_minus_complex_step_actual_P2": 8.673617379884035e-19,
+      "rho2_reference_minus_complex_step_pressure_identity": 8.673617379884035e-19,
+      "rho3_reference_minus_complex_step_pressure_identity": -1.0842021724855044e-19,
+      "x": 0.1,
+      "z": 1.00003
+    },
+    {
+      "corrected_component_reference": {
+        "P2_native": -0.0015268000655718488,
+        "P3_paper": 0.00017226804070000616,
+        "dP2dz_pressure_consistent": -0.006408812821265793,
+        "rho2_pressure_consistent": -0.005522894037820525,
+        "rho3_pressure_consistent": 0.0005793305254628365
+      },
+      "finite_difference_checks": [
+        {
+          "dP2dz_five_point": -0.006408812821267169,
+          "dP3dz_five_point": 0.000683271423784451,
+          "h_over_z": 0.001,
+          "rho2_reference_minus_finite_diff_pressure_identity": 1.5126788710517758e-15,
+          "rho3_reference_minus_finite_diff_pressure_identity": -5.355958732078392e-17
+        },
+        {
+          "dP2dz_five_point": -0.006408812821265608,
+          "dP3dz_five_point": 0.0006832714237844633,
+          "h_over_z": 0.0005,
+          "rho2_reference_minus_finite_diff_pressure_identity": -2.0469737016526324e-16,
+          "rho3_reference_minus_finite_diff_pressure_identity": -6.700369425960417e-17
+        }
+      ],
+      "native_QED_n": 161,
+      "native_components_preserved": {
+        "dP2dz": -0.01568296719854262,
+        "rho2": -0.015724463852825034,
+        "rho3": 0.0004787855582337491
+      },
+      "native_minus_reference_rho2": -0.010201569815004509,
+      "native_minus_reference_rho2_over_photon": -0.010589800512255325,
+      "native_minus_reference_rho2_over_reference": 1.8471420500094022,
+      "native_minus_reference_rho3": -0.0001005449672290874,
+      "native_minus_reference_rho3_over_photon": -0.00010437130410079088,
+      "native_minus_reference_rho3_over_reference": -0.17355371900826458,
+      "reference_dP2dz_minus_complex_step_actual_P2": -2.6020852139652106e-18,
+      "rho2_reference_minus_complex_step_pressure_identity": -3.469446951953614e-18,
+      "rho3_reference_minus_complex_step_pressure_identity": 0.0,
+      "x": 1.0,
+      "z": 1.1
+    },
+    {
+      "corrected_component_reference": {
+        "P2_native": -0.000827753522830012,
+        "P3_paper": 0.00011632095979875317,
+        "dP2dz_pressure_consistent": -0.003841570688784285,
+        "rho2_pressure_consistent": -0.004550445441467987,
+        "rho3_pressure_consistent": 0.0006550803016895828
+      },
+      "finite_difference_checks": [
+        {
+          "dP2dz_five_point": -0.0038415706887853,
+          "dP3dz_five_point": 0.0005510009010637477,
+          "h_over_z": 0.001,
+          "rho2_reference_minus_finite_diff_pressure_identity": 1.420738526825005e-15,
+          "rho3_reference_minus_finite_diff_pressure_identity": -9.107298248878237e-16
+        },
+        {
+          "dP2dz_five_point": -0.0038415706887838996,
+          "dP3dz_five_point": 0.0005510009010630458,
+          "h_over_z": 0.0005,
+          "rho2_reference_minus_finite_diff_pressure_identity": -5.39499001028787e-16,
+          "rho3_reference_minus_finite_diff_pressure_identity": 7.177418381854039e-17
+        }
+      ],
+      "native_QED_n": 161,
+      "native_components_preserved": {
+        "dP2dz": -0.005645358739287008,
+        "rho2": -0.007075748712171799,
+        "rho3": 0.005347594299506799
+      },
+      "native_minus_reference_rho2": -0.0025253032707038114,
+      "native_minus_reference_rho2_over_photon": -0.0009990630848223806,
+      "native_minus_reference_rho2_over_reference": 0.5549573779504849,
+      "native_minus_reference_rho3": 0.004692513997817217,
+      "native_minus_reference_rho3_over_photon": 0.0018564572281747666,
+      "native_minus_reference_rho3_over_reference": 7.163265306122451,
+      "reference_dP2dz_minus_complex_step_actual_P2": 0.0,
+      "rho2_reference_minus_complex_step_pressure_identity": 0.0,
+      "rho3_reference_minus_complex_step_pressure_identity": 2.168404344971009e-19,
+      "x": 4.0,
+      "z": 1.4
+    },
+    {
+      "corrected_component_reference": {
+        "P2_native": -0.0015727207042134546,
+        "P3_paper": 0.00014139402993517178,
+        "dP2dz_pressure_consistent": -0.006323854151112718,
+        "rho2_pressure_consistent": -0.0047513231625237965,
+        "rho3_pressure_consistent": 0.0004249409864022299
+      },
+      "finite_difference_checks": [
+        {
+          "dP2dz_five_point": -0.0063238541511125386,
+          "dP3dz_five_point": 0.0005663180267965932,
+          "h_over_z": 0.001,
+          "rho2_reference_minus_finite_diff_pressure_identity": -1.7954387976359953e-16,
+          "rho3_reference_minus_finite_diff_pressure_identity": 4.607859233063394e-18
+        },
+        {
+          "dP2dz_five_point": -0.006323854151112755,
+          "dP3dz_five_point": 0.0005663180267966338,
+          "h_over_z": 0.0005,
+          "rho2_reference_minus_finite_diff_pressure_identity": 3.729655473350135e-17,
+          "rho3_reference_minus_finite_diff_pressure_identity": -3.604972223514302e-17
+        }
+      ],
+      "native_QED_n": 321,
+      "native_components_preserved": {
+        "dP2dz": -0.01748893552598825,
+        "rho2": -0.015916739489840574,
+        "rho3": 4.249154910903406e-06
+      },
+      "native_minus_reference_rho2": -0.011165416327316777,
+      "native_minus_reference_rho2_over_photon": -0.01696736179710706,
+      "native_minus_reference_rho2_over_reference": 2.3499593577183577,
+      "native_minus_reference_rho3": -0.00042069183149132653,
+      "native_minus_reference_rho3_over_photon": -0.0006392981954947231,
+      "native_minus_reference_rho3_over_reference": -0.9900005999730012,
+      "reference_dP2dz_minus_complex_step_actual_P2": 1.734723475976807e-18,
+      "rho2_reference_minus_complex_step_pressure_identity": 1.734723475976807e-18,
+      "rho3_reference_minus_complex_step_pressure_identity": 2.710505431213761e-19,
+      "x": 0.1,
+      "z": 1.00003
+    },
+    {
+      "corrected_component_reference": {
+        "P2_native": -0.0015267998743624476,
+        "P3_paper": 0.00017226802724753048,
+        "dP2dz_pressure_consistent": -0.006408812424086037,
+        "rho2_pressure_consistent": -0.005522893792132193,
+        "rho3_pressure_consistent": 0.0005793305073434401
+      },
+      "finite_difference_checks": [
+        {
+          "dP2dz_five_point": -0.006408812424087165,
+          "dP3dz_five_point": 0.0006832713950827673,
+          "h_over_z": 0.001,
+          "rho2_reference_minus_finite_diff_pressure_identity": 1.2420620087993939e-15,
+          "rho3_reference_minus_finite_diff_pressure_identity": -7.35089072945172e-17
+        },
+        {
+          "dP2dz_five_point": -0.006408812424086607,
+          "dP3dz_five_point": 0.0006832713950827078,
+          "h_over_z": 0.0005,
+          "rho2_reference_minus_finite_diff_pressure_identity": 6.271025365656158e-16,
+          "rho3_reference_minus_finite_diff_pressure_identity": -8.023096076392733e-18
+        }
+      ],
+      "native_QED_n": 321,
+      "native_components_preserved": {
+        "dP2dz": -0.015682965731853456,
+        "rho2": -0.015724462430676357,
+        "rho3": 0.0004787855432590414
+      },
+      "native_minus_reference_rho2": -0.010201568638544163,
+      "native_minus_reference_rho2_over_photon": -0.010589799291023631,
+      "native_minus_reference_rho2_over_reference": 1.8471419191651157,
+      "native_minus_reference_rho3": -0.00010054496408439873,
+      "native_minus_reference_rho3_over_photon": -0.00010437130083642801,
+      "native_minus_reference_rho3_over_reference": -0.17355371900826452,
+      "reference_dP2dz_minus_complex_step_actual_P2": 0.0,
+      "rho2_reference_minus_complex_step_pressure_identity": 0.0,
+      "rho3_reference_minus_complex_step_pressure_identity": 0.0,
+      "x": 1.0,
+      "z": 1.1
+    },
+    {
+      "corrected_component_reference": {
+        "P2_native": -0.0008277535212630962,
+        "P3_paper": 0.00011632095974251003,
+        "dP2dz_pressure_consistent": -0.0038415706843345464,
+        "rho2_pressure_consistent": -0.004550445436805268,
+        "rho3_pressure_consistent": 0.0006550803014333507
+      },
+      "finite_difference_checks": [
+        {
+          "dP2dz_five_point": -0.003841570684335644,
+          "dP3dz_five_point": 0.0005510009008405577,
+          "h_over_z": 0.001,
+          "rho2_reference_minus_finite_diff_pressure_identity": 1.5360976379774627e-15,
+          "rho3_reference_minus_finite_diff_pressure_identity": -9.20053963571199e-16
+        },
+        {
+          "dP2dz_five_point": -0.0038415706843338048,
+          "dP3dz_five_point": 0.0005510009008398503,
+          "h_over_z": 0.0005,
+          "rho2_reference_minus_finite_diff_pressure_identity": -1.038232000372119e-15,
+          "rho3_reference_minus_finite_diff_pressure_identity": 7.036472099430924e-17
+        }
+      ],
+      "native_QED_n": 321,
+      "native_components_preserved": {
+        "dP2dz": -0.0056453587302114985,
+        "rho2": -0.007075748701033001,
+        "rho3": 0.005347594297415108
+      },
+      "native_minus_reference_rho2": -0.002525303264227733,
+      "native_minus_reference_rho2_over_photon": -0.0009990630822603078,
+      "native_minus_reference_rho2_over_reference": 0.5549573770959603,
+      "native_minus_reference_rho3": 0.004692513995981758,
+      "native_minus_reference_rho3_over_photon": 0.0018564572274486204,
+      "native_minus_reference_rho3_over_reference": 7.16326530612245,
+      "reference_dP2dz_minus_complex_step_actual_P2": 8.673617379884035e-19,
+      "rho2_reference_minus_complex_step_pressure_identity": 8.673617379884035e-19,
+      "rho3_reference_minus_complex_step_pressure_identity": -2.168404344971009e-19,
+      "x": 4.0,
+      "z": 1.4
+    }
+  ],
+  "original_negative_receipt_sha256": "166e9148ec2cdd15932b3c3a8df7d00e64730c800a2fea0e9fcfd4936aa146d1",
+  "primary_reference": {
+    "equations": [
+      "2.51",
+      "2.53",
+      "2.54"
+    ],
+    "pdf_sha256": "b969a8fec0bce91fba69008fff1d2bbb936be073bf54cdaeccc9ba33ed2e7392",
+    "printed_page": 20,
+    "retrieval": "Successful curl --fail --location with TLS verification; unversioned arxiv PDF downloaded 2026-10-02, metadata creation 2022-11-03",
+    "url": "https://arxiv.org/pdf/2210.10307"
+  },
+  "reference_derivation": "Actual analytic derivative of native P2 (pi^4 in final denominator); arxiv2210.10307 eq2.53 cubic energy z^2 after comoving conversion; native fixed-grid I,dIdz retained",
+  "runtime": {
+    "executable": "/workspace/shared/dmde-upstream/nudec-venv/bin/python",
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "scipy": "1.16.3"
+  },
+  "scope": "Isolated QED component correction reference, not a replaced native EOS or trajectory",
+  "script_sha256": "dd563ab9d0401e9855bde45fa7bf71030db1354898ef3f86971e173f7471b88b",
+  "source_snapshot": {
+    "head": "0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62",
+    "porcelain": "",
+    "tracked_sha256": {
+      ".gitignore": "14933a2dcc3b89f009f3a1bc3e5720a6b45bc324eb2a73c73ec501b74bb2424c",
+      "BatchLauncher.py": "9fbedf0c17d3309e97acfc8e6a7e63ae6d39e74ce8b6d0de1854bb9a0d7515d2",
+      "Collision_term/Collision_term_diagonal.py": "a95c4b60a3dce826c84d9d3fc6b40685b26195fafc7d8097b384151703f664d7",
+      "Collision_term/D_function.py": "9794175598d1fa26f834a202b4d76f9c0f894882a2d5eeb24c2c5d98f8d65648",
+      "Constants.py": "0dac68fb57b1425aece579a859072b72f6b4533276e4baf01d5f7d9d85953807",
+      "Core.py": "a08dc41a892811ee053c10eae336e13edf773887097e34a6f16d90ef071d47e0",
+      "Distributions.py": "f14dfb1347ee741935bef5c5b00cbfee4d5fbaa169f1b999f5c61b2df9fafa27",
+      "GlobalParameters.py": "962453b5e9dcdbd15429636cd6a6941181136bdbf9bb69e09a0dcadf12f23a7c",
+      "HowToUse.md": "48a41e12d73e784f8ae4a452a4cc06f602b2966bbefad5b2e272d879361b37bd",
+      "LICENSE.txt": "605e9047a563c5c8396ffb18232aa4304ec56586aee537c45064c6fb425e44ad",
+      "LLP_parameters.py": "1473ada47c0e4f13ef686cffbd9afeeb3e1370a8622b8b4b6bf662d9318e244c",
+      "Momentum_Grid.py": "c05b77e72044b6efd525d94dc0e5c8a62bf49f9a3698a4c1ee25debfa3a68ec2",
+      "README.md": "95c9833ec7c85b1c01ebba899e3c7b6c0342ef4f8ba1df387a73e2e33528d1b8",
+      "SingleShot.py": "b2e3659579b993e1f7814fa5c90a5800f06a4e32b75f0837cf6878da1cad912e",
+      "System_Nudecoupling.py": "e285d33e4ab0f823593a850701be1f90a5ec12c3685834cac68372457ccbaad6",
+      "Thermodynamics/Thermal_QED_corrections.py": "16f38da386e9be0f777c0b53ecb8806d9619300fef56b7a7470e9243a4a888c6",
+      "Thermodynamics/Thermodynamics_ideal_gas.py": "e3797b88dd504970b4d0d9f66b68b4cce2f78c96fa68d1eb7c6d210b7010ddd7",
+      "decayProbabilities.csv": "383fd7cc74b3637534f80fa2f91fa37d4ef04ae0ca9d2829daad43ede0501356",
+      "parameters.csv": "6cc7f394552014dbb89de445eae327a1c1b0e3bd26b280dab8d316e2c4f23958",
+      "requirements.txt": "1dbc45c3897b98b55862bf987e1308c2f80bca02cecf02730a60e512d5c43ab7",
+      "scaleFactorTime.csv": "48d94b40a638d11a2a596e6668eedc24182aba74fa02d84c14d8d08b2909e778"
+    }
+  },
+  "source_unchanged": true,
+  "timestamp_utc": "2026-10-02T07:15:59.464661+00:00"
+}

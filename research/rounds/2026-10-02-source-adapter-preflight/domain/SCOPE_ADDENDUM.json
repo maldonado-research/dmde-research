@@ -1,0 +1,6 @@
+{
+  "schema": "DMDE-source-grid-diagnostic-scope-addendum-v1",
+  "branch_field_in_first_receipt": "intended production mapping [2*B_mumu]; production branches were not constructed or consumed; direct emitter arrays use algebraically equivalent B factor",
+  "snapshot_timing": "snapshot copies were added after execution and verified against executed wrapper/predeclaration hashes recorded before computation",
+  "phase_hardening": "corrected phase wrapper lacked explicit clean-pinned precondition; after independent review added that guard and reran fresh without numerical changes"
+}

@@ -1,0 +1,15 @@
+{
+  "files": {
+    "COPYING": "605e9047a563c5c8396ffb18232aa4304ec56586aee537c45064c6fb425e44ad",
+    "PRIMARY_REFERENCE.json": "d36a9adcee55f1d207d2d8a8d44ab5f44ef31910b2bdbdc077d100d4eb897833",
+    "README.md": "41c04850c35e3463000ead90af6da1da02f6d9e2645e800e9e8c13b636a2647a",
+    "conservation_review.py": "106a8edd182ea2e2dfeadcd257a165f2e896ff1553b9456858a684fe40a7fadb",
+    "local_conservation_review.json": "0ebdddff27db65252766183754163912a4e546525ff290286389df5025e3a04a",
+    "qed_component_reference.json": "9f8dd57317d666abc06339590975cad33b2dd301315346b18ee1e0e18cee4c35",
+    "qed_component_reference.py": "dd563ab9d0401e9855bde45fa7bf71030db1354898ef3f86971e173f7471b88b",
+    "qed_identity_review.json": "166e9148ec2cdd15932b3c3a8df7d00e64730c800a2fea0e9fcfd4936aa146d1",
+    "qed_identity_review.py": "8336b8540af5c087e4be6eed93d51e41905f689f464e0c94322ad7303f37a710",
+    "thermodynamics/thermodynamics_derivation.md": "b277a236cf6f0ba0dfc1d3a6009301bb478def50c910db9ebec5cf14190bb62e"
+  },
+  "scope": "Independent public-safe adapter conservation review; raw primary PDF/text excluded"
+}

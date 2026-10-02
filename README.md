@@ -44,6 +44,8 @@ The [1 October 2026 numerical-control supplement](research/README.md) adds a six
 
 The [transport-source diagnostic round](research/rounds/2026-10-01-transport-source-audit/README.md) executes a candidate backend's native emitter and local collision-coupled RHS. It preserves momentum clipping, endpoint rounding and normalization corrections; it supplies no evolved injected spectra or cosmological predictions.
 
+The [2 October source-adapter preflight](research/rounds/2026-10-02-source-adapter-preflight/README.md) executes the exact source with explicit entropy/coordinate mapping and actual-time cutoff. Twelve fixed-state adapter checks pass, while dense source-grid tests, a mixed-source witness mismatch and two QED formula defects establish prerequisites before a physical evolution. Separately labeled pressure-consistent QED components and independent computational reviews are included; no new cosmological prediction or Zenodo version is claimed.
+
 1. [Public explanation in more basic terms](releases/v0.9.20/DMDE_v0920_README_IN_MORE_BASIC_TERMS.md).
 2. [Provider dispatch overview](provider/README_PROVIDER_DISPATCH.md).
 3. [Validation scope and limits](provider/docs/DMDE_v0920_VALIDATION_SCOPE_AND_LIMITS.md).

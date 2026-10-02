@@ -1,0 +1,29 @@
+{
+  "head": "0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62",
+  "porcelain": "",
+  "source": "/workspace/shared/dmde-upstream/nudec",
+  "tracked_file_sha256": {
+    ".gitignore": "14933a2dcc3b89f009f3a1bc3e5720a6b45bc324eb2a73c73ec501b74bb2424c",
+    "BatchLauncher.py": "9fbedf0c17d3309e97acfc8e6a7e63ae6d39e74ce8b6d0de1854bb9a0d7515d2",
+    "Collision_term/Collision_term_diagonal.py": "a95c4b60a3dce826c84d9d3fc6b40685b26195fafc7d8097b384151703f664d7",
+    "Collision_term/D_function.py": "9794175598d1fa26f834a202b4d76f9c0f894882a2d5eeb24c2c5d98f8d65648",
+    "Constants.py": "0dac68fb57b1425aece579a859072b72f6b4533276e4baf01d5f7d9d85953807",
+    "Core.py": "a08dc41a892811ee053c10eae336e13edf773887097e34a6f16d90ef071d47e0",
+    "Distributions.py": "f14dfb1347ee741935bef5c5b00cbfee4d5fbaa169f1b999f5c61b2df9fafa27",
+    "GlobalParameters.py": "962453b5e9dcdbd15429636cd6a6941181136bdbf9bb69e09a0dcadf12f23a7c",
+    "HowToUse.md": "48a41e12d73e784f8ae4a452a4cc06f602b2966bbefad5b2e272d879361b37bd",
+    "LICENSE.txt": "605e9047a563c5c8396ffb18232aa4304ec56586aee537c45064c6fb425e44ad",
+    "LLP_parameters.py": "1473ada47c0e4f13ef686cffbd9afeeb3e1370a8622b8b4b6bf662d9318e244c",
+    "Momentum_Grid.py": "c05b77e72044b6efd525d94dc0e5c8a62bf49f9a3698a4c1ee25debfa3a68ec2",
+    "README.md": "95c9833ec7c85b1c01ebba899e3c7b6c0342ef4f8ba1df387a73e2e33528d1b8",
+    "SingleShot.py": "b2e3659579b993e1f7814fa5c90a5800f06a4e32b75f0837cf6878da1cad912e",
+    "System_Nudecoupling.py": "e285d33e4ab0f823593a850701be1f90a5ec12c3685834cac68372457ccbaad6",
+    "Thermodynamics/Thermal_QED_corrections.py": "16f38da386e9be0f777c0b53ecb8806d9619300fef56b7a7470e9243a4a888c6",
+    "Thermodynamics/Thermodynamics_ideal_gas.py": "e3797b88dd504970b4d0d9f66b68b4cce2f78c96fa68d1eb7c6d210b7010ddd7",
+    "decayProbabilities.csv": "383fd7cc74b3637534f80fa2f91fa37d4ef04ae0ca9d2829daad43ede0501356",
+    "parameters.csv": "6cc7f394552014dbb89de445eae327a1c1b0e3bd26b280dab8d316e2c4f23958",
+    "requirements.txt": "1dbc45c3897b98b55862bf987e1308c2f80bca02cecf02730a60e512d5c43ab7",
+    "scaleFactorTime.csv": "48d94b40a638d11a2a596e6668eedc24182aba74fa02d84c14d8d08b2909e778"
+  },
+  "tree": "fa965d26fb6cc71142b1d4108e442c99cb88cb1c"
+}

@@ -1,0 +1,10 @@
+{
+  "status": "failed_byte_binding_check",
+  "scientific_input_change": false,
+  "native_physics_callable_executed": false,
+  "failed_assertion": "producer callback_module_sha256 equals current source_grid_diagnostic.py hash",
+  "recorded_callback_sha256": "724e1184e9d51fd82d3020f2512368cd5184cf30fc99d5ae5f9de33a3147386d",
+  "current_callback_sha256_at_failure": "046f8f23ccd785111683ff91d43779f39a3b400109856386c4f2683865efd22e",
+  "reason": "Producer scope/comment edits occurred after the recorded run; a fresh run or exact executed snapshot is required for strict byte binding.",
+  "prior_independent_numerical_review_invalidated": false
+}

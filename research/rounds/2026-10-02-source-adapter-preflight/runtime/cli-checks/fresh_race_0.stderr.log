@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workspace/shared/dmde-adapter-runtime/source_adapter_diagnostic.py", line 441, in <module>
+    main()
+  File "/workspace/shared/dmde-adapter-runtime/source_adapter_diagnostic.py", line 430, in main
+    out.mkdir(parents=True, exist_ok=False)
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/workspace/shared/dmde-adapter-runtime/cli-checks/atomic_fresh_output_race'

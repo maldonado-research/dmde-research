@@ -1,0 +1,79 @@
+{
+  "B_mumu": 0.4,
+  "N_mu": 0.8,
+  "Y0": 1e-06,
+  "callback": "physical dN/dp Michel shapes, hard actual 0<=p<=m_mu_source/2 support; mu decay probability1; no snap, renormalization or epsilon",
+  "catalog": "[authored frozen_michel callback]",
+  "coefficient_relative_tolerance": 1e-10,
+  "fd_occupations": "all three native flavors f(q)=1/(exp(q/z)+1); native antineutrinos copied",
+  "frozen_full_stepper_source_relative_ceiling": 0.005,
+  "g_s_ref": 10.75,
+  "grid_limit": "N65 is a deliberately coarse local fixture; source moments and thermal occupations are not certified; do not infer trajectory convergence",
+  "known_blockers": [
+    "native unsplit mixing modifies preoscillation source and produces a tau response",
+    "independent native QED P2 derivative and rho3 identity inconsistencies"
+  ],
+  "n": 65,
+  "native_branches": [
+    0.8
+  ],
+  "native_gate": "stopPoint=nextafter(actual x,+inf) iff 0<=actual state t<18*tau; otherwise0",
+  "native_muon_mass_MeV_unchanged": 105.7,
+  "native_transport_me_MeV": 0.5109989,
+  "negative_time_policy": "reject actual state t<0 at wrapper interface before native RHS; recorded gate decision false is not a physical negative-time evaluation",
+  "normalization": "T_ref=z0*me/x0; s0=2*pi^2/45*g_s_ref*T_ref^3; s_ref(x)=s0*(x0/x)^3; C0=s0*(x0/me)^3; llp_count=Y0*C0",
+  "parent_mass_MeV": 300.0,
+  "private_inputs": false,
+  "q_max_formula": "4.1*m_mu_source/(2*me_native)",
+  "q_min": 0.01,
+  "schema": "DMDE-fixed-state-native-source-adapter-v1",
+  "scope": "real native fixed-state RHS calls with compiled collision term; no integration, cosmological trajectory, weak rates, BBN, fit, production or physics validation",
+  "source_muon_mass_MeV": 105.6583755,
+  "source_toggle": "callback phi versus callback zero, identical positive parent count and native gate; this redirects neutrino energy to EM and is not entire decay off",
+  "state_t_seconds": 1.0,
+  "status": "predeclared_before_execution",
+  "tau_seconds": 10.0,
+  "time_gate_cases": [
+    {
+      "t": 0.0,
+      "tag": "t_zero",
+      "x": 4.0
+    },
+    {
+      "t": 179.99999999999997,
+      "tag": "t_left_18tau",
+      "x": 4.0
+    },
+    {
+      "t": 180.0,
+      "tag": "t_exact_18tau",
+      "x": 4.0
+    },
+    {
+      "t": 180.00000000000003,
+      "tag": "t_right_18tau",
+      "x": 4.0
+    },
+    {
+      "t": 181.0,
+      "tag": "x_small_t_late",
+      "x": 0.25
+    },
+    {
+      "t": 1.0,
+      "tag": "x_large_t_early",
+      "x": 4.05
+    },
+    {
+      "t": -0.01,
+      "tag": "t_negative_rejected",
+      "x": 4.0
+    }
+  ],
+  "upstream_commit": "0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62",
+  "worker_timeout_seconds": 60,
+  "x": 4.0,
+  "x0": 0.1,
+  "z": 1.4,
+  "z0": 1.00003
+}

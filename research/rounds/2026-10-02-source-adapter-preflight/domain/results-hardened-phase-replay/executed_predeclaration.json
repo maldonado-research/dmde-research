@@ -1,0 +1,16 @@
+{
+  "schema": "DMDE-authored-source-grid-refinement-predeclaration-v1",
+  "status": "predeclared_before_refinement_execution",
+  "reason": "Initial full-cap grid ladder fails early source moments and three isolated short-window points do not establish endpoint-phase adequacy.",
+  "coordinate_mass": "native transport me=0.5109989 retained",
+  "source_mass": "callback m_mu=105.6583755",
+  "q_min": 0.01,
+  "q_max": 40.0,
+  "native_n_ladder": [3001, 4001, 8001],
+  "x_scan": {"min": 0.1, "max": 0.2, "count": 1001, "spacing": "uniform"},
+  "moment_orders": [0, 1, 2, 3, 4, 5],
+  "moment_relative_ceiling": 0.005,
+  "scope": "source-only callback moments with upstream native quadrature; no transport, collision JIT, production stepper, weak or BBN",
+  "full_cap_density_estimate": "derive asymptotic endpoint-discontinuity error and N^3 work ratios; estimates are not executed full-cap convergence",
+  "preserve_prior_negative_receipts": true
+}

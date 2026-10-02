@@ -1,0 +1,16 @@
+{
+  "schema": "DMDE-public-source-grid-input-provenance-v1",
+  "private_inputs": false,
+  "public_sources": {
+    "/workspace/dmde-research/research/rounds/2026-10-01-transport-source-audit/README.md": "f21d3530713d517a864a7c9aaccf276c7d6823e3646ba0a702d3a7385fa57e88",
+    "/workspace/dmde-research/research/rounds/2026-10-01-transport-source-audit/source-audit/SOURCE_CAPABILITY_AUDIT.md": "243de49ee9c30f71b5d96456324de743fb287a003d980b30f0854e29180285f2",
+    "/workspace/dmde-research/provider/docs/DMDE_v0920_NATIVE_ADAPTER_AND_DENSITY_MAPPING.md": "86d90759b2799f730c91f4dc852934fc1ed54de7b12fd9521a3cce1dbb00ac4e",
+    "/workspace/dmde-research/provider/docs/DMDE_v0920_SOURCE_OPERATOR_CLOSURE_GATE.md": "55c2c59567b61680959161839335a8b777bb354a08eff86f5b53d840bf45df59",
+    "/workspace/dmde-research/provider/docs/DMDE_v0920_ENDPOINT_DOMAIN_AND_KERNEL_GATE.md": "e99f62f75e89c86ec63a3cb44569d622ca381e3f45d48b9a3d1c6201312b943c",
+    "/workspace/dmde-research/provider/docs/DMDE_v0920_SPECTRAL_TO_BBN_BRIDGE_CONTRACT.md": "dcb27a141f6d2d6990a516df5177fddd7c8430ad2e91a6123ade4bba184e8fb4",
+    "/workspace/dmde-research/provider/tables/DMDE_v099_blind_spectral_source_cards.json": "bcc692b7a00a0e4abda928f41d03fd297a897cda073eb2dbc826679d654faa8b",
+    "/workspace/dmde-research/provider/tables/DMDE_v0920_NUDEC_NATIVE_MAPPING.csv": "2e6b9a4cb581f004c4ba8cd6c15968971490f76d560ef3f0af6d91c117316261",
+    "/workspace/dmde-research/provider/tables/DMDE_v0920_MICHEL_MOMENT_LOCK.csv": "c3953b75f892a9ee72326ceeffc9c8e648366ef0bdded5b16a693b9d97d739ef"
+  },
+  "official_source_receipts": "results-first-declared/source_before.json and matching source_after.json"
+}

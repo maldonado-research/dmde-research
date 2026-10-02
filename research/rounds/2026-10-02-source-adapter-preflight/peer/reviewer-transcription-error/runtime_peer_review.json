@@ -1,0 +1,194 @@
+{
+  "all_required_local_review_checks_passed": false,
+  "checks": {
+    "actual_consumption_mixed_coefficient_error_below_1e_minus10": false,
+    "actual_time_gate_raw_cases_pass": true,
+    "all_recorded_input_artifact_hashes_match": true,
+    "callback_count_one_in_main_source_lane": true,
+    "canonical_actual_source_matches_actual_rhs_delta": true,
+    "canonical_pre_source_matches_independent_michel_formula": true,
+    "captured_callback_michel_peak_error_below_1e_minus14": true,
+    "captured_callback_momenta_equal_actual_grid": true,
+    "current_wrapper_matches_final_executed_and_predeclared_hash": true,
+    "final_worker_and_supervisor_native_snapshots_identical": true,
+    "first_and_final_scientific_predeclaration_equal": true,
+    "normalization_values_match_independent_reference": true,
+    "physical_momentum_saved_conversion_matches": true,
+    "preoscillation_literal_infinitesimal_comparison_fails": true,
+    "preoscillation_tau_exactly_zero_actual_tau_positive": true,
+    "same_parent_source_toggle_time_derivative_bitwise_equal": true,
+    "saved_native_hashes_match_current_pinned_clean_source": true,
+    "source_input_states_bitwise_equal": true,
+    "state_to_yield_mapping_peak_error_below_1e_minus14": true,
+    "zero_parent_source_toggle_vectors_bitwise_equal": true
+  },
+  "final_lane": "results-serialization-fix",
+  "gate_raw_case_review": [
+    {
+      "active_source_changes_neutrino_vector": true,
+      "actual_time_s": 0.0,
+      "callback_count_matches_gate": true,
+      "captured_callback_count": 1,
+      "expected_half_open_gate": true,
+      "off_gate_vectors_bitwise_equal": true,
+      "recorded_gate_matches": true,
+      "tag": "t_zero"
+    },
+    {
+      "active_source_changes_neutrino_vector": true,
+      "actual_time_s": 179.99999999999997,
+      "callback_count_matches_gate": true,
+      "captured_callback_count": 1,
+      "expected_half_open_gate": true,
+      "off_gate_vectors_bitwise_equal": true,
+      "recorded_gate_matches": true,
+      "tag": "t_left_18tau"
+    },
+    {
+      "active_source_changes_neutrino_vector": true,
+      "actual_time_s": 180.0,
+      "callback_count_matches_gate": true,
+      "captured_callback_count": 0,
+      "expected_half_open_gate": false,
+      "off_gate_vectors_bitwise_equal": true,
+      "recorded_gate_matches": true,
+      "tag": "t_exact_18tau"
+    },
+    {
+      "active_source_changes_neutrino_vector": true,
+      "actual_time_s": 180.00000000000003,
+      "callback_count_matches_gate": true,
+      "captured_callback_count": 0,
+      "expected_half_open_gate": false,
+      "off_gate_vectors_bitwise_equal": true,
+      "recorded_gate_matches": true,
+      "tag": "t_right_18tau"
+    },
+    {
+      "active_source_changes_neutrino_vector": true,
+      "actual_time_s": 181.0,
+      "callback_count_matches_gate": true,
+      "captured_callback_count": 0,
+      "expected_half_open_gate": false,
+      "off_gate_vectors_bitwise_equal": true,
+      "recorded_gate_matches": true,
+      "tag": "x_small_t_late"
+    },
+    {
+      "active_source_changes_neutrino_vector": true,
+      "actual_time_s": 1.0,
+      "callback_count_matches_gate": true,
+      "captured_callback_count": 1,
+      "expected_half_open_gate": true,
+      "off_gate_vectors_bitwise_equal": true,
+      "recorded_gate_matches": true,
+      "tag": "x_large_t_early"
+    },
+    {
+      "actual_time_s": -0.01,
+      "expected_half_open_gate": false,
+      "negative_rejected_without_native_rhs": true,
+      "recorded_gate_matches": true,
+      "tag": "t_negative_rejected"
+    }
+  ],
+  "important_limits": [
+    "Captured physical callback is actual; pre-mixing native df_nudx accumulator is not directly instrumented",
+    "Canonical pre-source multiplies captured phi by independently verified adapter coefficient; it is not a direct accumulator export",
+    "Actual consumption witness is paired fixed-state post-mixing RHS, conditional on measured native dt/dx and native charge symmetry",
+    "Literal per-flavor infinitesimal unsplit comparison fails; no h/h2 production-stepper gate was executed",
+    "N65 is coarse and no continuum source moments or thermal/collision convergence is certified",
+    "Preserved actual serialization failure is not a controlled native failure or timeout; general failure branches reviewed in source only",
+    "Native QED defects and continuing exponential parent after cutoff remain; no closed energy trajectory claim"
+  ],
+  "independent_normalization": {
+    "C0": 4.715902064019412,
+    "T_ref_MeV": 5.11014229967,
+    "llp_count": 4.715902064019411e-06,
+    "s0_MeV3": 629.2520994400936,
+    "s_ref_fixture_MeV3": 0.009832064053751465
+  },
+  "independent_source_consumption": {
+    "actual_mixed_tau_peak": 8.79391529235806e-11,
+    "flavor_sum_peak_relative_error": 8.861742804434328e-16,
+    "literal_preoscillation_peak_relative_error": 0.5803471906670695,
+    "mixed_coefficient_peak_relative_error": 0.4951964263901366,
+    "native_dt_dx_measured_seconds": 12.220517169490353,
+    "pre_tau_peak": 0.0,
+    "source_only_delta_dtdx": 0.0,
+    "source_only_delta_dzdx": -0.00014245175195775478,
+    "threshold": 0.005
+  },
+  "input_artifact_manifest_review": {
+    "final": {
+      "manifest_sha256": "cc32006e87540797a5e565a8e0d2afa7428fe386594ce3f562cf3d0f565eed97",
+      "member_count": 78,
+      "mismatches": []
+    },
+    "first": {
+      "manifest_sha256": "87cab75128701450a347e04340e8390e4d9013f326db637d9579cff24fe2e2cf",
+      "member_count": 77,
+      "mismatches": []
+    }
+  },
+  "input_bundle": "/workspace/shared/dmde-adapter-runtime",
+  "preserved_first_failure": {
+    "execution": {
+      "command": [
+        "/workspace/shared/dmde-upstream/nudec-venv/bin/python",
+        "-B",
+        "/workspace/shared/dmde-adapter-runtime/source_adapter_diagnostic.py",
+        "worker",
+        "--out",
+        "/workspace/shared/dmde-adapter-runtime/results-first/native_fixed_state",
+        "--source",
+        "/workspace/shared/dmde-upstream/nudec"
+      ],
+      "elapsed_seconds": 4.992415967999477,
+      "returncode": 1,
+      "source_unchanged": true,
+      "timeout": false
+    },
+    "partial_result_JSON_parseable": false,
+    "partial_result_size_bytes": 572,
+    "scientific_state_and_rhs_csv_same_first_final": true,
+    "stderr_sha256": "f531aeda5fff3335b93d175de6966e695860c187db6dd252e54c8bc33278d85b"
+  },
+  "reviewed_source_hashes": {
+    "CLI_receipt": "f8b65a8961b648fce670e54a3047408c03fa75343352a15a535dc16f600ee80d",
+    "final_executed_wrapper": "5bb1ab652581ff07db3cca9ea3bce697b717253719df3ca711246f0ca0e9dd18",
+    "first_executed_wrapper": "2be9ac38a8939b4376a87331e79627af286750bba5898da189d5647f82b68931",
+    "native_upstream_head": "0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62",
+    "native_upstream_tracked_sha256": {
+      ".gitignore": "14933a2dcc3b89f009f3a1bc3e5720a6b45bc324eb2a73c73ec501b74bb2424c",
+      "BatchLauncher.py": "9fbedf0c17d3309e97acfc8e6a7e63ae6d39e74ce8b6d0de1854bb9a0d7515d2",
+      "Collision_term/Collision_term_diagonal.py": "a95c4b60a3dce826c84d9d3fc6b40685b26195fafc7d8097b384151703f664d7",
+      "Collision_term/D_function.py": "9794175598d1fa26f834a202b4d76f9c0f894882a2d5eeb24c2c5d98f8d65648",
+      "Constants.py": "0dac68fb57b1425aece579a859072b72f6b4533276e4baf01d5f7d9d85953807",
+      "Core.py": "a08dc41a892811ee053c10eae336e13edf773887097e34a6f16d90ef071d47e0",
+      "Distributions.py": "f14dfb1347ee741935bef5c5b00cbfee4d5fbaa169f1b999f5c61b2df9fafa27",
+      "GlobalParameters.py": "962453b5e9dcdbd15429636cd6a6941181136bdbf9bb69e09a0dcadf12f23a7c",
+      "HowToUse.md": "48a41e12d73e784f8ae4a452a4cc06f602b2966bbefad5b2e272d879361b37bd",
+      "LICENSE.txt": "605e9047a563c5c8396ffb18232aa4304ec56586aee537c45064c6fb425e44ad",
+      "LLP_parameters.py": "1473ada47c0e4f13ef686cffbd9afeeb3e1370a8622b8b4b6bf662d9318e244c",
+      "Momentum_Grid.py": "c05b77e72044b6efd525d94dc0e5c8a62bf49f9a3698a4c1ee25debfa3a68ec2",
+      "README.md": "95c9833ec7c85b1c01ebba899e3c7b6c0342ef4f8ba1df387a73e2e33528d1b8",
+      "SingleShot.py": "b2e3659579b993e1f7814fa5c90a5800f06a4e32b75f0837cf6878da1cad912e",
+      "System_Nudecoupling.py": "e285d33e4ab0f823593a850701be1f90a5ec12c3685834cac68372457ccbaad6",
+      "Thermodynamics/Thermal_QED_corrections.py": "16f38da386e9be0f777c0b53ecb8806d9619300fef56b7a7470e9243a4a888c6",
+      "Thermodynamics/Thermodynamics_ideal_gas.py": "e3797b88dd504970b4d0d9f66b68b4cce2f78c96fa68d1eb7c6d210b7010ddd7",
+      "decayProbabilities.csv": "383fd7cc74b3637534f80fa2f91fa37d4ef04ae0ca9d2829daad43ede0501356",
+      "parameters.csv": "6cc7f394552014dbb89de445eae327a1c1b0e3bd26b280dab8d316e2c4f23958",
+      "requirements.txt": "1dbc45c3897b98b55862bf987e1308c2f80bca02cecf02730a60e512d5c43ab7",
+      "scaleFactorTime.csv": "48d94b40a638d11a2a596e6668eedc24182aba74fa02d84c14d8d08b2909e778"
+    },
+    "runtime_README": "e96fe9a8596be9fad4b7f6ca9017231115d85f5b15bfb8424d24aba916e64e83",
+    "runtime_wrapper": "5bb1ab652581ff07db3cca9ea3bce697b717253719df3ca711246f0ca0e9dd18"
+  },
+  "runtime": {
+    "numpy": "2.3.5",
+    "python": "3.12.14"
+  },
+  "scope": "Independent raw-receipt and source review; no adapter/native physics/validator import, new RHS or trajectory",
+  "script_sha256": "5d8746bcf6c09d95e0154237a524786df609624fce5487559537ecb6180d82d0"
+}

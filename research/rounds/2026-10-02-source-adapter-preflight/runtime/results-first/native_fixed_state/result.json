@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "actual_callback_support_mask_is_exact": true,
+    "actual_preoscillation_phi_tau_exactly_zero": true,
+    "actual_source_tau_response_positive": true,
+    "all_nonnegative_time_gates_agree_with_actual_state_time": true,
+    "all_off_time_gate_source_toggle_vectors_bitwise_equal": true,
+    "independent_native_RHS_coefficient_witness_passed": true,
+    "native_collision_nopython_compiled": true,
+    "native_numba_JIT_enabled": true,
+    "native_physics_and_setup_scalar_globals_unchanged": true,
+    "same_parent_source_toggle_dtdx_bitwise_equal": 
