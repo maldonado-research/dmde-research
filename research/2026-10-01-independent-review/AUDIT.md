@@ -123,3 +123,41 @@ executed code hashes without altering either dossier. Both commands' explicit
 output modes and overwrite refusals were checked. The README provides commands
 with outputs outside the published directory. These are recording-interface
 changes; physical formulas, original results and original receipts are unchanged.
+
+### Focused literature addition — documentation review only
+
+The final `research/LITERATURE_CHECK.md`,
+`research/LITERATURE_SOURCE_PROVENANCE.json`, and updated root research README
+and next-tests document were reviewed for inference, availability and attribution
+scope. This review inspected those authored documents and the retrieval metadata;
+it did **not** independently refetch every source, rerun any external author's
+benchmark, execute nuDSMC, validate the candidate's transport implementation, or
+reproduce any observational likelihood. Hash entries for the two literature files
+record this **documentation-only** review, not independent scientific confirmation
+of the cited papers.
+
+The note clearly distinguishes metadata/abstract inspection from selected full-PDF
+inspection, attributes external validation results to their authors, and calls
+nuDSMC a candidate for later comparison. It does not infer a ready DMDE adapter
+from the paper or public repository. Its stated source-channel, neutrino/antineutrino
+symmetry, runtime, separate BBN-project availability and per-component licensing
+limits are consistent with the supplied pinned-commit provenance. In particular,
+absence of a documented primary-muon input does not prove such an extension
+impossible, and the note makes no such impossibility claim.
+
+The observational summaries remain model- and data-dependent statements from the
+cited sources. The note does not turn a selected helium estimate or a DESI
+combined-data preference into a DMDE likelihood, discovery, universal exclusion,
+or validation of this supplement's numerical controls. It preserves the need for
+matched inputs, actual nonequilibrium rates, a conserved model, and structure/lensing
+tests. Short attributed excerpts and original summaries are used; source inspection
+depths and dates are recorded. The stated search scope is focused rather than
+exhaustive.
+
+The updated access statement distinguishes initially blocked requests from later
+successful direct retrievals and API requests, consistent with the recorded request
+outcomes. Retrieval success does not establish runtime availability or execution;
+the documents preserve that distinction. No material inference or availability
+overclaim was found within this documentation review. The new literature lead
+does not change any numerical result, physical assumption, code-validation scope,
+or outstanding production-physics requirement identified above.

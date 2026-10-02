@@ -9,3 +9,5 @@ These are prospective tests, not completed results or a retrospective preregistr
 5. **Frozen pair only after integration checks.** Run both preserved scenarios at coarse and fine resolutions, validate complete returns, and keep a matched Standard Model control. Independent backend replication and physical review follow; successful software gates alone are not scientific confirmation.
 
 The missing covariant microscopic/dark-energy model, abundance-generation mechanism, and structure/lensing calculations remain distinct open tasks. Additional fitted mass relations or analogy with another research program cannot replace these checks.
+
+The [focused literature check](LITERATURE_CHECK.md) identifies nuDSMC at a pinned September 2026 commit as a candidate comparison route. Assess its documented source channels, neutrino/antineutrino symmetry, BBN handoff and runtime availability before selecting it. Its current native interface does not document primary muon decay or a Linux library, and the separate Python BBN project was not located. It does not supersede the executed PRIMAT control or establish an available DMDE adapter.

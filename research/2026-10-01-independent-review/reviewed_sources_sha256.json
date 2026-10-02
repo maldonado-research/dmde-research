@@ -6,7 +6,9 @@
   "research/2026-10-01-sm-control/run_primat_sm_control.py": "59913ba22716cde0c3e083e97d51002a54aa9849a78c8191096f0e63a2ae3a58",
   "research/2026-10-01-sm-control/verify_controls.py": "2d4da14ebc738f2a4580e65a2b0234b540564a987ec33e920cf4b28ae3065e02",
   "research/2026-10-01-sm-control/README.md": "530c0d053dc5fc43162698b64cbf479f2e72de3bc7d19defc6810d51ce092b56",
-  "research/README.md": "9376cc04ec9d4808b72f07f01c9bb2a551e96c8c040827c78fd3547740bfeed8",
+  "research/README.md": "213e6e0f5df7d5a5e4132a8428a15e4b023d6fe03a678655712b7a2099ef7fc8",
   "research/CLAIM_LEDGER.md": "400f8e32813cf69c76a8c3674f7835f341487d4b9e631b2e9e528c062ba8a792",
-  "research/NEXT_TESTS.md": "dbc27880e5fd9a8e0ff5201540e51a75f2c3efaa6fda46fd194abc814f49dd17"
+  "research/NEXT_TESTS.md": "4ca073bdb0037da20ed429968a5cbc6212de7c5ee3b55fab381f5d11e7c48760",
+  "research/LITERATURE_CHECK.md": "cae90f2d8584ac171d966e6018281aa63652cc3f00c90780becc526177c1355b",
+  "research/LITERATURE_SOURCE_PROVENANCE.json": "f71345bad1553a58466b0856e8758e46fd206e43a63fc410228b6fc49e78b16e"
 }
