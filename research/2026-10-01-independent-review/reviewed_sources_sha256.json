@@ -1,0 +1,14 @@
+{
+  "provider/code/dmde_v0920_validate_weak_rate_closure.py": "a694386cad1434ecf702faf6914906c9cb58c7f9f330c618729964562669085d",
+  "research/2026-10-01-equilibrium-audit/equilibrium_audit.py": "bd5e9074ab288bc2ace55cc9e92357f460ec44963b5b22f43623a53a6b70705b",
+  "research/2026-10-01-equilibrium-audit/test_equilibrium_audit.py": "d6055733a0c45ffd39f0318b3d77da96333d8f1ad7a4a85bac31948d1dbe0b23",
+  "research/2026-10-01-equilibrium-audit/README.md": "f6a518b406eca3fd7b6fa9fe8487118901a5f15b3253adb6b3aefa088f6ae12d",
+  "research/2026-10-01-sm-control/run_primat_sm_control.py": "59913ba22716cde0c3e083e97d51002a54aa9849a78c8191096f0e63a2ae3a58",
+  "research/2026-10-01-sm-control/verify_controls.py": "2d4da14ebc738f2a4580e65a2b0234b540564a987ec33e920cf4b28ae3065e02",
+  "research/2026-10-01-sm-control/README.md": "530c0d053dc5fc43162698b64cbf479f2e72de3bc7d19defc6810d51ce092b56",
+  "research/README.md": "213e6e0f5df7d5a5e4132a8428a15e4b023d6fe03a678655712b7a2099ef7fc8",
+  "research/CLAIM_LEDGER.md": "400f8e32813cf69c76a8c3674f7835f341487d4b9e631b2e9e528c062ba8a792",
+  "research/NEXT_TESTS.md": "4ca073bdb0037da20ed429968a5cbc6212de7c5ee3b55fab381f5d11e7c48760",
+  "research/LITERATURE_CHECK.md": "cae90f2d8584ac171d966e6018281aa63652cc3f00c90780becc526177c1355b",
+  "research/LITERATURE_SOURCE_PROVENANCE.json": "f71345bad1553a58466b0856e8758e46fd206e43a63fc410228b6fc49e78b16e"
+}

@@ -1,0 +1,10 @@
+{
+  "AUDIT.md": "715488b40dfec8f5c8096bf721ae58b036412601db0d6310ed8f5828bb5ab109",
+  "README.md": "48aa71134c69e9425c6a41f5b9c141459acdc7150e1d05f8431c7b84c3133deb",
+  "compare_with_producer.py": "48d2d18a27fb342f13a70a401258b1a1d55d249d1dff8c494ab576c0118fd0b6",
+  "control_artifact_checks.json": "ff2a0d63bd5a99bc4e9983a546592eddcdf9e4d52b9d5ae5779f42478449fdb7",
+  "independent_rates.json": "ea29bd2e9f0245655e3b8382495b58867426d0d1ef45f9c7e2c72dbc20426771",
+  "independent_rates.py": "6f1b0df821ef6b2ac2d75ff16d5cedf220e4c8c7078331e280777372ae7a2b63",
+  "producer_comparison.json": "64dac665044501a45ce2a504e14b00ac7d81641e573defa9def1133589319fc3",
+  "reviewed_sources_sha256.json": "ba636be787a6d5972de69450c7199b044e896c60bca524af174854fdc004538d"
+}

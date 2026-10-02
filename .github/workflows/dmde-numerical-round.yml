@@ -1,0 +1,55 @@
+name: DMDE public numerical round
+
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - '.github/workflows/dmde-numerical-round.yml'
+      - 'scripts/**'
+      - 'research/**'
+      - 'provider/**'
+      - 'releases/**'
+      - 'requirements.txt'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: dmde-public-numerical-round
+  cancel-in-progress: false
+
+jobs:
+  public-controls:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+      DMDE_ROUND_DIR: generated/rounds/${{ github.run_id }}-${{ github.run_attempt }}
+    steps:
+      - name: Check out this public repository only
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6, verified official tag
+        with:
+          persist-credentials: false
+      - name: Select Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6, verified official tag
+        with:
+          python-version: '3.12.14'
+      - name: Install pinned public numerical dependencies
+        run: |
+          python -m pip install --disable-pip-version-check -r requirements.txt scipy==1.16.3
+          python -m pip check
+      - name: Replay public controls into a new dossier
+        run: python -B scripts/run_research_round.py --output-dir "$DMDE_ROUND_DIR"
+      - name: Preserve only this public reproduction dossier
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4, verified official tag
+        with:
+          name: dmde-public-round-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ env.DMDE_ROUND_DIR }}/
+          retention-days: 14
+          if-no-files-found: warn

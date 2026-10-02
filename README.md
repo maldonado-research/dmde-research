@@ -38,6 +38,10 @@ The wider physical model, including its complete microscopic origin and connecti
 
 ## Start reading
 
+The [1 October 2026 numerical-control supplement](research/README.md) adds a six-process equilibrium diagnostic and fresh official PRIMAT Standard Model controls. It preserves v0.9.20 and supplies no injected-scenario cosmological predictions.
+
+[Recurring research protocol and numerical checks](research/CONTINUOUS_RESEARCH.md) defines bounded research rounds and a six-hour public maintenance workflow. The workflow requires default-branch activation; it does not launch an AI researcher.
+
 1. [Public explanation in more basic terms](releases/v0.9.20/DMDE_v0920_README_IN_MORE_BASIC_TERMS.md).
 2. [Provider dispatch overview](provider/README_PROVIDER_DISPATCH.md).
 3. [Validation scope and limits](provider/docs/DMDE_v0920_VALIDATION_SCOPE_AND_LIMITS.md).

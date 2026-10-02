@@ -1,0 +1,3 @@
+PASS: original ZIP and 74 provider files
+PASS: 73 provider manifest entries
+PASS: 4 published artifact entries and manifest identity

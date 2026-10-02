@@ -1,0 +1,12 @@
+{
+  "Omegabh2": 0.02242,
+  "cache_dir": "/workspace/shared/dmde-upstream/results/current-4bf97d5-sm-small/cache",
+  "network": "small",
+  "output_background_evolution": true,
+  "output_background_file": "/workspace/shared/dmde-upstream/results/current-4bf97d5-sm-small/background_evolution.tsv",
+  "output_file": "/workspace/shared/dmde-upstream/results/current-4bf97d5-sm-small/abundance_evolution.tsv",
+  "output_final_file": "/workspace/shared/dmde-upstream/results/current-4bf97d5-sm-small/final_abundances.dat",
+  "output_final_result": true,
+  "output_time_evolution": true,
+  "verbose": true
+}

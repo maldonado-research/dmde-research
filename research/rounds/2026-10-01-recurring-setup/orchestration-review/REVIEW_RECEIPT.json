@@ -1,0 +1,57 @@
+{
+  "review_kind": "MOCKED_ORCHESTRATION_AND_PATH_GUARD_REVIEW",
+  "scope": "Temporary /tmp roots and mocked subprocesses only; no scientific control, fresh solver, private input, credential or network operation executed.",
+  "recorded_utc": "2026-10-02T05:14:15.495713+00:00",
+  "python": "3.12.14",
+  "review_source_sha256": "736effe2eadcf4871ebc7fc961a92e7bb005caee95c004b812bd817e2172fe0c",
+  "round_driver_sha256": "78001f3287bf5bf5ec111af869ff79b58ac3469fc6570ba9a2cee1493f53d24d",
+  "tests": [
+    {
+      "name": "missing-dependency-failure-receipt",
+      "status": "PASS"
+    },
+    {
+      "name": "initial-snapshot-failure-receipt-and-cause",
+      "status": "PASS"
+    },
+    {
+      "name": "final-snapshot-failure-receipt",
+      "status": "PASS"
+    },
+    {
+      "name": "timeout-attempt-record",
+      "status": "PASS"
+    },
+    {
+      "name": "nonzero-subprocess-exit-record",
+      "status": "PASS"
+    },
+    {
+      "name": "subprocess-start-error-record",
+      "status": "PASS"
+    },
+    {
+      "name": "generated-symlink-escape-rejection",
+      "status": "PASS"
+    },
+    {
+      "name": "nested-output-symlink-escape-rejection",
+      "status": "PASS"
+    },
+    {
+      "name": "concurrent-local-round-rejection",
+      "status": "PASS"
+    },
+    {
+      "name": "historical-document-and-numerical-source-semantics",
+      "status": "PASS"
+    },
+    {
+      "name": "manifest-path-containment",
+      "status": "PASS"
+    }
+  ],
+  "pass_count": 11,
+  "fail_count": 0,
+  "status": "PASS_ORCHESTRATION_ONLY"
+}

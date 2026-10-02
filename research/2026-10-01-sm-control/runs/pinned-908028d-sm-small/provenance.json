@@ -1,0 +1,34 @@
+{
+  "argv": [
+    "/workspace/shared/dmde-upstream/run_primat_sm_control.py",
+    "--source",
+    "/workspace/shared/dmde-upstream/primat",
+    "--output",
+    "/workspace/shared/dmde-upstream/results/pinned-908028d-sm-small"
+  ],
+  "backend": "python",
+  "executable": "/workspace/shared/dmde-upstream/.venv/bin/python",
+  "installed_packages": {
+    "numpy": "2.3.5",
+    "pip": "25.0.1",
+    "scipy": "1.16.3"
+  },
+  "interpretation": "Unmodified upstream Standard Model control; not a DMDE prediction, independent physics replication, likelihood, or cache-free rate recomputation.",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "recorded_utc": "2026-10-02T03:36:13.603816+00:00",
+  "runner_sha256": "59913ba22716cde0c3e083e97d51002a54aa9849a78c8191096f0e63a2ae3a58",
+  "selected_runtime_variables": {
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "source_commit": "908028da9426370f2f41ca996503650eef34795a",
+  "source_path": "/workspace/shared/dmde-upstream/primat",
+  "source_status_before": "",
+  "source_tree": "7b267051420238a1fee1fa74b40ec3b1189bac99",
+  "source_url": "https://github.com/CyrilPitrou/primat",
+  "upstream_commit_date": "2026-08-17T14:54:46+02:00",
+  "upstream_license": "GPL-3.0-or-later"
+}

@@ -1,0 +1,144 @@
+{
+  "kind": "PUBLIC_NUMERICAL_MAINTENANCE_REPRODUCTION",
+  "scope": "No new transport solve, BBN prediction, literature search, AI research, or discovery.",
+  "started_utc": "2026-10-02T05:15:00.120463+00:00",
+  "python": "3.12.14",
+  "steps": [
+    {
+      "name": "release-integrity",
+      "command": [
+        "/workspace/shared/dmde-upstream/.venv/bin/python",
+        "-B",
+        "scripts/check_public_release.py"
+      ],
+      "log": "release-integrity.log",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "name": "deep-payloads",
+      "command": [
+        "/workspace/shared/dmde-upstream/.venv/bin/python",
+        "-B",
+        "provider/code/dmde_v0920_validate_blind_payloads_deep.py",
+        "--base",
+        "provider",
+        "--out-csv",
+        "/workspace/dmde-research/generated/rounds/2026-10-01-routine-clean-commit/deep.csv",
+        "--out-json",
+        "/workspace/dmde-research/generated/rounds/2026-10-01-routine-clean-commit/deep.json"
+      ],
+      "log": "deep-payloads.log",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "name": "pair-geometry",
+      "command": [
+        "/workspace/shared/dmde-upstream/.venv/bin/python",
+        "-B",
+        "provider/code/dmde_v0920_pair_geometry.py",
+        "--provider-root",
+        "provider",
+        "--json-out",
+        "/workspace/dmde-research/generated/rounds/2026-10-01-routine-clean-commit/geometry.json",
+        "--csv-out",
+        "/workspace/dmde-research/generated/rounds/2026-10-01-routine-clean-commit/precision.csv"
+      ],
+      "log": "pair-geometry.log",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "name": "equilibrium-tests",
+      "command": [
+        "/workspace/shared/dmde-upstream/.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "research/2026-10-01-equilibrium-audit",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "log": "equilibrium-tests.log",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "name": "equilibrium-report",
+      "command": [
+        "/workspace/shared/dmde-upstream/.venv/bin/python",
+        "-B",
+        "research/2026-10-01-equilibrium-audit/equilibrium_audit.py",
+        "--output-dir",
+        "/workspace/dmde-research/generated/rounds/2026-10-01-routine-clean-commit/equilibrium"
+      ],
+      "log": "equilibrium-report.log",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "name": "independent-integration",
+      "command": [
+        "/workspace/shared/dmde-upstream/.venv/bin/python",
+        "-B",
+        "research/2026-10-01-independent-review/independent_rates.py",
+        "--output",
+        "/workspace/dmde-research/generated/rounds/2026-10-01-routine-clean-commit/independent.json"
+      ],
+      "log": "independent-integration.log",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "name": "independent-comparison",
+      "command": [
+        "/workspace/shared/dmde-upstream/.venv/bin/python",
+        "-B",
+        "research/2026-10-01-independent-review/compare_with_producer.py",
+        "--producer-dir",
+        "research/2026-10-01-equilibrium-audit",
+        "--output",
+        "/workspace/dmde-research/generated/rounds/2026-10-01-routine-clean-commit/comparison.json"
+      ],
+      "log": "independent-comparison.log",
+      "status": "PASS",
+      "returncode": 0
+    },
+    {
+      "name": "saved-sm-controls",
+      "command": [
+        "/workspace/shared/dmde-upstream/.venv/bin/python",
+        "-B",
+        "research/2026-10-01-sm-control/verify_controls.py",
+        "--output",
+        "/workspace/dmde-research/generated/rounds/2026-10-01-routine-clean-commit/historical-controls.json"
+      ],
+      "log": "saved-sm-controls.log",
+      "status": "PASS",
+      "returncode": 0
+    }
+  ],
+  "status": "PASS_REPRODUCTION_ONLY",
+  "source_commit": "bfac4c542fd83c3883cbb7f83cbdd8d74dba2284",
+  "tracked_worktree_clean_at_start": true,
+  "numpy": "2.3.5",
+  "scipy": "1.16.3",
+  "round_driver_sha256": "78001f3287bf5bf5ec111af869ff79b58ac3469fc6570ba9a2cee1493f53d24d",
+  "public_source_fingerprint_sha256": "28c4d01219908ad5871ac2a1117baaf566764907ab5ff4a96055ded9b0152327",
+  "verified_saved_manifest_entries": {
+    "sm": 42,
+    "review": 8
+  },
+  "reviewed_source_provenance": {
+    "entries": 12,
+    "unchanged_numerical_sources": 5,
+    "documentation_changed_since_review": [],
+    "historical_review_covers_current_documents": true
+  },
+  "tracked_files_unchanged": true,
+  "finished_utc": "2026-10-02T05:15:01.869858+00:00"
+}
