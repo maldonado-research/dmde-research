@@ -1,0 +1,4 @@
+usage: native_probe_final.py [-h] --out OUT [--domain {clipped,complete}]
+                             [--n N] [--source SOURCE]
+                             {run,run-rhs,emission,rhs}
+native_probe_final.py: error: emission requires --domain and an odd --n between3 and1025

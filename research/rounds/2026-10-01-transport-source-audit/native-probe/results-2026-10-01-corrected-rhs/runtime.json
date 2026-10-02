@@ -1,0 +1,20 @@
+{
+  "python_executable": "/workspace/shared/dmde-upstream/nudec-venv/bin/python",
+  "thread_environment": {
+    "MKL_NUM_THREADS": "1",
+    "NUMBA_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "versions": {
+    "llvmlite": "0.46.0",
+    "numba": "0.63.1",
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "scipy": "1.16.3"
+  },
+  "wrapper_path": "/workspace/shared/dmde-native-probe/native_probe_corrected.py",
+  "wrapper_sha256": "cc748311dfc01e8e73be5ad6d969bcdded27b60b35abb63d0da7610cc36a0d54"
+}

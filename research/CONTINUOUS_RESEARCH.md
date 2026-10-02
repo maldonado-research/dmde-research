@@ -37,12 +37,24 @@ generated public dossier, with 14-day artifact retention. It does not access the
 private archive, invoke an AI model, merge changes, deploy a website or publish
 Zenodo versions. GitHub logs and these artifacts are public.
 
+The transport-source round extends the workflow with canonical dossier-identity
+verification and the separate analytic source-coverage controls. Its new public
+analytic receipt is also uploaded. These checks use no external solver or private
+inputs; native Nudec probes still require the pinned separate environment and
+are not launched by this workflow.
+
 Scheduled workflows use the default branch. The workflow must be merged and
 Actions enabled before its recurring schedule can run. GitHub can delay scheduled
 jobs; public-repository schedules may be disabled after 60 days without activity.
 Successful cloud replay does not prove GitHub-hosted execution. Inspect Actions
 run status before claiming the scheduler is active. A schedule in source is not
 evidence of a completed scheduled run.
+
+At the transport-source round, research PR #1 has been merged and the workflow
+is registered as active on the default branch. The earlier hosted PR run
+[36968301105](https://github.com/maldonado-research/dmde-research/actions/runs/36968301105)
+passed. A completed `schedule`-event run has not yet been verified. Query current
+Actions state rather than treating that PR run as proof of scheduled execution.
 
 ## What full AI research requires
 
@@ -88,8 +100,11 @@ unbounded recursive sessions or fabricate progress to fill the schedule.
 Each substantive round gets a unique dossier under `research/rounds/` after
 review; provisional outputs stay in ignored `generated/`. Record separately:
 assumptions, fitted parameters, predictions, evidence and interpretation limits.
-The round queue starts with unexecuted items. Never mark them complete because
-a protocol or a passing maintenance replay exists.
+The [transport-source round](rounds/2026-10-01-transport-source-audit/README.md)
+partly demonstrates the first capability item: native emission and a local RHS
+execute, while the explicit adapter and evolved trajectories remain open.
+Never mark a scientific gate complete because a protocol or a passing
+maintenance replay exists.
 
 Compare specified mechanisms against conservation, expansion, BBN/CMB, growth,
 structure and lensing, using matched established controls and dated primary

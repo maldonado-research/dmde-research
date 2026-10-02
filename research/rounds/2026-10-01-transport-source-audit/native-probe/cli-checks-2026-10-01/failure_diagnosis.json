@@ -1,0 +1,6 @@
+{
+  "status": "failed",
+  "scope": "Harness-only test; no native physics failure",
+  "reason": "First test double patched subprocess.run for all commands, unintentionally replacing git source-provenance reads. Expected worker receipt was therefore absent.",
+  "correction": "CLI check r2 only intercepts the specified wrapper rhs worker; git provenance checks use the real subprocess runner. Original test artifacts remain untouched."
+}

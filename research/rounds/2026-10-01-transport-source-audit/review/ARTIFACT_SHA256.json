@@ -1,0 +1,10 @@
+{
+  "README.md": "09868fd0771aca893197760688694953f1908029a275c65d671902ffe1879423",
+  "REVIEW.md": "4692d00fdf358d63ca5500012cd281321ce6b7d38088c786774afa6d3de4c7ec",
+  "REVIEW_RECEIPT.json": "dccd33d48f2998905d1d5a4c982f51e0c128fbfaba1aef6a7f8f37e3b324106d",
+  "independent_domain_review.py": "270ff9c43b3c23f0c0024fc6591f10bdbd76ab1d5fae3b610bab3ffeeedea15f",
+  "independent_domain_review.json": "b9f3ec204385f1f8738bb9998efaa7982c61ec8843253953f56742051d7bed7e",
+  "table_proxy_sensitivity.py": "a3eb2e1851af8e716b56dbf18a72adab765bec81a10f8a37a7e3f971d9f33340",
+  "table_proxy_sensitivity.json": "9c60d8b2c6d0876735936b3316d2e77bdd9a161ee353bf3b794b51a6f03a43e7",
+  "verify_review.py": "0d3ea4a9329f04d77c5c4174bec7188de756c8b987e1bae9245bbb415811e528"
+}

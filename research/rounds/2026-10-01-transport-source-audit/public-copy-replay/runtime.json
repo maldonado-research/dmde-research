@@ -1,0 +1,20 @@
+{
+  "python_executable": "/workspace/shared/dmde-upstream/nudec-venv/bin/python",
+  "thread_environment": {
+    "MKL_NUM_THREADS": "1",
+    "NUMBA_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "versions": {
+    "llvmlite": "0.46.0",
+    "numba": "0.63.1",
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "scipy": "1.16.3"
+  },
+  "wrapper_path": "/workspace/dmde-research/research/rounds/2026-10-01-transport-source-audit/native-probe/native_probe_final.py",
+  "wrapper_sha256": "362708741fb0d04a658f0aec5886a07ba1e0d983b6e26e222f996bebf07f27d2"
+}

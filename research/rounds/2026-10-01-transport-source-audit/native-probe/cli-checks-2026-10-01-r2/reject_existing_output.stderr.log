@@ -1,0 +1,4 @@
+usage: native_probe_final.py [-h] --out OUT [--domain {clipped,complete}]
+                             [--n N] [--source SOURCE]
+                             {run,run-rhs,emission,rhs}
+native_probe_final.py: error: --out must identify a fresh path; existing evidence will never be overwritten

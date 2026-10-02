@@ -1,0 +1,273 @@
+{
+  "branching_scope": "Native branch0.8 equals primary-muon multiplicity0.8. An external equal-charge-pair assumption labels this pair B=0.4; native SingleShot passes its branch input unchanged and native RHS supplies the nu/antinu factor1/2 itself.",
+  "charge_scope": "Native f_nubar=f_nu.copy() and source factor1/2; no independent charge-asymmetric evolution.",
+  "configuration": {
+    "antinue_p_threshold_MeV": 1.80433131,
+    "capture_threshold_convention": "frozen static Born heavy-nucleon limit",
+    "emission_decay_probabilities": {
+      "mu": 1.0,
+      "pi": 1.0
+    },
+    "emission_refinements": [
+      65,
+      129,
+      257,
+      513,
+      1025
+    ],
+    "emission_x_convention": "nextafter(4.0, 0.0), left limit",
+    "no_time_integration": true,
+    "nue_n_threshold_MeV": 0.0,
+    "q_min": 0.01,
+    "rhs_external_charge_pair_B_assumption": 0.4,
+    "rhs_fd_convention": "all three flavors f(q)=1/(exp(q/z)+1); native antineutrinos copied",
+    "rhs_gates": "on stopPoint=nextafter(x,+inf), off stopPoint=0",
+    "rhs_lifetime_seconds": 10.0,
+    "rhs_llp_count": 1e-05,
+    "rhs_mass_MeV": 300.0,
+    "rhs_n": 21,
+    "rhs_native_branching_muon": 0.8,
+    "rhs_other_branchings": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rhs_primary_muon_multiplicity": 0.8,
+    "rhs_t_seconds": 1.0,
+    "rhs_x": 4.0,
+    "rhs_z": 1.4,
+    "threshold_Delta_MeV": 1.29333236,
+    "threshold_reference_me_MeV": 0.51099895,
+    "user_date": "2026-10-01 America/Los_Angeles",
+    "worker_timeout_seconds": 180,
+    "x_stop": 4.0
+  },
+  "gate_scope": "Diagnostic native stopPoint gate changes BOTH source injection and LLP energy-loss term. This is not a frozen-only source-toggle certification.",
+  "grid_scope": "Deliberately tiny n=21 fixed complete-support linear grid severely under-resolves FD bulk and is not a converged transport computation.",
+  "instrumentation": "getDistribution callables replaced by recording wrappers; each calls original native function and returns its exact unchanged object. No RHS, thermo, collision or mixing mocks/replacements.",
+  "modules": {
+    "Collision_term.Collision_term_diagonal": {
+      "path": "/workspace/shared/dmde-upstream/nudec/Collision_term/Collision_term_diagonal.py",
+      "sha256": "a95c4b60a3dce826c84d9d3fc6b40685b26195fafc7d8097b384151703f664d7"
+    },
+    "Collision_term.D_function": {
+      "path": "/workspace/shared/dmde-upstream/nudec/Collision_term/D_function.py",
+      "sha256": "9794175598d1fa26f834a202b4d76f9c0f894882a2d5eeb24c2c5d98f8d65648"
+    },
+    "Constants": {
+      "path": "/workspace/shared/dmde-upstream/nudec/Constants.py",
+      "sha256": "0dac68fb57b1425aece579a859072b72f6b4533276e4baf01d5f7d9d85953807"
+    },
+    "Distributions": {
+      "path": "/workspace/shared/dmde-upstream/nudec/Distributions.py",
+      "sha256": "f14dfb1347ee741935bef5c5b00cbfee4d5fbaa169f1b999f5c61b2df9fafa27"
+    },
+    "GlobalParameters": {
+      "path": "/workspace/shared/dmde-upstream/nudec/GlobalParameters.py",
+      "sha256": "962453b5e9dcdbd15429636cd6a6941181136bdbf9bb69e09a0dcadf12f23a7c"
+    },
+    "Momentum_Grid": {
+      "path": "/workspace/shared/dmde-upstream/nudec/Momentum_Grid.py",
+      "sha256": "c05b77e72044b6efd525d94dc0e5c8a62bf49f9a3698a4c1ee25debfa3a68ec2"
+    },
+    "System_Nudecoupling": {
+      "path": "/workspace/shared/dmde-upstream/nudec/System_Nudecoupling.py",
+      "sha256": "e285d33e4ab0f823593a850701be1f90a5ec12c3685834cac68372457ccbaad6"
+    },
+    "Thermodynamics.Thermal_QED_corrections": {
+      "path": "/workspace/shared/dmde-upstream/nudec/Thermodynamics/Thermal_QED_corrections.py",
+      "sha256": "16f38da386e9be0f777c0b53ecb8806d9619300fef56b7a7470e9243a4a888c6"
+    },
+    "Thermodynamics.Thermodynamics_ideal_gas": {
+      "path": "/workspace/shared/dmde-upstream/nudec/Thermodynamics/Thermodynamics_ideal_gas.py",
+      "sha256": "e3797b88dd504970b4d0d9f66b68b4cce2f78c96fa68d1eb7c6d210b7010ddd7"
+    }
+  },
+  "native_collision_nopython_signatures": [
+    "(float64, float64, int64, float64, Array(float64, 1, 'C', False, aligned=True), Array(float64, 1, 'C', False, aligned=True), Array(float64, 1, 'C', False, aligned=True), Array(float64, 1, 'C', False, aligned=True), Array(float64, 1, 'C', False, aligned=True), Array(float64, 1, 'C', False, aligned=True), float64) -> array(float64, 1d, C)"
+  ],
+  "native_collision_signatures": [
+    "(float64, float64, int64, float64, Array(float64, 1, 'C', False, aligned=True), Array(float64, 1, 'C', False, aligned=True), Array(float64, 1, 'C', False, aligned=True), Array(float64, 1, 'C', False, aligned=True), Array(float64, 1, 'C', False, aligned=True), Array(float64, 1, 'C', False, aligned=True), float64)"
+  ],
+  "native_me_MeV": 0.5109989,
+  "no_BBN_or_production_witness": true,
+  "no_time_integration": true,
+  "numba_jit_disabled": false,
+  "positive_gate_delta_dtdx": 0.0,
+  "positive_gate_delta_dzdx": 0.00292066591560948,
+  "positive_gate_delta_max_abs_neutrinos": 2.1248871136108562e-11,
+  "positive_off_minus_zero_off_dtdx": -0.10907421719777943,
+  "positive_off_minus_zero_off_dzdx": 0.0,
+  "q_max": 413.6995206838997,
+  "runs": {
+    "positive_off": {
+      "dtdx_seconds": 26.427350330618896,
+      "dzdx": 0.05941258173659857,
+      "elapsed_seconds": 0.0031448319987248397,
+      "finite_full_vector": true,
+      "length": 65,
+      "llp_count": 1e-05,
+      "neutrino_max_abs": 1.7489018131681909e-25,
+      "sources": [],
+      "stopPoint": 0.0
+    },
+    "positive_on": {
+      "dtdx_seconds": 26.427350330618896,
+      "dzdx": 0.06233324765220805,
+      "elapsed_seconds": 0.0032340960005967645,
+      "finite_full_vector": true,
+      "length": 65,
+      "llp_count": 1e-05,
+      "neutrino_max_abs": 2.1248871136108736e-11,
+      "sources": [
+        {
+          "file": "preosc_positive_on_0_muonDistribution.csv",
+          "finite": true,
+          "index": 0,
+          "name": "muonDistribution",
+          "shape": [
+            3,
+            21
+          ],
+          "tau_exactly_zero": true,
+          "x": 4.0
+        },
+        {
+          "file": "preosc_positive_on_1_pionDistribution.csv",
+          "finite": true,
+          "index": 1,
+          "name": "pionDistribution",
+          "shape": [
+            3,
+            21
+          ],
+          "tau_exactly_zero": true,
+          "x": 4.0
+        },
+        {
+          "file": "preosc_positive_on_2_distribution.csv",
+          "finite": true,
+          "index": 2,
+          "name": "distribution",
+          "shape": [
+            3,
+            21
+          ],
+          "tau_exactly_zero": true,
+          "x": 4.0
+        },
+        {
+          "file": "preosc_positive_on_3_distribution.csv",
+          "finite": true,
+          "index": 3,
+          "name": "distribution",
+          "shape": [
+            3,
+            21
+          ],
+          "tau_exactly_zero": true,
+          "x": 4.0
+        },
+        {
+          "file": "preosc_positive_on_4_distribution.csv",
+          "finite": true,
+          "index": 4,
+          "name": "distribution",
+          "shape": [
+            3,
+            21
+          ],
+          "tau_exactly_zero": false,
+          "x": 4.0
+        }
+      ],
+      "stopPoint": 4.000000000000001
+    },
+    "zero_off": {
+      "dtdx_seconds": 26.536424547816676,
+      "dzdx": 0.05941258173659857,
+      "elapsed_seconds": 3.8392297150003287,
+      "finite_full_vector": true,
+      "length": 65,
+      "llp_count": 0.0,
+      "neutrino_max_abs": 1.7561200962665942e-25,
+      "sources": [],
+      "stopPoint": 0.0
+    },
+    "zero_on": {
+      "dtdx_seconds": 26.536424547816676,
+      "dzdx": 0.05941258173659857,
+      "elapsed_seconds": 0.003585695001675049,
+      "finite_full_vector": true,
+      "length": 65,
+      "llp_count": 0.0,
+      "neutrino_max_abs": 1.7561200962665942e-25,
+      "sources": [
+        {
+          "file": "preosc_zero_on_0_muonDistribution.csv",
+          "finite": true,
+          "index": 0,
+          "name": "muonDistribution",
+          "shape": [
+            3,
+            21
+          ],
+          "tau_exactly_zero": true,
+          "x": 4.0
+        },
+        {
+          "file": "preosc_zero_on_1_pionDistribution.csv",
+          "finite": true,
+          "index": 1,
+          "name": "pionDistribution",
+          "shape": [
+            3,
+            21
+          ],
+          "tau_exactly_zero": true,
+          "x": 4.0
+        },
+        {
+          "file": "preosc_zero_on_2_distribution.csv",
+          "finite": true,
+          "index": 2,
+          "name": "distribution",
+          "shape": [
+            3,
+            21
+          ],
+          "tau_exactly_zero": true,
+          "x": 4.0
+        },
+        {
+          "file": "preosc_zero_on_3_distribution.csv",
+          "finite": true,
+          "index": 3,
+          "name": "distribution",
+          "shape": [
+            3,
+            21
+          ],
+          "tau_exactly_zero": true,
+          "x": 4.0
+        },
+        {
+          "file": "preosc_zero_on_4_distribution.csv",
+          "finite": true,
+          "index": 4,
+          "name": "distribution",
+          "shape": [
+            3,
+            21
+          ],
+          "tau_exactly_zero": false,
+          "x": 4.0
+        }
+      ],
+      "stopPoint": 4.000000000000001
+    }
+  },
+  "status": "passed",
+  "zero_gate_vectors_bitwise_equal": true
+}

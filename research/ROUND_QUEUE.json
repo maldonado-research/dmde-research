@@ -4,7 +4,7 @@
   "preferred_model": "GPT-6.1 Sol",
   "preferred_reasoning": "ultra",
   "ai_scheduler_status": "not_connected",
-  "maintenance_schedule_status": "requires_default_branch_merge_and_run_verification",
+  "maintenance_schedule_status": "workflow_active_on_default_branch_first_scheduled_run_unverified",
   "recommended_ai_cadence_hours": 6,
   "maximum_concurrent_ai_rounds": 1,
   "latest_maintenance_record": "research/rounds/2026-10-01-recurring-setup/VALIDATION.json",
@@ -12,37 +12,58 @@
     {
       "id": "transport-capability",
       "priority": 1,
-      "status": "not_started",
+      "status": "partially_demonstrated_adapter_requirements_open",
       "question": "Can a pinned transport backend actually consume the declared source and export physically mapped occupation and energy histories?",
-      "route": "Audit the existing Nudec/PRIMAT route first; nuDSMC remains an unexecuted candidate.",
-      "gate": "Runtime, source interfaces, physical momentum, stopped-muon support, source-call/stepper witnesses and daughter-energy accounting demonstrated."
+      "route": "Pinned Nudec native emitter and local collision-coupled RHS executed; PRIMAT nonthermal rate adapter and nuDSMC route remain unexecuted.",
+      "gate": "Completion requires demonstrated runtime, source interfaces, physical momentum, stopped-muon support, source-call/production-stepper witnesses and daughter-energy accounting.",
+      "demonstrated": [
+        "Pinned source audit and native runtime with real Numba collision compilation",
+        "Unrenormalized Michel moments on clipped and complete diagnostic grids with refinements",
+        "Matched same-state zero/positive-parent gate fixtures, corrected primary multiplicity and preserved erratum",
+        "Separate continuum/source-domain review and explicitly limited reference-history proxy"
+      ],
+      "remaining": [
+        "Explicit frozen constants and canonical state/source coordinate map",
+        "Endpoint-aware grid/quadrature and independent resolution budget",
+        "Actual evolved-time cutoff and complete pre-mixing source exports",
+        "Canonical reference entropy, accepted-step witnesses and daughter-energy conservation history"
+      ],
+      "next_test": "Review a minimal explicit adapter, then matched zero/small-source evolved trajectories with independent domain/grid/timestep refinements."
     },
     {
       "id": "small-source-transport",
       "priority": 2,
-      "status": "not_started",
-      "requires": ["transport-capability"],
+      "status": "blocked_transport_adapter_requirements",
+      "requires": [
+        "transport-capability"
+      ],
       "gate": "Matched zero-source/small-source evolved spectra, source RHS and background; independently refined domain, momentum and timestep."
     },
     {
       "id": "six-process-rate-adapter",
       "priority": 3,
       "status": "not_started",
-      "requires": ["small-source-transport"],
+      "requires": [
+        "small-source-transport"
+      ],
       "gate": "Separately versioned six-process contract, direct occupation integration, threshold/domain splits, stable absolute rates and separate numerical check; corrected production rates before physics inference."
     },
     {
       "id": "nuclear-consumption",
       "priority": 4,
       "status": "not_started",
-      "requires": ["six-process-rate-adapter"],
+      "requires": [
+        "six-process-rate-adapter"
+      ],
       "gate": "Measured rates consumed by network; cache policy, consumption canaries, matched controls, raw evolution and conserved active baryon history."
     },
     {
       "id": "precision-and-frozen-pair",
       "priority": 5,
       "status": "not_started",
-      "requires": ["nuclear-consumption"],
+      "requires": [
+        "nuclear-consumption"
+      ],
       "gate": "Separate numerical/physical error budget smaller than any claimed contrast; complete returns, meaningful refinement and independent backend replication."
     },
     {
@@ -51,5 +72,7 @@
       "status": "blocked_model_unspecified",
       "gate": "Specified covariant model and conserved background/perturbations before testing expansion, growth, CMB and lensing likelihoods."
     }
-  ]
+  ],
+  "latest_scientific_record": "research/rounds/2026-10-01-transport-source-audit/README.md",
+  "updated_user_date": "2026-10-01"
 }

@@ -1,0 +1,28 @@
+{
+  "controls": [
+    {
+      "mutation": "numerical_value",
+      "rejected_exit_code": 1,
+      "requested_output_absent": true,
+      "stdout_empty": true
+    },
+    {
+      "mutation": "scientific_code_hash",
+      "rejected_exit_code": 1,
+      "requested_output_absent": true,
+      "stdout_empty": true
+    },
+    {
+      "mutation": "boolean_type",
+      "rejected_exit_code": 1,
+      "requested_output_absent": true,
+      "stdout_empty": true
+    }
+  ],
+  "executed_runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.16.3"
+  },
+  "verifier_sha256": "4b3b547a0a0f37a74c16635b08fc7f3d5e6bbdc11033ee4f407eecef351abb9f"
+}

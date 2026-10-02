@@ -45,11 +45,17 @@ jobs:
           python -m pip check
       - name: Replay public controls into a new dossier
         run: python -B scripts/run_research_round.py --output-dir "$DMDE_ROUND_DIR"
+      - name: Check reviewed transport-source records and analytic controls
+        run: |
+          python -B research/rounds/2026-10-01-transport-source-audit/verify_dossier.py
+          python -B research/rounds/2026-10-01-transport-source-audit/coverage/source_coverage.py > generated/transport-source-analytic-control.json
       - name: Preserve only this public reproduction dossier
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4, verified official tag
         with:
           name: dmde-public-round-${{ github.run_id }}-${{ github.run_attempt }}
-          path: ${{ env.DMDE_ROUND_DIR }}/
+          path: |
+            ${{ env.DMDE_ROUND_DIR }}/
+            generated/transport-source-analytic-control.json
           retention-days: 14
           if-no-files-found: warn

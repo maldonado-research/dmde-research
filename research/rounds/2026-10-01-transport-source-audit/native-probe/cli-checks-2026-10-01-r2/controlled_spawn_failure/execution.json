@@ -1,0 +1,22 @@
+{
+  "all_jobs_completed_successfully": false,
+  "jobs": [
+    {
+      "command": [
+        "/workspace/shared/dmde-upstream/nudec-venv/bin/python",
+        "-B",
+        "/workspace/shared/dmde-native-probe/native_probe_final.py",
+        "rhs",
+        "--out",
+        "/workspace/shared/dmde-native-probe/cli-checks-2026-10-01-r2/controlled_spawn_failure/rhs_n21",
+        "--source",
+        "/workspace/shared/dmde-upstream/nudec"
+      ],
+      "elapsed_seconds": 0.00021500299953913782,
+      "name": "rhs_n21",
+      "returncode": 7,
+      "timeout": false
+    }
+  ],
+  "source_unchanged": true
+}
