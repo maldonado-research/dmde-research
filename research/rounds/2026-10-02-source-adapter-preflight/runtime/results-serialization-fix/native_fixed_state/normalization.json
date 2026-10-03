@@ -1,0 +1,17 @@
+{
+  "C0": 4.715902064019412,
+  "J_state_units": "yield per dq",
+  "S_source_units": "yield per dq per second",
+  "T_ref_MeV": 5.11014229967,
+  "llp_count": 4.715902064019411e-06,
+  "s0_MeV3": 629.2520994400936,
+  "s_ref_fixture_MeV3": 0.009832064053751465,
+  "source_species_order": [
+    "nue",
+    "nuebar",
+    "numu",
+    "numubar",
+    "nutau",
+    "nutaubar"
+  ]
+}

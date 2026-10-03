@@ -1,0 +1,12 @@
+{
+  "array_status": "synthetic fixed-state emitter/map snapshots; not transported or production-consumed source histories",
+  "source_node_peak_scaled_error": 3.2191519989910655e-16,
+  "zero_tau_source": true,
+  "cutoff_and_postcutoff_zero": true,
+  "charge_symmetric_sources": true,
+  "charge_symmetric_states": true,
+  "state_normalization_q_coefficient": 0.010742502947143552,
+  "source_has_extra_jacobian": "dp/dq=me/x",
+  "entropy_is_comoving_reference": true,
+  "renormalization_applied": false
+}

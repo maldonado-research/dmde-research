@@ -1,0 +1,14 @@
+{
+  "positive_on": {
+    "file": "branch_weighted_preosc_positive_on.csv",
+    "finite": true,
+    "phi_tau_exactly_zero": true,
+    "scope": "Branch-weighted raw emission functions, before common LLP/time/Hubble amplitude and oscillations. Zero-count case has a nonzero shape but its native physical amplitude is zero."
+  },
+  "zero_on": {
+    "file": "branch_weighted_preosc_zero_on.csv",
+    "finite": true,
+    "phi_tau_exactly_zero": true,
+    "scope": "Branch-weighted raw emission functions, before common LLP/time/Hubble amplitude and oscillations. Zero-count case has a nonzero shape but its native physical amplitude is zero."
+  }
+}

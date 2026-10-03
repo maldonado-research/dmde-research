@@ -1,0 +1,40 @@
+{
+  "checks": [
+    {
+      "name": "reject_optimized_flag",
+      "returncode": 1,
+      "output_created": false,
+      "passed": true
+    },
+    {
+      "name": "reject_optimized_environment",
+      "returncode": 1,
+      "output_created": false,
+      "passed": true
+    },
+    {
+      "name": "reject_invalid_even_grid",
+      "returncode": 2,
+      "output_created": false,
+      "passed": true
+    },
+    {
+      "name": "reject_missing_emission_grid",
+      "returncode": 2,
+      "output_created": false,
+      "passed": true
+    },
+    {
+      "name": "reject_existing_output",
+      "returncode": 2,
+      "passed": true
+    },
+    {
+      "name": "propagate_controlled_worker_failure",
+      "scope": "orchestration harness only; no native physics call",
+      "worker_returncode": 7,
+      "passed": true
+    }
+  ],
+  "all_passed": true
+}

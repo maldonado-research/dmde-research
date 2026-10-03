@@ -1,0 +1,42 @@
+{
+  "antinue_p_threshold_MeV": 1.80433131,
+  "capture_threshold_convention": "frozen static Born heavy-nucleon limit",
+  "emission_decay_probabilities": {
+    "mu": 1.0,
+    "pi": 1.0
+  },
+  "emission_refinements": [
+    65,
+    129,
+    257,
+    513,
+    1025
+  ],
+  "emission_x_convention": "nextafter(4.0, 0.0), left limit",
+  "no_time_integration": true,
+  "nue_n_threshold_MeV": 0.0,
+  "q_min": 0.01,
+  "rhs_external_charge_pair_B_assumption": 0.4,
+  "rhs_fd_convention": "all three flavors f(q)=1/(exp(q/z)+1); native antineutrinos copied",
+  "rhs_gates": "on stopPoint=nextafter(x,+inf), off stopPoint=0",
+  "rhs_lifetime_seconds": 10.0,
+  "rhs_llp_count": 1e-05,
+  "rhs_mass_MeV": 300.0,
+  "rhs_n": 21,
+  "rhs_native_branching_muon": 0.8,
+  "rhs_other_branchings": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "rhs_primary_muon_multiplicity": 0.8,
+  "rhs_t_seconds": 1.0,
+  "rhs_x": 4.0,
+  "rhs_z": 1.4,
+  "threshold_Delta_MeV": 1.29333236,
+  "threshold_reference_me_MeV": 0.51099895,
+  "user_date": "2026-10-01 America/Los_Angeles",
+  "worker_timeout_seconds": 180,
+  "x_stop": 4.0
+}

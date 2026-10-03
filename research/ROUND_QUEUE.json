@@ -4,7 +4,7 @@
   "preferred_model": "GPT-6.1 Sol",
   "preferred_reasoning": "ultra",
   "ai_scheduler_status": "not_connected",
-  "maintenance_schedule_status": "requires_default_branch_merge_and_run_verification",
+  "maintenance_schedule_status": "workflow_active_on_default_branch_first_scheduled_run_unverified",
   "recommended_ai_cadence_hours": 6,
   "maximum_concurrent_ai_rounds": 1,
   "latest_maintenance_record": "research/rounds/2026-10-01-recurring-setup/VALIDATION.json",
@@ -12,37 +12,69 @@
     {
       "id": "transport-capability",
       "priority": 1,
-      "status": "not_started",
+      "status": "partially_demonstrated_adapter_requirements_open",
       "question": "Can a pinned transport backend actually consume the declared source and export physically mapped occupation and energy histories?",
-      "route": "Audit the existing Nudec/PRIMAT route first; nuDSMC remains an unexecuted candidate.",
-      "gate": "Runtime, source interfaces, physical momentum, stopped-muon support, source-call/stepper witnesses and daughter-energy accounting demonstrated."
+      "route": "Pinned Nudec native emitter/local collision-coupled RHS and Oct 2 exact-source callback preflight executed; canonical reference mapping and actual-time gate demonstrated on fixed-state fixtures. PRIMAT nonthermal rate adapter and nuDSMC route remain unexecuted.",
+      "gate": "Completion requires a separately reviewed pressure-consistent EOS/thermal-correction treatment, a genuine source-operator witness or separately versioned contract, conservative endpoint-complete quadrature, accepted-step source/energy histories and independently refined zero/small-source trajectories.",
+      "demonstrated": [
+        "Pinned source audit and native runtime with real Numba collision compilation",
+        "Unrenormalized Michel moments on clipped and complete diagnostic grids with refinements",
+        "Matched same-state zero/positive-parent gate fixtures, corrected primary multiplicity and preserved erratum",
+        "Separate continuum/source-domain review and explicitly limited reference-history proxy",
+        "Exact m_mu=105.6583755 source-specific callback with all native transport/EOS/collision mass copies retained and explicit weak-kernel electron-mass role",
+        "Canonical comoving-reference entropy/state/source map, six declared charge-symmetric arrays and pre-mixing callback capture and wrapper canonical conversion, witnessed by the actual fixed-state mixed RHS",
+        "Half-open actual-time source cutoff and source-on/off checks on fixed-state fixtures",
+        "Native-weight endpoint-phase source-only sweep: N3001 fails, N4001/N8001 pass sampled short-window coordinates; independent replay and retained full-domain failures"
+      ],
+      "remaining": [
+        "Separately versioned pressure-consistent EOS audit and reviewed thermal-correction derivatives before a conservation/trajectory claim",
+        "Genuine split source-operator/production-stepper witness, or separately versioned semantics for the native immediately mixed response",
+        "Conservative endpoint-complete full-history grid/quadrature with native-weight conditioning and collision runtime budget; sampled short-window source passes are insufficient",
+        "Actual evolved-time cutoff/domain proof, complete accepted-step occupation/background/source exports and daughter-energy conservation history",
+        "Matched zero/small-source trajectories with independent domain, momentum and timestep refinements before weak/BBN handoff"
+      ],
+      "pretrajectory_order": [
+        "Separately versioned pressure-consistent EOS/thermal-correction audit",
+        "Genuine split source-operator witness or separately versioned contract",
+        "Conservative full-history grid/quadrature and runtime budget",
+        "Matched zero/small-source evolved trajectories"
+      ],
+      "next_test": "Resolve the pressure-consistent EOS, mixed-operator witness semantics and conservative full-history grid in that order; only then run matched zero/small-source trajectories."
     },
     {
       "id": "small-source-transport",
       "priority": 2,
-      "status": "not_started",
-      "requires": ["transport-capability"],
-      "gate": "Matched zero-source/small-source evolved spectra, source RHS and background; independently refined domain, momentum and timestep."
+      "status": "blocked_transport_adapter_requirements",
+      "requires": [
+        "transport-capability"
+      ],
+      "gate": "After pressure-consistent EOS, source-operator witness and conservative-grid gates, obtain matched zero-source/small-source evolved spectra, actual-time source RHS and full background; independently refine domain, momentum and timestep."
     },
     {
       "id": "six-process-rate-adapter",
       "priority": 3,
       "status": "not_started",
-      "requires": ["small-source-transport"],
+      "requires": [
+        "small-source-transport"
+      ],
       "gate": "Separately versioned six-process contract, direct occupation integration, threshold/domain splits, stable absolute rates and separate numerical check; corrected production rates before physics inference."
     },
     {
       "id": "nuclear-consumption",
       "priority": 4,
       "status": "not_started",
-      "requires": ["six-process-rate-adapter"],
+      "requires": [
+        "six-process-rate-adapter"
+      ],
       "gate": "Measured rates consumed by network; cache policy, consumption canaries, matched controls, raw evolution and conserved active baryon history."
     },
     {
       "id": "precision-and-frozen-pair",
       "priority": 5,
       "status": "not_started",
-      "requires": ["nuclear-consumption"],
+      "requires": [
+        "nuclear-consumption"
+      ],
       "gate": "Separate numerical/physical error budget smaller than any claimed contrast; complete returns, meaningful refinement and independent backend replication."
     },
     {
@@ -51,5 +83,7 @@
       "status": "blocked_model_unspecified",
       "gate": "Specified covariant model and conserved background/perturbations before testing expansion, growth, CMB and lensing likelihoods."
     }
-  ]
+  ],
+  "latest_scientific_record": "research/rounds/2026-10-02-source-adapter-preflight/README.md",
+  "updated_user_date": "2026-10-02"
 }

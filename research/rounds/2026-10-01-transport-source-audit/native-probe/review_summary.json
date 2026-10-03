@@ -1,0 +1,61 @@
+{
+  "cli_checks": {
+    "all_passed": true,
+    "checks": [
+      {
+        "name": "reject_optimized_flag",
+        "output_created": false,
+        "passed": true,
+        "returncode": 1
+      },
+      {
+        "name": "reject_optimized_environment",
+        "output_created": false,
+        "passed": true,
+        "returncode": 1
+      },
+      {
+        "name": "reject_invalid_even_grid",
+        "output_created": false,
+        "passed": true,
+        "returncode": 2
+      },
+      {
+        "name": "reject_missing_emission_grid",
+        "output_created": false,
+        "passed": true,
+        "returncode": 2
+      },
+      {
+        "name": "reject_existing_output",
+        "passed": true,
+        "returncode": 2
+      },
+      {
+        "name": "propagate_controlled_worker_failure",
+        "passed": true,
+        "scope": "orchestration harness only; no native physics call",
+        "worker_returncode": 7
+      }
+    ]
+  },
+  "corrected_native_muon_multiplicity": 0.8,
+  "emission_receipt": "/workspace/shared/dmde-native-probe/results-2026-10-01",
+  "external_equal_charge_pair_B_assumption": 0.4,
+  "final_wrapper_sha256": "362708741fb0d04a658f0aec5886a07ba1e0d983b6e26e222f996bebf07f27d2",
+  "final_wrapper_snapshot_identical": true,
+  "first_external_equal_charge_pair_B_assumption": 0.2,
+  "first_native_muon_multiplicity": 0.4,
+  "first_run_wrapper_provenance_gap": "No executed wrapper SHA or snapshot was captured for original emission run; final wrapper differs in metadata and CLI hardening.",
+  "native_source_head": "0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62",
+  "native_workers_failed": 0,
+  "native_workers_timed_out": 0,
+  "primary_rhs_receipt": "/workspace/shared/dmde-native-probe/results-2026-10-01-final-rhs",
+  "rhs_positive_count_minus_zero_count_off_delta_dtdx": -0.10907421719777943,
+  "rhs_positive_gate_delta_dtdx": 0.0,
+  "rhs_positive_gate_delta_dzdx": 0.00292066591560948,
+  "rhs_positive_gate_delta_max_abs_neutrinos": 2.1248871136108562e-11,
+  "rhs_zero_gate_vectors_bitwise_equal": true,
+  "scope": "Bounded actual native calls; no time integration, BBN, production transport, or thermal precision claim.",
+  "source_unchanged": true
+}

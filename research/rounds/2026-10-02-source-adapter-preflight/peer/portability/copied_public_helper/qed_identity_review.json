@@ -1,0 +1,419 @@
+{
+  "declaration": {
+    "finite_difference_relative_steps": [
+      0.001,
+      0.0005
+    ],
+    "finite_difference_rule": "five-point central, (-f(z+2h)+8f(z+h)-8f(z-h)+f(z-2h))/(12h)",
+    "native_QED_interval": [
+      0.01,
+      20.0
+    ],
+    "native_QED_n": [
+      81,
+      161,
+      321
+    ],
+    "native_derivative_replaced": false,
+    "production_stepper_or_trajectory": false,
+    "reference_Gauss_Legendre_n": [
+      240,
+      480
+    ],
+    "reference_u_interval": [
+      0.0,
+      80.0
+    ],
+    "source_constants_changed": false,
+    "states_x_z": [
+      [
+        0.1,
+        1.00003
+      ],
+      [
+        1.0,
+        1.1
+      ],
+      [
+        4.0,
+        1.4
+      ]
+    ]
+  },
+  "independent_reference_script_sha256": "106a8edd182ea2e2dfeadcd257a165f2e896ff1553b9456858a684fe40a7fadb",
+  "observations": [
+    {
+      "actual_derivative_complex_step": -0.006327973726650068,
+      "actual_derivative_finite_difference": {
+        "0.0005": -0.0063279737266504045,
+        "0.001": -0.006327973726649953
+      },
+      "expected_ratio_x2_over_z2": 0.00999940002699892,
+      "native_P2": -0.0015747745554039686,
+      "native_QED_n": 81,
+      "native_dP2dz": -0.01750522242039675,
+      "native_dP2dz_minus_actual": -0.011177248693746682,
+      "native_derivative_relative_to_actual_minus_one": 1.7663234988909706,
+      "native_rho2": -0.015930973021665393,
+      "native_rho2_minus_pressure_identity": -0.011177584011207494,
+      "native_rho3": 4.251177999815603e-06,
+      "native_rho3_over_pressure_identity": 0.009999400026998922,
+      "reference_components": {
+        "240": {
+          "pressure_qed2": -0.0015726850524360166,
+          "pressure_qed3": 0.00014145300799844808,
+          "rho_qed2": -0.004751289602178365,
+          "rho_qed3": 0.000425003539643566
+        },
+        "480": {
+          "pressure_qed2": -0.0015726850524363449,
+          "pressure_qed3": 0.00014145300799846242,
+          "rho_qed2": -0.004751289602178766,
+          "rho_qed3": 0.00042500353964358825
+        }
+      },
+      "same_grid_P3": 0.00014159599934092772,
+      "same_grid_pressure_identity_rho2": -0.004753389010457899,
+      "same_grid_pressure_identity_rho3": 0.0004251433074321651,
+      "x": 0.1,
+      "z": 1.00003
+    },
+    {
+      "actual_derivative_complex_step": -0.0064088226505164304,
+      "actual_derivative_finite_difference": {
+        "0.0005": -0.006408822650516441,
+        "0.001": -0.006408822650517295
+      },
+      "expected_ratio_x2_over_z2": 0.8264462809917354,
+      "native_P2": -0.0015268049067817687,
+      "native_QED_n": 81,
+      "native_dP2dz": -0.015683003586345223,
+      "native_dP2dz_minus_actual": -0.009274180935828793,
+      "native_derivative_relative_to_actual_minus_one": 1.447095892890946,
+      "native_rho2": -0.01572449903819798,
+      "native_rho2_minus_pressure_identity": -0.010201599029411673,
+      "native_rho3": 0.000478785904673871,
+      "native_rho3_over_pressure_identity": 0.8264462809917354,
+      "reference_components": {
+        "240": {
+          "pressure_qed2": -0.0015268008320511858,
+          "pressure_qed3": 0.00017269045241122152,
+          "rho_qed2": -0.005522909058036162,
+          "rho_qed3": 0.00058007908786813
+        },
+        "480": {
+          "pressure_qed2": -0.001526800832051198,
+          "pressure_qed3": 0.0001726904524111905,
+          "rho_qed2": -0.0055229090580362645,
+          "rho_qed3": 0.0005800790878680846
+        }
+      },
+      "same_grid_P3": 0.0001722683702369285,
+      "same_grid_pressure_identity_rho2": -0.005522900008786306,
+      "same_grid_pressure_identity_rho3": 0.0005793309446553839,
+      "x": 1.0,
+      "z": 1.1
+    },
+    {
+      "actual_derivative_complex_step": -0.003841570760821211,
+      "actual_derivative_finite_difference": {
+        "0.0005": -0.0038415707608205766,
+        "0.001": -0.003841570760822203
+      },
+      "expected_ratio_x2_over_z2": 8.16326530612245,
+      "native_P2": -0.0008277535482464122,
+      "native_QED_n": 81,
+      "native_dP2dz": -0.005645358886263115,
+      "native_dP2dz_minus_actual": -0.0018037881254419036,
+      "native_derivative_relative_to_actual_minus_one": 0.4695444227757264,
+      "native_rho2": -0.0070757488925219485,
+      "native_rho2_minus_pressure_identity": -0.002525303375618666,
+      "native_rho3": 0.00534759433342433,
+      "native_rho3_over_pressure_identity": 8.163265306122447,
+      "reference_components": {
+        "240": {
+          "pressure_qed2": -0.0008277998897933806,
+          "pressure_qed3": 0.00011665451060954394,
+          "rho_qed2": -0.0045512249650907,
+          "rho_qed3": 0.0006566638695976486
+        },
+        "480": {
+          "pressure_qed2": -0.0008277998897933979,
+          "pressure_qed3": 0.00011665451060951334,
+          "rho_qed2": -0.004551224965090811,
+          "rho_qed3": 0.0006566638695975134
+        }
+      },
+      "same_grid_P3": 0.00011632096071403661,
+      "same_grid_pressure_identity_rho2": -0.0045504455169032825,
+      "same_grid_pressure_identity_rho3": 0.0006550803058444804,
+      "x": 4.0,
+      "z": 1.4
+    },
+    {
+      "actual_derivative_complex_step": -0.0063247919923535385,
+      "actual_derivative_finite_difference": {
+        "0.0005": -0.006324791992354585,
+        "0.001": -0.006324791992353212
+      },
+      "expected_ratio_x2_over_z2": 0.00999940002699892,
+      "native_P2": -0.0015731882742131623,
+      "native_QED_n": 161,
+      "native_dP2dz": -0.01749264331798002,
+      "native_dP2dz_minus_actual": -0.01116785132562648,
+      "native_derivative_relative_to_actual_minus_one": 1.7657262624807326,
+      "native_rho2": -0.015919979823066397,
+      "native_rho2_minus_pressure_identity": -0.01116818636116625,
+      "native_rho3": 4.249520317652629e-06,
+      "native_rho3_over_pressure_identity": 0.00999940002699892,
+      "reference_components": {
+        "240": {
+          "pressure_qed2": -0.0015726850524360166,
+          "pressure_qed3": 0.00014145300799844808,
+          "rho_qed2": -0.004751289602178365,
+          "rho_qed3": 0.000425003539643566
+        },
+        "480": {
+          "pressure_qed2": -0.0015726850524363449,
+          "pressure_qed3": 0.00014145300799846242,
+          "rho_qed2": -0.004751289602178766,
+          "rho_qed3": 0.00042500353964358825
+        }
+      },
+      "same_grid_P3": 0.0001414305057415747,
+      "same_grid_pressure_identity_rho2": -0.004751793461900146,
+      "same_grid_pressure_identity_rho3": 0.0004249775292696256,
+      "x": 0.1,
+      "z": 1.00003
+    },
+    {
+      "actual_derivative_complex_step": -0.0064088128212657905,
+      "actual_derivative_finite_difference": {
+        "0.0005": -0.006408812821265608,
+        "0.001": -0.006408812821267169
+      },
+      "expected_ratio_x2_over_z2": 0.8264462809917354,
+      "native_P2": -0.0015268000655718488,
+      "native_QED_n": 161,
+      "native_dP2dz": -0.01568296719854262,
+      "native_dP2dz_minus_actual": -0.009274154377276828,
+      "native_derivative_relative_to_actual_minus_one": 1.447093968246854,
+      "native_rho2": -0.015724463852825034,
+      "native_rho2_minus_pressure_identity": -0.010201569815004512,
+      "native_rho3": 0.0004787855582337491,
+      "native_rho3_over_pressure_identity": 0.8264462809917354,
+      "reference_components": {
+        "240": {
+          "pressure_qed2": -0.0015268008320511858,
+          "pressure_qed3": 0.00017269045241122152,
+          "rho_qed2": -0.005522909058036162,
+          "rho_qed3": 0.00058007908786813
+        },
+        "480": {
+          "pressure_qed2": -0.001526800832051198,
+          "pressure_qed3": 0.0001726904524111905,
+          "rho_qed2": -0.0055229090580362645,
+          "rho_qed3": 0.0005800790878680846
+        }
+      },
+      "same_grid_P3": 0.00017226804070000616,
+      "same_grid_pressure_identity_rho2": -0.0055228940378205214,
+      "same_grid_pressure_identity_rho3": 0.0005793305254628365,
+      "x": 1.0,
+      "z": 1.1
+    },
+    {
+      "actual_derivative_complex_step": -0.003841570688784285,
+      "actual_derivative_finite_difference": {
+        "0.0005": -0.0038415706887838996,
+        "0.001": -0.0038415706887853
+      },
+      "expected_ratio_x2_over_z2": 8.16326530612245,
+      "native_P2": -0.000827753522830012,
+      "native_QED_n": 161,
+      "native_dP2dz": -0.005645358739287008,
+      "native_dP2dz_minus_actual": -0.0018037880505027228,
+      "native_derivative_relative_to_actual_minus_one": 0.46954441207316555,
+      "native_rho2": -0.007075748712171799,
+      "native_rho2_minus_pressure_identity": -0.0025253032707038114,
+      "native_rho3": 0.005347594299506799,
+      "native_rho3_over_pressure_identity": 8.163265306122454,
+      "reference_components": {
+        "240": {
+          "pressure_qed2": -0.0008277998897933806,
+          "pressure_qed3": 0.00011665451060954394,
+          "rho_qed2": -0.0045512249650907,
+          "rho_qed3": 0.0006566638695976486
+        },
+        "480": {
+          "pressure_qed2": -0.0008277998897933979,
+          "pressure_qed3": 0.00011665451060951334,
+          "rho_qed2": -0.004551224965090811,
+          "rho_qed3": 0.0006566638695975134
+        }
+      },
+      "same_grid_P3": 0.00011632095979875317,
+      "same_grid_pressure_identity_rho2": -0.004550445441467987,
+      "same_grid_pressure_identity_rho3": 0.0006550803016895825,
+      "x": 4.0,
+      "z": 1.4
+    },
+    {
+      "actual_derivative_complex_step": -0.00632385415111272,
+      "actual_derivative_finite_difference": {
+        "0.0005": -0.006323854151112755,
+        "0.001": -0.0063238541511125386
+      },
+      "expected_ratio_x2_over_z2": 0.00999940002699892,
+      "native_P2": -0.0015727207042134546,
+      "native_QED_n": 321,
+      "native_dP2dz": -0.01748893552598825,
+      "native_dP2dz_minus_actual": -0.01116508137487553,
+      "native_derivative_relative_to_actual_minus_one": 1.7655501072729463,
+      "native_rho2": -0.015916739489840574,
+      "native_rho2_minus_pressure_identity": -0.011165416327316775,
+      "native_rho3": 4.249154910903406e-06,
+      "native_rho3_over_pressure_identity": 0.009999400026998928,
+      "reference_components": {
+        "240": {
+          "pressure_qed2": -0.0015726850524360166,
+          "pressure_qed3": 0.00014145300799844808,
+          "rho_qed2": -0.004751289602178365,
+          "rho_qed3": 0.000425003539643566
+        },
+        "480": {
+          "pressure_qed2": -0.0015726850524363449,
+          "pressure_qed3": 0.00014145300799846242,
+          "rho_qed2": -0.004751289602178766,
+          "rho_qed3": 0.00042500353964358825
+        }
+      },
+      "same_grid_P3": 0.00014139402993517178,
+      "same_grid_pressure_identity_rho2": -0.004751323162523798,
+      "same_grid_pressure_identity_rho3": 0.00042494098640222965,
+      "x": 0.1,
+      "z": 1.00003
+    },
+    {
+      "actual_derivative_complex_step": -0.006408812424086037,
+      "actual_derivative_finite_difference": {
+        "0.0005": -0.006408812424086607,
+        "0.001": -0.006408812424087165
+      },
+      "expected_ratio_x2_over_z2": 0.8264462809917354,
+      "native_P2": -0.0015267998743624476,
+      "native_QED_n": 321,
+      "native_dP2dz": -0.015682965731853456,
+      "native_dP2dz_minus_actual": -0.00927415330776742,
+      "native_derivative_relative_to_actual_minus_one": 1.4470938910479987,
+      "native_rho2": -0.015724462430676357,
+      "native_rho2_minus_pressure_identity": -0.010201568638544163,
+      "native_rho3": 0.0004787855432590414,
+      "native_rho3_over_pressure_identity": 0.8264462809917354,
+      "reference_components": {
+        "240": {
+          "pressure_qed2": -0.0015268008320511858,
+          "pressure_qed3": 0.00017269045241122152,
+          "rho_qed2": -0.005522909058036162,
+          "rho_qed3": 0.00058007908786813
+        },
+        "480": {
+          "pressure_qed2": -0.001526800832051198,
+          "pressure_qed3": 0.0001726904524111905,
+          "rho_qed2": -0.0055229090580362645,
+          "rho_qed3": 0.0005800790878680846
+        }
+      },
+      "same_grid_P3": 0.00017226802724753048,
+      "same_grid_pressure_identity_rho2": -0.005522893792132193,
+      "same_grid_pressure_identity_rho3": 0.0005793305073434401,
+      "x": 1.0,
+      "z": 1.1
+    },
+    {
+      "actual_derivative_complex_step": -0.0038415706843345472,
+      "actual_derivative_finite_difference": {
+        "0.0005": -0.0038415706843338048,
+        "0.001": -0.003841570684335644
+      },
+      "expected_ratio_x2_over_z2": 8.16326530612245,
+      "native_P2": -0.0008277535212630962,
+      "native_QED_n": 321,
+      "native_dP2dz": -0.0056453587302114985,
+      "native_dP2dz_minus_actual": -0.0018037880458769513,
+      "native_derivative_relative_to_actual_minus_one": 0.46954441141290904,
+      "native_rho2": -0.007075748701033001,
+      "native_rho2_minus_pressure_identity": -0.002525303264227732,
+      "native_rho3": 0.005347594297415108,
+      "native_rho3_over_pressure_identity": 8.163265306122447,
+      "reference_components": {
+        "240": {
+          "pressure_qed2": -0.0008277998897933806,
+          "pressure_qed3": 0.00011665451060954394,
+          "rho_qed2": -0.0045512249650907,
+          "rho_qed3": 0.0006566638695976486
+        },
+        "480": {
+          "pressure_qed2": -0.0008277998897933979,
+          "pressure_qed3": 0.00011665451060951334,
+          "rho_qed2": -0.004551224965090811,
+          "rho_qed3": 0.0006566638695975134
+        }
+      },
+      "same_grid_P3": 0.00011632095974251003,
+      "same_grid_pressure_identity_rho2": -0.004550445436805269,
+      "same_grid_pressure_identity_rho3": 0.0006550803014333509,
+      "x": 4.0,
+      "z": 1.4
+    }
+  ],
+  "primary_reference": {
+    "equations": [
+      "2.51",
+      "2.53",
+      "2.54"
+    ],
+    "pdf_sha256": "b969a8fec0bce91fba69008fff1d2bbb936be073bf54cdaeccc9ba33ed2e7392",
+    "printed_page": 20,
+    "retrieval": "Successful curl --fail --location with TLS verification; unversioned arxiv PDF downloaded 2026-10-02, metadata creation 2022-11-03",
+    "url": "https://arxiv.org/pdf/2210.10307"
+  },
+  "runtime": {
+    "executable": "/workspace/shared/dmde-upstream/nudec-venv/bin/python",
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "scipy": "1.16.3"
+  },
+  "scope": "Local native QED callable/pressure identity; no trajectory or observational effect",
+  "script_sha256": "8336b8540af5c087e4be6eed93d51e41905f689f464e0c94322ad7303f37a710",
+  "source": "/workspace/shared/dmde-upstream/nudec",
+  "source_snapshot": {
+    "head": "0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62",
+    "porcelain": "",
+    "tracked_sha256": {
+      ".gitignore": "14933a2dcc3b89f009f3a1bc3e5720a6b45bc324eb2a73c73ec501b74bb2424c",
+      "BatchLauncher.py": "9fbedf0c17d3309e97acfc8e6a7e63ae6d39e74ce8b6d0de1854bb9a0d7515d2",
+      "Collision_term/Collision_term_diagonal.py": "a95c4b60a3dce826c84d9d3fc6b40685b26195fafc7d8097b384151703f664d7",
+      "Collision_term/D_function.py": "9794175598d1fa26f834a202b4d76f9c0f894882a2d5eeb24c2c5d98f8d65648",
+      "Constants.py": "0dac68fb57b1425aece579a859072b72f6b4533276e4baf01d5f7d9d85953807",
+      "Core.py": "a08dc41a892811ee053c10eae336e13edf773887097e34a6f16d90ef071d47e0",
+      "Distributions.py": "f14dfb1347ee741935bef5c5b00cbfee4d5fbaa169f1b999f5c61b2df9fafa27",
+      "GlobalParameters.py": "962453b5e9dcdbd15429636cd6a6941181136bdbf9bb69e09a0dcadf12f23a7c",
+      "HowToUse.md": "48a41e12d73e784f8ae4a452a4cc06f602b2966bbefad5b2e272d879361b37bd",
+      "LICENSE.txt": "605e9047a563c5c8396ffb18232aa4304ec56586aee537c45064c6fb425e44ad",
+      "LLP_parameters.py": "1473ada47c0e4f13ef686cffbd9afeeb3e1370a8622b8b4b6bf662d9318e244c",
+      "Momentum_Grid.py": "c05b77e72044b6efd525d94dc0e5c8a62bf49f9a3698a4c1ee25debfa3a68ec2",
+      "README.md": "95c9833ec7c85b1c01ebba899e3c7b6c0342ef4f8ba1df387a73e2e33528d1b8",
+      "SingleShot.py": "b2e3659579b993e1f7814fa5c90a5800f06a4e32b75f0837cf6878da1cad912e",
+      "System_Nudecoupling.py": "e285d33e4ab0f823593a850701be1f90a5ec12c3685834cac68372457ccbaad6",
+      "Thermodynamics/Thermal_QED_corrections.py": "16f38da386e9be0f777c0b53ecb8806d9619300fef56b7a7470e9243a4a888c6",
+      "Thermodynamics/Thermodynamics_ideal_gas.py": "e3797b88dd504970b4d0d9f66b68b4cce2f78c96fa68d1eb7c6d210b7010ddd7",
+      "decayProbabilities.csv": "383fd7cc74b3637534f80fa2f91fa37d4ef04ae0ca9d2829daad43ede0501356",
+      "parameters.csv": "6cc7f394552014dbb89de445eae327a1c1b0e3bd26b280dab8d316e2c4f23958",
+      "requirements.txt": "1dbc45c3897b98b55862bf987e1308c2f80bca02cecf02730a60e512d5c43ab7",
+      "scaleFactorTime.csv": "48d94b40a638d11a2a596e6668eedc24182aba74fa02d84c14d8d08b2909e778"
+    }
+  },
+  "source_unchanged": true,
+  "timestamp_utc": "2026-10-02T07:08:37.402612+00:00"
+}

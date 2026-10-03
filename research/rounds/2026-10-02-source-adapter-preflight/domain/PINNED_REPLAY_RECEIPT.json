@@ -1,0 +1,8 @@
+{
+  "status": "exact_numerical_replay_after_clean_pinned_guard",
+  "first_successful_scan": "results-phase-refinement-corrected",
+  "pinned_replay": "results-phase-pinned-replay",
+  "rows_identical": true,
+  "raw_phase_scan_npz_bytes_identical": true,
+  "checks": "explicit clean commit pin, unchanged source before/after, callback masses retained"
+}

@@ -1,0 +1,856 @@
+{
+  "scope": "continuous prescribed-source moment and zero-blocking static Born capture-proxy coverage only; no evolved occupations, transport solution, weak-rate solution, time-integrated yield, BBN or abundance prediction",
+  "source_contract": "massless charged-lepton Michel source shapes; w_e=12z^2(1-z), w_mu=2z^2(3-2z), 0<=z<=1; dN/dE=w(E/L)/L, L=m_mu/2; no renormalization after clipping",
+  "capture_proxy_contract": "electron-flavour source averaged against (E+Delta)*sqrt((E+Delta)^2-me^2) for nu_n; physical E>=Delta+me antinu_p branch with (E-Delta)*sqrt((E-Delta)^2-me^2); no blocking, recoil, radiative, finite-nucleon-mass or plasma corrections; not occupied-state rates",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.16.3"
+  },
+  "constants_MeV": {
+    "frozen_muon_mass": 105.6583755,
+    "frozen_electron_mass": 0.51099895,
+    "delta_np": 1.29333236,
+    "nudec_muon_mass": 105.7,
+    "nudec_electron_mass": 0.5109989
+  },
+  "reference_x_stop": 16.993868549367075,
+  "source_domain_arithmetic": {
+    "native_qmax_reference": 898.1259528340499,
+    "native_final_injection_limit_pmax_MeV": 27.006291865,
+    "native_endpoint_complete_qmax_reference": 1757.5888183595891,
+    "frozen_endpoint_complete_qmax_with_frozen_me_reference": 1756.8965106353612,
+    "native_clipping_onset_x_over_xstop": 0.5109989,
+    "frozen_clipping_onset_x_over_xstop_at_native_domain": 0.5112002098688333,
+    "time_dependence": "for fixed qmax, pmax(x)=qmax*me/x; x_stop snapshot is the x->x_stop^- limit because native injection uses x<x_stop; no t(x) integration is done"
+  },
+  "source_cases": {
+    "native_source_at_native_final_injection_domain": {
+      "physical_cutoff_MeV": 27.006291865,
+      "source_endpoint_MeV": 52.85,
+      "retained_endpoint_fraction": 0.5109989,
+      "flavours": {
+        "electron": {
+          "moments": [
+            {
+              "k": 0,
+              "full_moment_MeV_power_k": 1.0,
+              "retained_moment_MeV_power_k": 0.3291771085949018,
+              "retained_fraction": 0.3291771085949018,
+              "omitted_upper_tail_fraction": 0.6708228914050982
+            },
+            {
+              "k": 1,
+              "full_moment_MeV_power_k": 31.71,
+              "retained_moment_MeV_power_k": 6.39118191457127,
+              "retained_fraction": 0.20155099068342067,
+              "omitted_upper_tail_fraction": 0.7984490093165794
+            },
+            {
+              "k": 2,
+              "full_moment_MeV_power_k": 1117.249,
+              "retained_moment_MeV_power_k": 134.10337887157405,
+              "retained_fraction": 0.12002998335337427,
+              "omitted_upper_tail_fraction": 0.8799700166466258
+            },
+            {
+              "k": 3,
+              "full_moment_MeV_power_k": 42176.149750000004,
+              "retained_moment_MeV_power_k": 2954.076965917329,
+              "retained_fraction": 0.0700414092663195,
+              "omitted_upper_tail_fraction": 0.9299585907336805
+            },
+            {
+              "k": 4,
+              "full_moment_MeV_power_k": 1671757.135715625,
+              "retained_moment_MeV_power_k": 67271.42661837919,
+              "retained_fraction": 0.04023995183342374,
+              "omitted_upper_tail_fraction": 0.9597600481665762
+            },
+            {
+              "k": 5,
+              "full_moment_MeV_power_k": 68718505.81755506,
+              "retained_moment_MeV_power_k": 1569251.5491118825,
+              "retained_fraction": 0.022835938157301963,
+              "omitted_upper_tail_fraction": 0.977164061842698
+            }
+          ],
+          "conditional_mean_energy_MeV": 19.41563294559619,
+          "full_mean_energy_MeV": 31.71,
+          "conditional_mean_over_full_mean": 0.6122873839670826
+        },
+        "muon": {
+          "moments": [
+            {
+              "k": 0,
+              "full_moment_MeV_power_k": 1.0,
+              "retained_moment_MeV_power_k": 0.19868034906667056,
+              "retained_fraction": 0.19868034906667056,
+              "omitted_upper_tail_fraction": 0.8013196509333295
+            },
+            {
+              "k": 1,
+              "full_moment_MeV_power_k": 36.995,
+              "retained_moment_MeV_power_k": 3.932145325077016,
+              "retained_fraction": 0.1062885612941483,
+              "omitted_upper_tail_fraction": 0.8937114387058517
+            },
+            {
+              "k": 2,
+              "full_moment_MeV_power_k": 1489.6653333333334,
+              "retained_moment_MeV_power_k": 83.62802462829922,
+              "retained_fraction": 0.05613880027748909,
+              "omitted_upper_tail_fraction": 0.9438611997225109
+            },
+            {
+              "k": 3,
+              "full_moment_MeV_power_k": 63264.22462500001,
+              "retained_moment_MeV_power_k": 1860.7516368967113,
+              "retained_fraction": 0.029412383506260527,
+              "omitted_upper_tail_fraction": 0.9705876164937395
+            },
+            {
+              "k": 4,
+              "full_moment_MeV_power_k": 2786261.8928593756,
+              "retained_moment_MeV_power_k": 42703.04905841885,
+              "retained_fraction": 0.015326286867669587,
+              "omitted_upper_tail_fraction": 0.9846737131323304
+            },
+            {
+              "k": 5,
+              "full_moment_MeV_power_k": 125983927.33218428,
+              "retained_moment_MeV_power_k": 1002292.5440507267,
+              "retained_fraction": 0.007955717568701937,
+              "omitted_upper_tail_fraction": 0.992044282431298
+            }
+          ],
+          "conditional_mean_energy_MeV": 19.791314760361722,
+          "full_mean_energy_MeV": 36.995,
+          "conditional_mean_over_full_mean": 0.5349726925357946
+        }
+      }
+    },
+    "frozen_source_at_unmodified_native_final_injection_domain": {
+      "physical_cutoff_MeV": 27.006291865,
+      "source_endpoint_MeV": 52.82918775,
+      "retained_endpoint_fraction": 0.5112002098688333,
+      "flavours": {
+        "electron": {
+          "moments": [
+            {
+              "k": 0,
+              "full_moment_MeV_power_k": 1.0,
+              "retained_moment_MeV_power_k": 0.329485624631831,
+              "retained_fraction": 0.329485624631831,
+              "omitted_upper_tail_fraction": 0.670514375368169
+            },
+            {
+              "k": 1,
+              "full_moment_MeV_power_k": 31.69751265,
+              "retained_moment_MeV_power_k": 6.396995310509198,
+              "retained_fraction": 0.2018137947019385,
+              "omitted_upper_tail_fraction": 0.7981862052980615
+            },
+            {
+              "k": 2,
+              "full_moment_MeV_power_k": 1116.3692313299002,
+              "retained_moment_MeV_power_k": 134.2227046849044,
+              "retained_fraction": 0.12023146188381467,
+              "omitted_upper_tail_fraction": 0.8797685381161853
+            },
+            {
+              "k": 3,
+              "full_moment_MeV_power_k": 42126.34265732177,
+              "retained_moment_MeV_power_k": 2956.6615860092616,
+              "retained_fraction": 0.07018557509395795,
+              "omitted_upper_tail_fraction": 0.929814424906042
+            },
+            {
+              "k": 4,
+              "full_moment_MeV_power_k": 1669125.3490983644,
+              "retained_moment_MeV_power_k": 67329.50541190316,
+              "retained_fraction": 0.040338195958903575,
+              "omitted_upper_tail_fraction": 0.9596618040410965
+            },
+            {
+              "k": 5,
+              "full_moment_MeV_power_k": 68583306.1245125,
+              "retained_moment_MeV_power_k": 1570591.8048677882,
+              "retained_fraction": 0.022900497127047073,
+              "omitted_upper_tail_fraction": 0.9770995028729529
+            }
+          ],
+          "conditional_mean_energy_MeV": 19.41509684271426,
+          "full_mean_energy_MeV": 31.69751265,
+          "conditional_mean_over_full_mean": 0.6125116837113798
+        },
+        "muon": {
+          "moments": [
+            {
+              "k": 0,
+              "full_moment_MeV_power_k": 1.0,
+              "retained_moment_MeV_power_k": 0.1988883611841191,
+              "retained_fraction": 0.1988883611841191,
+              "omitted_upper_tail_fraction": 0.8011116388158809
+            },
+            {
+              "k": 1,
+              "full_moment_MeV_power_k": 36.980431425,
+              "retained_moment_MeV_power_k": 3.9362133821548606,
+              "retained_fraction": 0.10644043972655899,
+              "omitted_upper_tail_fraction": 0.893559560273441
+            },
+            {
+              "k": 2,
+              "full_moment_MeV_power_k": 1488.4923084398667,
+              "retained_moment_MeV_power_k": 83.71382420417643,
+              "retained_fraction": 0.056240683092221945,
+              "omitted_upper_tail_fraction": 0.943759316907778
+            },
+            {
+              "k": 3,
+              "full_moment_MeV_power_k": 63189.51398598266,
+              "retained_moment_MeV_power_k": 1862.6489651002091,
+              "retained_fraction": 0.02947718454542,
+              "omitted_upper_tail_fraction": 0.97052281545458
+            },
+            {
+              "k": 4,
+              "full_moment_MeV_power_k": 2781875.5818306073,
+              "retained_moment_MeV_power_k": 42746.385340008506,
+              "retained_fraction": 0.015366030608701536,
+              "omitted_upper_tail_fraction": 0.9846339693912984
+            },
+            {
+              "k": 5,
+              "full_moment_MeV_power_k": 125736061.22827293,
+              "retained_moment_MeV_power_k": 1003305.8771237168,
+              "retained_fraction": 0.00797946004768053,
+              "omitted_upper_tail_fraction": 0.9920205399523194
+            }
+          ],
+          "conditional_mean_energy_MeV": 19.79106951618424,
+          "full_mean_energy_MeV": 36.980431425,
+          "conditional_mean_over_full_mean": 0.5351768152386892
+        }
+      }
+    },
+    "frozen_source_at_mass_aligned_but_uncorrected_domain": {
+      "physical_cutoff_MeV": 26.995656828143478,
+      "source_endpoint_MeV": 52.82918775,
+      "retained_endpoint_fraction": 0.5109989,
+      "flavours": {
+        "electron": {
+          "moments": [
+            {
+              "k": 0,
+              "full_moment_MeV_power_k": 1.0,
+              "retained_moment_MeV_power_k": 0.3291771085949018,
+              "retained_fraction": 0.3291771085949018,
+              "omitted_upper_tail_fraction": 0.6708228914050982
+            },
+            {
+              "k": 1,
+              "full_moment_MeV_power_k": 31.69751265,
+              "retained_moment_MeV_power_k": 6.388665076807759,
+              "retained_fraction": 0.20155099068342067,
+              "omitted_upper_tail_fraction": 0.7984490093165794
+            },
+            {
+              "k": 2,
+              "full_moment_MeV_power_k": 1116.3692313299002,
+              "retained_moment_MeV_power_k": 133.99778025274716,
+              "retained_fraction": 0.12002998335337427,
+              "omitted_upper_tail_fraction": 0.8799700166466258
+            },
+            {
+              "k": 3,
+              "full_moment_MeV_power_k": 42126.34265732177,
+              "retained_moment_MeV_power_k": 2950.5884069546873,
+              "retained_fraction": 0.0700414092663195,
+              "omitted_upper_tail_fraction": 0.9299585907336805
+            },
+            {
+              "k": 4,
+              "full_moment_MeV_power_k": 1669125.3490983644,
+              "retained_moment_MeV_power_k": 67165.52365166477,
+              "retained_fraction": 0.04023995183342374,
+              "omitted_upper_tail_fraction": 0.9597600481665762
+            },
+            {
+              "k": 5,
+              "full_moment_MeV_power_k": 68583306.1245125,
+              "retained_moment_MeV_power_k": 1566164.1372826763,
+              "retained_fraction": 0.022835938157301963,
+              "omitted_upper_tail_fraction": 0.977164061842698
+            }
+          ],
+          "conditional_mean_energy_MeV": 19.407987098732008,
+          "full_mean_energy_MeV": 31.69751265,
+          "conditional_mean_over_full_mean": 0.6122873839670826
+        },
+        "muon": {
+          "moments": [
+            {
+              "k": 0,
+              "full_moment_MeV_power_k": 1.0,
+              "retained_moment_MeV_power_k": 0.19868034906667056,
+              "retained_fraction": 0.19868034906667056,
+              "omitted_upper_tail_fraction": 0.8013196509333295
+            },
+            {
+              "k": 1,
+              "full_moment_MeV_power_k": 36.980431425,
+              "retained_moment_MeV_power_k": 3.9305968522001606,
+              "retained_fraction": 0.1062885612941483,
+              "omitted_upper_tail_fraction": 0.8937114387058517
+            },
+            {
+              "k": 2,
+              "full_moment_MeV_power_k": 1488.4923084398667,
+              "retained_moment_MeV_power_k": 83.56217241808437,
+              "retained_fraction": 0.05613880027748909,
+              "omitted_upper_tail_fraction": 0.9438611997225109
+            },
+            {
+              "k": 3,
+              "full_moment_MeV_power_k": 63189.51398598266,
+              "retained_moment_MeV_power_k": 1858.5542189299354,
+              "retained_fraction": 0.029412383506260527,
+              "omitted_upper_tail_fraction": 0.9705876164937395
+            },
+            {
+              "k": 4,
+              "full_moment_MeV_power_k": 2781875.5818306073,
+              "retained_moment_MeV_power_k": 42635.82319730113,
+              "retained_fraction": 0.015326286867669587,
+              "omitted_upper_tail_fraction": 0.9846737131323304
+            },
+            {
+              "k": 5,
+              "full_moment_MeV_power_k": 125736061.22827293,
+              "retained_moment_MeV_power_k": 1000320.5913331534,
+              "retained_fraction": 0.007955717568701937,
+              "omitted_upper_tail_fraction": 0.992044282431298
+            }
+          ],
+          "conditional_mean_energy_MeV": 19.78352097056756,
+          "full_mean_energy_MeV": 36.980431425,
+          "conditional_mean_over_full_mean": 0.5349726925357946
+        }
+      }
+    },
+    "frozen_source_endpoint_complete_control": {
+      "physical_cutoff_MeV": 52.82918775,
+      "source_endpoint_MeV": 52.82918775,
+      "retained_endpoint_fraction": 1.0,
+      "flavours": {
+        "electron": {
+          "moments": [
+            {
+              "k": 0,
+              "full_moment_MeV_power_k": 1.0,
+              "retained_moment_MeV_power_k": 1.0,
+              "retained_fraction": 1.0,
+              "omitted_upper_tail_fraction": 0.0
+            },
+            {
+              "k": 1,
+              "full_moment_MeV_power_k": 31.69751265,
+              "retained_moment_MeV_power_k": 31.69751265,
+              "retained_fraction": 1.0,
+              "omitted_upper_tail_fraction": 0.0
+            },
+            {
+              "k": 2,
+              "full_moment_MeV_power_k": 1116.3692313299002,
+              "retained_moment_MeV_power_k": 1116.3692313299002,
+              "retained_fraction": 1.0,
+              "omitted_upper_tail_fraction": 0.0
+            },
+            {
+              "k": 3,
+              "full_moment_MeV_power_k": 42126.34265732177,
+              "retained_moment_MeV_power_k": 42126.34265732177,
+              "retained_fraction": 1.0,
+              "omitted_upper_tail_fraction": 0.0
+            },
+            {
+              "k": 4,
+              "full_moment_MeV_power_k": 1669125.3490983644,
+              "retained_moment_MeV_power_k": 1669125.3490983644,
+              "retained_fraction": 1.0,
+              "omitted_upper_tail_fraction": 0.0
+            },
+            {
+              "k": 5,
+              "full_moment_MeV_power_k": 68583306.1245125,
+              "retained_moment_MeV_power_k": 68583306.1245125,
+              "retained_fraction": 1.0,
+              "omitted_upper_tail_fraction": 0.0
+            }
+          ],
+          "conditional_mean_energy_MeV": 31.69751265,
+          "full_mean_energy_MeV": 31.69751265,
+          "conditional_mean_over_full_mean": 1.0
+        },
+        "muon": {
+          "moments": [
+            {
+              "k": 0,
+              "full_moment_MeV_power_k": 1.0,
+              "retained_moment_MeV_power_k": 1.0,
+              "retained_fraction": 1.0,
+              "omitted_upper_tail_fraction": 0.0
+            },
+            {
+              "k": 1,
+              "full_moment_MeV_power_k": 36.980431425,
+              "retained_moment_MeV_power_k": 36.980431425,
+              "retained_fraction": 1.0,
+              "omitted_upper_tail_fraction": 0.0
+            },
+            {
+              "k": 2,
+              "full_moment_MeV_power_k": 1488.4923084398667,
+              "retained_moment_MeV_power_k": 1488.4923084398667,
+              "retained_fraction": 1.0,
+              "omitted_upper_tail_fraction": 0.0
+            },
+            {
+              "k": 3,
+              "full_moment_MeV_power_k": 63189.51398598266,
+              "retained_moment_MeV_power_k": 63189.51398598266,
+              "retained_fraction": 1.0,
+              "omitted_upper_tail_fraction": 0.0
+            },
+            {
+              "k": 4,
+              "full_moment_MeV_power_k": 2781875.5818306073,
+              "retained_moment_MeV_power_k": 2781875.5818306073,
+              "retained_fraction": 1.0,
+              "omitted_upper_tail_fraction": 0.0
+            },
+            {
+              "k": 5,
+              "full_moment_MeV_power_k": 125736061.22827293,
+              "retained_moment_MeV_power_k": 125736061.22827293,
+              "retained_fraction": 1.0,
+              "omitted_upper_tail_fraction": 0.0
+            }
+          ],
+          "conditional_mean_energy_MeV": 36.980431425,
+          "full_mean_energy_MeV": 36.980431425,
+          "conditional_mean_over_full_mean": 1.0
+        }
+      }
+    }
+  },
+  "local_domain_snapshots_native_source": [
+    {
+      "x_over_xstop": 0.25,
+      "retained_fractions": {
+        "electron": {
+          "number": 1.0,
+          "energy": 1.0
+        },
+        "muon": {
+          "number": 1.0,
+          "energy": 1.0
+        }
+      }
+    },
+    {
+      "x_over_xstop": 0.5,
+      "retained_fractions": {
+        "electron": {
+          "number": 1.0,
+          "energy": 1.0
+        },
+        "muon": {
+          "number": 1.0,
+          "energy": 1.0
+        }
+      }
+    },
+    {
+      "x_over_xstop": 0.5109989,
+      "retained_fractions": {
+        "electron": {
+          "number": 1.0,
+          "energy": 1.0
+        },
+        "muon": {
+          "number": 1.0,
+          "energy": 1.0
+        }
+      }
+    },
+    {
+      "x_over_xstop": 0.75,
+      "retained_fractions": {
+        "electron": {
+          "number": 0.6186513044301329,
+          "energy": 0.49017785946757364
+        },
+        "muon": {
+          "number": 0.4170725591400077,
+          "energy": 0.2939749697406513
+        }
+      }
+    },
+    {
+      "x_over_xstop": 1.0,
+      "retained_fractions": {
+        "electron": {
+          "number": 0.3291771085949018,
+          "energy": 0.20155099068342067
+        },
+        "muon": {
+          "number": 0.19868034906667056,
+          "energy": 0.1062885612941483
+        }
+      }
+    }
+  ],
+  "frozen_capture_proxy_at_native_final_injection_domain": {
+    "nu_n": {
+      "neutrino_energy_ceiling_MeV": 27.006291865,
+      "full_proxy_MeV2": 1199.9022035564203,
+      "retained_proxy_MeV2": 151.27769255546556,
+      "retained_proxy_fraction": 0.12607501853658556,
+      "omitted_proxy_fraction": 0.8739249814634145
+    },
+    "antinu_p": {
+      "neutrino_energy_ceiling_MeV": 27.006291865,
+      "full_proxy_MeV2": 1035.9205157067797,
+      "retained_proxy_MeV2": 118.18391656134413,
+      "retained_proxy_fraction": 0.1140858924689898,
+      "omitted_proxy_fraction": 0.8859141075310102
+    }
+  },
+  "weak_quadrature_domain_diagnostic": {
+    "T_gamma_MeV": 0.1,
+    "electron_p_over_me_ceiling": 7.0,
+    "electron_momentum_ceiling_MeV": 3.5769926499999998,
+    "electron_energy_ceiling_MeV": 3.6133082272420554,
+    "mapping": "PRIMAT thermal weak quadrature uses dimensionless electron momentum pmax=max(7,30T_gamma/me); static nu_n E_nu=E_e-Delta, antinu_p E_antinu=E_e+Delta; these are integration-domain ceilings, not the last interior Gauss node",
+    "channel_specific_frozen_source_proxy_coverage": {
+      "nu_n": {
+        "neutrino_energy_ceiling_MeV": 2.3199758672420554,
+        "full_proxy_MeV2": 1199.9022035564203,
+        "retained_proxy_MeV2": 0.0030299063555071365,
+        "retained_proxy_fraction": 2.525127753350832e-06,
+        "omitted_proxy_fraction": 0.9999974748722467
+      },
+      "antinu_p": {
+        "neutrino_energy_ceiling_MeV": 4.906640587242055,
+        "full_proxy_MeV2": 1035.9205157067797,
+        "retained_proxy_MeV2": 0.019060477187580964,
+        "retained_proxy_fraction": 1.8399555659515566e-05,
+        "omitted_proxy_fraction": 0.9999816004443405
+      }
+    },
+    "channel_specific_frozen_source_number_energy_coverage": {
+      "nu_n": {
+        "physical_cutoff_MeV": 2.3199758672420554,
+        "source_endpoint_MeV": 52.82918775,
+        "retained_endpoint_fraction": 0.04391466092987688,
+        "flavours": {
+          "electron": {
+            "moments": [
+              {
+                "k": 0,
+                "full_moment_MeV_power_k": 1.0,
+                "retained_moment_MeV_power_k": 0.0003275999383511976,
+                "retained_fraction": 0.0003275999383511976,
+                "omitted_upper_tail_fraction": 0.9996724000616488
+              },
+              {
+                "k": 1,
+                "full_moment_MeV_power_k": 31.69751265,
+                "retained_moment_MeV_power_k": 0.0005687237291433687,
+                "retained_fraction": 1.7942219486530237e-05,
+                "omitted_upper_tail_fraction": 0.9999820577805135
+              },
+              {
+                "k": 2,
+                "full_moment_MeV_power_k": 1116.3692313299002,
+                "retained_moment_MeV_power_k": 0.0010539388789703203,
+                "retained_fraction": 9.44077326203976e-07,
+                "omitted_upper_tail_fraction": 0.9999990559226738
+              },
+              {
+                "k": 3,
+                "full_moment_MeV_power_k": 42126.34265732177,
+                "retained_moment_MeV_power_k": 0.002035382560767566,
+                "retained_fraction": 4.831614691368908e-08,
+                "omitted_upper_tail_fraction": 0.9999999516838531
+              },
+              {
+                "k": 4,
+                "full_moment_MeV_power_k": 1669125.3490983644,
+                "retained_moment_MeV_power_k": 0.004044163378668216,
+                "retained_fraction": 2.4229237072295438e-09,
+                "omitted_upper_tail_fraction": 0.9999999975770762
+              },
+              {
+                "k": 5,
+                "full_moment_MeV_power_k": 68583306.1245125,
+                "retained_moment_MeV_power_k": 0.008204358941867343,
+                "retained_fraction": 1.1962618026859756e-10,
+                "omitted_upper_tail_fraction": 0.9999999998803738
+              }
+            ],
+            "conditional_mean_energy_MeV": 1.7360312459328935,
+            "full_mean_energy_MeV": 31.69751265,
+            "conditional_mean_over_full_mean": 0.054768690057858324
+          },
+          "muon": {
+            "moments": [
+              {
+                "k": 0,
+                "full_moment_MeV_power_k": 1.0,
+                "retained_moment_MeV_power_k": 0.00016565952037248628,
+                "retained_fraction": 0.00016565952037248628,
+                "omitted_upper_tail_fraction": 0.9998343404796275
+              },
+              {
+                "k": 1,
+                "full_moment_MeV_power_k": 36.980431425,
+                "retained_moment_MeV_power_k": 0.0002878131556922283,
+                "retained_fraction": 7.78285013456217e-06,
+                "omitted_upper_tail_fraction": 0.9999922171498654
+              },
+              {
+                "k": 2,
+                "full_moment_MeV_power_k": 1488.4923084398667,
+                "retained_moment_MeV_power_k": 0.0005336418662439008,
+                "retained_fraction": 3.585116719905841e-07,
+                "omitted_upper_tail_fraction": 0.999999641488328
+              },
+              {
+                "k": 3,
+                "full_moment_MeV_power_k": 63189.51398598266,
+                "retained_moment_MeV_power_k": 0.0010309597395748277,
+                "retained_fraction": 1.6315361118357796e-08,
+                "omitted_upper_tail_fraction": 0.9999999836846388
+              },
+              {
+                "k": 4,
+                "full_moment_MeV_power_k": 2781875.5818306073,
+                "retained_moment_MeV_power_k": 0.0020490163813129784,
+                "retained_fraction": 7.365593179996309e-10,
+                "omitted_upper_tail_fraction": 0.9999999992634406
+              },
+              {
+                "k": 5,
+                "full_moment_MeV_power_k": 125736061.22827293,
+                "retained_moment_MeV_power_k": 0.004157724213495964,
+                "retained_fraction": 3.30670785523307e-11,
+                "omitted_upper_tail_fraction": 0.9999999999669329
+              }
+            ],
+            "conditional_mean_energy_MeV": 1.737377695197227,
+            "full_mean_energy_MeV": 36.980431425,
+            "conditional_mean_over_full_mean": 0.0469810012552396
+          }
+        }
+      },
+      "antinu_p": {
+        "physical_cutoff_MeV": 4.906640587242055,
+        "source_endpoint_MeV": 52.82918775,
+        "retained_endpoint_fraction": 0.0928774565011565,
+        "flavours": {
+          "electron": {
+            "moments": [
+              {
+                "k": 0,
+                "full_moment_MeV_power_k": 1.0,
+                "retained_moment_MeV_power_k": 0.0029814910926954596,
+                "retained_fraction": 0.0029814910926954596,
+                "omitted_upper_tail_fraction": 0.9970185089073046
+              },
+              {
+                "k": 1,
+                "full_moment_MeV_power_k": 31.69751265,
+                "retained_moment_MeV_power_k": 0.010917062180859322,
+                "retained_fraction": 0.00034441384412096205,
+                "omitted_upper_tail_fraction": 0.999655586155879
+              },
+              {
+                "k": 2,
+                "full_moment_MeV_power_k": 1116.3692313299002,
+                "retained_moment_MeV_power_k": 0.04270956264337198,
+                "retained_fraction": 3.825755981512787e-05,
+                "omitted_upper_tail_fraction": 0.9999617424401849
+              },
+              {
+                "k": 3,
+                "full_moment_MeV_power_k": 42126.34265732177,
+                "retained_moment_MeV_power_k": 0.17421515157803724,
+                "retained_fraction": 4.135539441322893e-06,
+                "omitted_upper_tail_fraction": 0.9999958644605587
+              },
+              {
+                "k": 4,
+                "full_moment_MeV_power_k": 1669125.3490983644,
+                "retained_moment_MeV_power_k": 0.7313749549854923,
+                "retained_fraction": 4.3817856782330323e-07,
+                "omitted_upper_tail_fraction": 0.9999995618214321
+              },
+              {
+                "k": 5,
+                "full_moment_MeV_power_k": 68583306.1245125,
+                "retained_moment_MeV_power_k": 3.135610975132525,
+                "retained_fraction": 4.571974074040476e-08,
+                "omitted_upper_tail_fraction": 0.9999999542802592
+              }
+            ],
+            "conditional_mean_energy_MeV": 3.6616115364576176,
+            "full_mean_energy_MeV": 31.69751265,
+            "conditional_mean_over_full_mean": 0.11551731446213706
+          },
+          "muon": {
+            "moments": [
+              {
+                "k": 0,
+                "full_moment_MeV_power_k": 1.0,
+                "retained_moment_MeV_power_k": 0.0015279513987071028,
+                "retained_fraction": 0.0015279513987071028,
+                "omitted_upper_tail_fraction": 0.9984720486012929
+              },
+              {
+                "k": 1,
+                "full_moment_MeV_power_k": 36.980431425,
+                "retained_moment_MeV_power_k": 0.00560457568664521,
+                "retained_fraction": 0.00015155517311937931,
+                "omitted_upper_tail_fraction": 0.9998484448268806
+              },
+              {
+                "k": 2,
+                "full_moment_MeV_power_k": 1488.4923084398667,
+                "retained_moment_MeV_power_k": 0.021951938274468143,
+                "retained_fraction": 1.4747767354926157e-05,
+                "omitted_upper_tail_fraction": 0.9999852522326451
+              },
+              {
+                "k": 3,
+                "full_moment_MeV_power_k": 63189.51398598266,
+                "retained_moment_MeV_power_k": 0.08961903396742552,
+                "retained_fraction": 1.418258003809077e-06,
+                "omitted_upper_tail_fraction": 0.9999985817419962
+              },
+              {
+                "k": 4,
+                "full_moment_MeV_power_k": 2781875.5818306073,
+                "retained_moment_MeV_power_k": 0.376469947295162,
+                "retained_fraction": 1.353295416063959e-07,
+                "omitted_upper_tail_fraction": 0.9999998646704584
+              },
+              {
+                "k": 5,
+                "full_moment_MeV_power_k": 125736061.22827293,
+                "retained_moment_MeV_power_k": 1.614832779978036,
+                "retained_fraction": 1.2843036152105309e-08,
+                "omitted_upper_tail_fraction": 0.9999999871569638
+              }
+            ],
+            "conditional_mean_energy_MeV": 3.6680326948799546,
+            "full_mean_energy_MeV": 36.980431425,
+            "conditional_mean_over_full_mean": 0.099188477622796
+          }
+        }
+      }
+    },
+    "interpretation": "coverage of a hypothetical full frozen source under these ceilings; no nonthermal PRIMAT adapter or rate evolution is executed"
+  },
+  "controls": {
+    "analytic_moments_vs_adaptive_quadrature_max_abs_error_relative_full": 3.7007434154171886e-16,
+    "zero_full_and_clamped_endpoint_controls_passed": true,
+    "monotonicity_control_passed": true,
+    "massless_zero_delta_proxy_vs_second_moment_max_abs_fraction_error": 1.3877787807814457e-17,
+    "antinu_proxy_below_and_at_threshold_values_MeV2": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "threshold_smoothed_GL64_GL128_vs_adaptive_max_abs_relerr": 3.419486915845482e-14,
+    "fixed_clipped_domain_refinement_negative_control": [
+      {
+        "n_points": 21,
+        "flavour": "electron",
+        "number_moment": 0.3291771085949018,
+        "error_relative_to_clipped_target": 0.0,
+        "error_relative_to_full_target": -0.6708228914050982
+      },
+      {
+        "n_points": 21,
+        "flavour": "muon",
+        "number_moment": 0.19868034906667054,
+        "error_relative_to_clipped_target": -1.1102230246251565e-16,
+        "error_relative_to_full_target": -0.8013196509333295
+      },
+      {
+        "n_points": 41,
+        "flavour": "electron",
+        "number_moment": 0.32917710859490174,
+        "error_relative_to_clipped_target": -2.220446049250313e-16,
+        "error_relative_to_full_target": -0.6708228914050982
+      },
+      {
+        "n_points": 41,
+        "flavour": "muon",
+        "number_moment": 0.19868034906667054,
+        "error_relative_to_clipped_target": -1.1102230246251565e-16,
+        "error_relative_to_full_target": -0.8013196509333295
+      },
+      {
+        "n_points": 81,
+        "flavour": "electron",
+        "number_moment": 0.3291771085949018,
+        "error_relative_to_clipped_target": 0.0,
+        "error_relative_to_full_target": -0.6708228914050982
+      },
+      {
+        "n_points": 81,
+        "flavour": "muon",
+        "number_moment": 0.19868034906667056,
+        "error_relative_to_clipped_target": 0.0,
+        "error_relative_to_full_target": -0.8013196509333295
+      },
+      {
+        "n_points": 161,
+        "flavour": "electron",
+        "number_moment": 0.3291771085949017,
+        "error_relative_to_clipped_target": -3.3306690738754696e-16,
+        "error_relative_to_full_target": -0.6708228914050983
+      },
+      {
+        "n_points": 161,
+        "flavour": "muon",
+        "number_moment": 0.19868034906667054,
+        "error_relative_to_clipped_target": -1.1102230246251565e-16,
+        "error_relative_to_full_target": -0.8013196509333295
+      }
+    ],
+    "renormalized_clipped_source_negative_control": {
+      "electron": {
+        "renormalized_number_moment": 1.0,
+        "renormalized_energy_over_full_energy": 0.6122873839670826
+      },
+      "muon": {
+        "renormalized_number_moment": 1.0,
+        "renormalized_energy_over_full_energy": 0.5349726925357946
+      }
+    },
+    "unphysical_squared_only_antinu_branch_negative_control_MeV2": -4.597358864998995e-06,
+    "all_assertions_passed": true
+  },
+  "provenance": {
+    "nudec": null,
+    "primat": null,
+    "executed_script_sha256": "09f2fe1b744b0314af8795b933af5a4b82fc6dca3b921f7c1776eb28ceb01734",
+    "upstream_modules_imported_or_executed": false
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "charge_histories_independently_evolved": false,
+  "classification": "independent_public_source_artifact_review",
+  "inputs_sha256": {
+    "predeclaration.json": "098ef98348cd9b128943103c1e5d71e88dcf377fb3b725f3c04af1b26d2ac01f",
+    "refinement_predeclaration.json": "5402a32f4c6b85244d20b89246dc1fe54857e1e3742e6d75380a1e7bbbc18bc9",
+    "results-first-declared/diagnostic_symmetric_arrays.npz": "7d5dc411bf9e5a1617c22ebdf0c608f1c64de98134bf83c75df0eb7f1dee4c77",
+    "results-phase-pinned-replay/raw_phase_scan.npz": "3f0579b5afdf6e7c9144885ba21c53bb50d1a23757cde4f411a58eb03656f2b1",
+    "results-phase-pinned-replay/results.json": "14484c94c8f8190071398dfc0152bbf201e4a4cdddacb1f359ee6577d8deb163",
+    "source_grid_diagnostic.py": "046f8f23ccd785111683ff91d43779f39a3b400109856386c4f2683865efd22e"
+  },
+  "phase_rows": [
+    {
+      "finite_domain_max_relative_quadrature_error": 0.0053915308835368325,
+      "finite_domain_omission_max_fraction": 3.6172865813810517e-09,
+      "full_target_max_relative_moment_error": 0.0053915308835368325,
+      "independently_replayed_rows": 1001,
+      "n": 3001,
+      "passes_declared_moment_gate_on_all_replayed_rows": false,
+      "recorded_vs_replayed_relative_moment_array_max_abs_error": 1.1102230246251565e-15,
+      "worst_flavor": "mu",
+      "worst_order": 5,
+      "worst_x": 0.10260000000000001
+    },
+    {
+      "finite_domain_max_relative_quadrature_error": 0.0039869488488955,
+      "finite_domain_omission_max_fraction": 3.6172865813810517e-09,
+      "full_target_max_relative_moment_error": 0.0039869488488955,
+      "independently_replayed_rows": 1001,
+      "n": 4001,
+      "passes_declared_moment_gate_on_all_replayed_rows": true,
+      "recorded_vs_replayed_relative_moment_array_max_abs_error": 1.1102230246251565e-15,
+      "worst_flavor": "mu",
+      "worst_order": 5,
+      "worst_x": 0.1027
+    },
+    {
+      "finite_domain_max_relative_quadrature_error": 0.0020297794477652786,
+      "finite_domain_omission_max_fraction": 3.6172865813810517e-09,
+      "full_target_max_relative_moment_error": 0.0020297794477652786,
+      "independently_replayed_rows": 1001,
+      "n": 8001,
+      "passes_declared_moment_gate_on_all_replayed_rows": true,
+      "recorded_vs_replayed_relative_moment_array_max_abs_error": 1.1102230246251565e-15,
+      "worst_flavor": "mu",
+      "worst_order": 5,
+      "worst_x": 0.10120000000000001
+    }
+  ],
+  "reference_module_sha256": "93c80a6106f37880a23cb8995bdc86ff2fb5b0b3de7a4a108222c7c697da2edb",
+  "reference_representation": "electron Beta(3,2), muon 2*Beta(3,1)-Beta(4,1); incomplete beta moments",
+  "review_script_sha256": "609b1027b4caf1d89cc68d4a0bdd8b03dd495068f08c8c3193de2cb3d54f8304",
+  "scope": "Producer source callback and native weights replayed; no collision execution, transport, production stepper, weak or nuclear evolution",
+  "snapshot_is_trajectory": false,
+  "source_callback_identity_peak_scaled_error_max": 6.9048457756830425e-15,
+  "synthetic_snapshot_source_beta_reference_peak_scaled_error": 9.657455996973192e-16,
+  "synthetic_snapshot_state_independent_comoving_entropy_peak_scaled_error": 5.038172861743471e-16
+}

@@ -1,0 +1,21 @@
+{
+  "files": {
+    "README.md": "43566efa164c3b3d2606f54fdc044cbea325adb070a413f93a451192ecbcb26a",
+    "portability/ARTIFACT_SHA256.json": "a33e1a346d52ba6949d7a5e056a172463c56270b0b43f81793d6dbb98a66a613",
+    "portability/README.md": "e1d67228c8cf2c4604a6fd9396aa18d79184d163736996b76293a785dfc93095",
+    "portability/cli_import_trace.stderr.txt": "c87aaeee6a1edbfee38e16fdc094d814976f5f343bfd39e60236ce44c856281f",
+    "portability/cli_stdout.json": "df717b0438eae5d48dae82a3453b8e20dde65d62d0365b67a9abb4c556fe000d",
+    "portability/copied_public_helper/COPYING": "605e9047a563c5c8396ffb18232aa4304ec56586aee537c45064c6fb425e44ad",
+    "portability/copied_public_helper/conservation_review.py": "106a8edd182ea2e2dfeadcd257a165f2e896ff1553b9456858a684fe40a7fadb",
+    "portability/copied_public_helper/qed_component_reference.py": "dd563ab9d0401e9855bde45fa7bf71030db1354898ef3f86971e173f7471b88b",
+    "portability/copied_public_helper/qed_identity_review.json": "166e9148ec2cdd15932b3c3a8df7d00e64730c800a2fea0e9fcfd4936aa146d1",
+    "portability/copied_public_helper/qed_identity_review.py": "8336b8540af5c087e4be6eed93d51e41905f689f464e0c94322ad7303f37a710",
+    "portability/portability_receipt.json": "800693ecb9b42f9603e2853c76c6a475b307ac14abb9a06cfc52e49d72436c87",
+    "portability/qed_component_reference_copied_replay.json": "ce76984eb928696b2940737a3096a8f6d6b26d3f1fafaee8ed7e0e4bd7122a6e",
+    "review_runtime_receipts.py": "83526392eb94cc418518bc8c7c906a09ada8c12ed56dcd38f14981d4cb2aae4f",
+    "reviewer-transcription-error/executed_review.py": "5d8746bcf6c09d95e0154237a524786df609624fce5487559537ecb6180d82d0",
+    "reviewer-transcription-error/runtime_peer_review.json": "fe624f0acfccb07523de23b612db61a8cf308a30d8c8858cc3867e4898d8ee91",
+    "runtime_peer_review.json": "1db93f746d7bc35f94a786358d4e0d5b3662cd10fac0af7a299f39ccdf9691d9"
+  },
+  "scope": "Independent component/runtime peer review; reviewer-transcription-error is failed reviewer evidence, not production; no raw primary PDF"
+}

@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/workspace/shared/dmde-native-probe/native_probe_final.py", line 352, in <module>
+    main()
+  File "/workspace/shared/dmde-native-probe/native_probe_final.py", line 322, in main
+    raise RuntimeError("Optimized Python execution is refused; unset PYTHONOPTIMIZE and omit -O/-OO")
+RuntimeError: Optimized Python execution is refused; unset PYTHONOPTIMIZE and omit -O/-OO

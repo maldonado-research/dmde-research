@@ -1,0 +1,200 @@
+{
+  "checks": {
+    "cli_exit_zero": true,
+    "component_replay_differs_from_original_only_in_timestamp": true,
+    "copied_dependencies_unchanged_after_run": true,
+    "copied_inputs_byte_identical": true,
+    "declaration_matches_original_component_run": true,
+    "helper_script_sha256_matches_cli_receipt": true,
+    "native_commit_expected": true,
+    "native_porcelain_empty": true,
+    "native_snapshot_matches_cli_receipt": true,
+    "native_snapshot_unchanged": true,
+    "negative_receipt_identity_script_hash_matches_copied_file": true,
+    "negative_receipt_reference_script_hash_matches_copied_file": true,
+    "negative_receipt_sha256_matches_cli_receipt": true,
+    "negative_receipt_source_snapshot_matches_current_native": true,
+    "negative_receipt_source_unchanged_true": true,
+    "no_raw_primary_pdf_copied": true,
+    "observations_exactly_match_original_component_run": true,
+    "original_public_tree_hashes_unchanged": true,
+    "primary_reference_matches_negative_receipt": true,
+    "runtime_matches_original_component_run": true
+  },
+  "command": [
+    "/workspace/shared/dmde-upstream/nudec-venv/bin/python",
+    "-B",
+    "-v",
+    "/workspace/shared/dmde-adapter-component-peer/portability/copied_public_helper/qed_component_reference.py",
+    "--source",
+    "/workspace/shared/dmde-upstream/nudec",
+    "--output",
+    "/workspace/shared/dmde-adapter-component-peer/portability/qed_component_reference_copied_replay.json"
+  ],
+  "comparison": {
+    "exact_observations_equal": true,
+    "full_receipt_equal_except_timestamp": true,
+    "ignored_metadata": [
+      "timestamp_utc"
+    ],
+    "observation_count": 9,
+    "same_runtime": true
+  },
+  "copied_directory": "/workspace/shared/dmde-adapter-component-peer/portability/copied_public_helper",
+  "copied_input_hashes": {
+    "COPYING": {
+      "copied_sha256": "605e9047a563c5c8396ffb18232aa4304ec56586aee537c45064c6fb425e44ad",
+      "original_sha256": "605e9047a563c5c8396ffb18232aa4304ec56586aee537c45064c6fb425e44ad"
+    },
+    "conservation_review.py": {
+      "copied_sha256": "106a8edd182ea2e2dfeadcd257a165f2e896ff1553b9456858a684fe40a7fadb",
+      "original_sha256": "106a8edd182ea2e2dfeadcd257a165f2e896ff1553b9456858a684fe40a7fadb"
+    },
+    "qed_component_reference.py": {
+      "copied_sha256": "dd563ab9d0401e9855bde45fa7bf71030db1354898ef3f86971e173f7471b88b",
+      "original_sha256": "dd563ab9d0401e9855bde45fa7bf71030db1354898ef3f86971e173f7471b88b"
+    },
+    "qed_identity_review.json": {
+      "copied_sha256": "166e9148ec2cdd15932b3c3a8df7d00e64730c800a2fea0e9fcfd4936aa146d1",
+      "original_sha256": "166e9148ec2cdd15932b3c3a8df7d00e64730c800a2fea0e9fcfd4936aa146d1"
+    },
+    "qed_identity_review.py": {
+      "copied_sha256": "8336b8540af5c087e4be6eed93d51e41905f689f464e0c94322ad7303f37a710",
+      "original_sha256": "8336b8540af5c087e4be6eed93d51e41905f689f464e0c94322ad7303f37a710"
+    }
+  },
+  "distribution_license_input": "COPYING",
+  "environment_overrides": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONPATH": ""
+  },
+  "execution_working_directory": "/tmp",
+  "exit_status": 0,
+  "external_dependencies": [
+    "Python 3.12.14",
+    "NumPy 2.3.5",
+    "SciPy 1.16.3",
+    "git executable",
+    "clean complete git checkout at pinned NuDec commit supplied by --source"
+  ],
+  "minimum_relative_runtime_inputs": [
+    "qed_component_reference.py",
+    "conservation_review.py",
+    "qed_identity_review.py",
+    "qed_identity_review.json"
+  ],
+  "native_source_snapshot_after": {
+    "head": "0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62",
+    "porcelain": "",
+    "tracked_sha256": {
+      ".gitignore": "14933a2dcc3b89f009f3a1bc3e5720a6b45bc324eb2a73c73ec501b74bb2424c",
+      "BatchLauncher.py": "9fbedf0c17d3309e97acfc8e6a7e63ae6d39e74ce8b6d0de1854bb9a0d7515d2",
+      "Collision_term/Collision_term_diagonal.py": "a95c4b60a3dce826c84d9d3fc6b40685b26195fafc7d8097b384151703f664d7",
+      "Collision_term/D_function.py": "9794175598d1fa26f834a202b4d76f9c0f894882a2d5eeb24c2c5d98f8d65648",
+      "Constants.py": "0dac68fb57b1425aece579a859072b72f6b4533276e4baf01d5f7d9d85953807",
+      "Core.py": "a08dc41a892811ee053c10eae336e13edf773887097e34a6f16d90ef071d47e0",
+      "Distributions.py": "f14dfb1347ee741935bef5c5b00cbfee4d5fbaa169f1b999f5c61b2df9fafa27",
+      "GlobalParameters.py": "962453b5e9dcdbd15429636cd6a6941181136bdbf9bb69e09a0dcadf12f23a7c",
+      "HowToUse.md": "48a41e12d73e784f8ae4a452a4cc06f602b2966bbefad5b2e272d879361b37bd",
+      "LICENSE.txt": "605e9047a563c5c8396ffb18232aa4304ec56586aee537c45064c6fb425e44ad",
+      "LLP_parameters.py": "1473ada47c0e4f13ef686cffbd9afeeb3e1370a8622b8b4b6bf662d9318e244c",
+      "Momentum_Grid.py": "c05b77e72044b6efd525d94dc0e5c8a62bf49f9a3698a4c1ee25debfa3a68ec2",
+      "README.md": "95c9833ec7c85b1c01ebba899e3c7b6c0342ef4f8ba1df387a73e2e33528d1b8",
+      "SingleShot.py": "b2e3659579b993e1f7814fa5c90a5800f06a4e32b75f0837cf6878da1cad912e",
+      "System_Nudecoupling.py": "e285d33e4ab0f823593a850701be1f90a5ec12c3685834cac68372457ccbaad6",
+      "Thermodynamics/Thermal_QED_corrections.py": "16f38da386e9be0f777c0b53ecb8806d9619300fef56b7a7470e9243a4a888c6",
+      "Thermodynamics/Thermodynamics_ideal_gas.py": "e3797b88dd504970b4d0d9f66b68b4cce2f78c96fa68d1eb7c6d210b7010ddd7",
+      "decayProbabilities.csv": "383fd7cc74b3637534f80fa2f91fa37d4ef04ae0ca9d2829daad43ede0501356",
+      "parameters.csv": "6cc7f394552014dbb89de445eae327a1c1b0e3bd26b280dab8d316e2c4f23958",
+      "requirements.txt": "1dbc45c3897b98b55862bf987e1308c2f80bca02cecf02730a60e512d5c43ab7",
+      "scaleFactorTime.csv": "48d94b40a638d11a2a596e6668eedc24182aba74fa02d84c14d8d08b2909e778"
+    }
+  },
+  "native_source_snapshot_before": {
+    "head": "0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62",
+    "porcelain": "",
+    "tracked_sha256": {
+      ".gitignore": "14933a2dcc3b89f009f3a1bc3e5720a6b45bc324eb2a73c73ec501b74bb2424c",
+      "BatchLauncher.py": "9fbedf0c17d3309e97acfc8e6a7e63ae6d39e74ce8b6d0de1854bb9a0d7515d2",
+      "Collision_term/Collision_term_diagonal.py": "a95c4b60a3dce826c84d9d3fc6b40685b26195fafc7d8097b384151703f664d7",
+      "Collision_term/D_function.py": "9794175598d1fa26f834a202b4d76f9c0f894882a2d5eeb24c2c5d98f8d65648",
+      "Constants.py": "0dac68fb57b1425aece579a859072b72f6b4533276e4baf01d5f7d9d85953807",
+      "Core.py": "a08dc41a892811ee053c10eae336e13edf773887097e34a6f16d90ef071d47e0",
+      "Distributions.py": "f14dfb1347ee741935bef5c5b00cbfee4d5fbaa169f1b999f5c61b2df9fafa27",
+      "GlobalParameters.py": "962453b5e9dcdbd15429636cd6a6941181136bdbf9bb69e09a0dcadf12f23a7c",
+      "HowToUse.md": "48a41e12d73e784f8ae4a452a4cc06f602b2966bbefad5b2e272d879361b37bd",
+      "LICENSE.txt": "605e9047a563c5c8396ffb18232aa4304ec56586aee537c45064c6fb425e44ad",
+      "LLP_parameters.py": "1473ada47c0e4f13ef686cffbd9afeeb3e1370a8622b8b4b6bf662d9318e244c",
+      "Momentum_Grid.py": "c05b77e72044b6efd525d94dc0e5c8a62bf49f9a3698a4c1ee25debfa3a68ec2",
+      "README.md": "95c9833ec7c85b1c01ebba899e3c7b6c0342ef4f8ba1df387a73e2e33528d1b8",
+      "SingleShot.py": "b2e3659579b993e1f7814fa5c90a5800f06a4e32b75f0837cf6878da1cad912e",
+      "System_Nudecoupling.py": "e285d33e4ab0f823593a850701be1f90a5ec12c3685834cac68372457ccbaad6",
+      "Thermodynamics/Thermal_QED_corrections.py": "16f38da386e9be0f777c0b53ecb8806d9619300fef56b7a7470e9243a4a888c6",
+      "Thermodynamics/Thermodynamics_ideal_gas.py": "e3797b88dd504970b4d0d9f66b68b4cce2f78c96fa68d1eb7c6d210b7010ddd7",
+      "decayProbabilities.csv": "383fd7cc74b3637534f80fa2f91fa37d4ef04ae0ca9d2829daad43ede0501356",
+      "parameters.csv": "6cc7f394552014dbb89de445eae327a1c1b0e3bd26b280dab8d316e2c4f23958",
+      "requirements.txt": "1dbc45c3897b98b55862bf987e1308c2f80bca02cecf02730a60e512d5c43ab7",
+      "scaleFactorTime.csv": "48d94b40a638d11a2a596e6668eedc24182aba74fa02d84c14d8d08b2909e778"
+    }
+  },
+  "not_needed_for_this_cli": [
+    "local_conservation_review.json",
+    "saved RHS fixtures",
+    "PRIMARY_REFERENCE.json",
+    "README.md",
+    "ARTIFACT_SHA256.json",
+    "raw primary-reference PDF or extracted PDF text"
+  ],
+  "original_component_receipt_sha256": "9f8dd57317d666abc06339590975cad33b2dd301315346b18ee1e0e18cee4c35",
+  "original_public_directory": "/workspace/shared/dmde-adapter-conservation",
+  "original_public_tree_sha256_after": {
+    "ARTIFACT_SHA256.json": "d317f501220db1eb437cc2e493872cb2c9866294857517deae30130e6fce8d59",
+    "COPYING": "605e9047a563c5c8396ffb18232aa4304ec56586aee537c45064c6fb425e44ad",
+    "PRIMARY_REFERENCE.json": "d36a9adcee55f1d207d2d8a8d44ab5f44ef31910b2bdbdc077d100d4eb897833",
+    "README.md": "41c04850c35e3463000ead90af6da1da02f6d9e2645e800e9e8c13b636a2647a",
+    "conservation_review.py": "106a8edd182ea2e2dfeadcd257a165f2e896ff1553b9456858a684fe40a7fadb",
+    "local_conservation_review.json": "0ebdddff27db65252766183754163912a4e546525ff290286389df5025e3a04a",
+    "qed_component_reference.json": "9f8dd57317d666abc06339590975cad33b2dd301315346b18ee1e0e18cee4c35",
+    "qed_component_reference.py": "dd563ab9d0401e9855bde45fa7bf71030db1354898ef3f86971e173f7471b88b",
+    "qed_identity_review.json": "166e9148ec2cdd15932b3c3a8df7d00e64730c800a2fea0e9fcfd4936aa146d1",
+    "qed_identity_review.py": "8336b8540af5c087e4be6eed93d51e41905f689f464e0c94322ad7303f37a710",
+    "thermodynamics/thermodynamics_derivation.md": "b277a236cf6f0ba0dfc1d3a6009301bb478def50c910db9ebec5cf14190bb62e"
+  },
+  "original_public_tree_sha256_before": {
+    "ARTIFACT_SHA256.json": "d317f501220db1eb437cc2e493872cb2c9866294857517deae30130e6fce8d59",
+    "COPYING": "605e9047a563c5c8396ffb18232aa4304ec56586aee537c45064c6fb425e44ad",
+    "PRIMARY_REFERENCE.json": "d36a9adcee55f1d207d2d8a8d44ab5f44ef31910b2bdbdc077d100d4eb897833",
+    "README.md": "41c04850c35e3463000ead90af6da1da02f6d9e2645e800e9e8c13b636a2647a",
+    "conservation_review.py": "106a8edd182ea2e2dfeadcd257a165f2e896ff1553b9456858a684fe40a7fadb",
+    "local_conservation_review.json": "0ebdddff27db65252766183754163912a4e546525ff290286389df5025e3a04a",
+    "qed_component_reference.json": "9f8dd57317d666abc06339590975cad33b2dd301315346b18ee1e0e18cee4c35",
+    "qed_component_reference.py": "dd563ab9d0401e9855bde45fa7bf71030db1354898ef3f86971e173f7471b88b",
+    "qed_identity_review.json": "166e9148ec2cdd15932b3c3a8df7d00e64730c800a2fea0e9fcfd4936aa146d1",
+    "qed_identity_review.py": "8336b8540af5c087e4be6eed93d51e41905f689f464e0c94322ad7303f37a710",
+    "thermodynamics/thermodynamics_derivation.md": "b277a236cf6f0ba0dfc1d3a6009301bb478def50c910db9ebec5cf14190bb62e"
+  },
+  "output_files_sha256": {
+    "cli_import_trace.stderr.txt": "c87aaeee6a1edbfee38e16fdc094d814976f5f343bfd39e60236ce44c856281f",
+    "cli_stdout.json": "df717b0438eae5d48dae82a3453b8e20dde65d62d0365b67a9abb4c556fe000d",
+    "qed_component_reference_copied_replay.json": "ce76984eb928696b2940737a3096a8f6d6b26d3f1fafaee8ed7e0e4bd7122a6e"
+  },
+  "receipt_limits": [
+    "CLI hashes its own helper and negative identity JSON, but not imported conservation_review.py or qed_identity_review.py; peer receipt hashes both copies.",
+    "CLI inherits primary-reference metadata from the copied negative JSON without reopening a raw PDF.",
+    "CLI sets in-memory grid defaults/refinements during execution; native files and imported function symbols are not patched.",
+    "Fresh standalone process import origins were observed in -v trace; an embedded run(args) would not exclude sys.modules reuse or namespace shadowing.",
+    "The component does not itself compare the negative receipt source/script hashes to current inputs; this peer receipt performs and records those comparisons.",
+    "native_symbols_modified=False is interpreted as native callable replacement absent; run does assign native grid globals as its declaration explicitly states, and hardcodes restoration to QED n=81 without try/finally.",
+    "Component snapshots source before output creation; peer replay uses external output and independently snapshots native source again after CLI exit.",
+    "Git porcelain/tracked hash snapshot excludes ignored-file cleanliness; PYTHONDONTWRITEBYTECODE=1 and -B suppressed replay bytecode writes."
+  ],
+  "scope": "Independent copied-location CLI portability replay; no source patch, tuning, full EOS, RHS, trajectory, BBN or observational validation",
+  "selected_import_origin_trace": [
+    "# code object from /workspace/shared/dmde-adapter-component-peer/portability/copied_public_helper/conservation_review.py",
+    "# code object from /workspace/shared/dmde-adapter-component-peer/portability/copied_public_helper/qed_identity_review.py",
+    "# code object from /workspace/shared/dmde-upstream/nudec/Constants.py",
+    "# code object from /workspace/shared/dmde-upstream/nudec/Momentum_Grid.py",
+    "# code object from /workspace/shared/dmde-upstream/nudec/Thermodynamics/Thermal_QED_corrections.py"
+  ],
+  "timestamp_utc": "2026-10-02T07:26:27.673800+00:00"
+}

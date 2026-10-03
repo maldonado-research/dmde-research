@@ -1,0 +1,97 @@
+{
+  "all_checks_passed": true,
+  "checks": [
+    {
+      "tag": "reject_O",
+      "command": [
+        "/workspace/shared/dmde-upstream/nudec-venv/bin/python",
+        "-B",
+        "-O",
+        "/workspace/shared/dmde-adapter-runtime/source_adapter_diagnostic.py",
+        "declare",
+        "--out",
+        "/workspace/shared/dmde-adapter-runtime/cli-checks/reject_O_output"
+      ],
+      "environment_override": {},
+      "returncode": 1,
+      "output_created": false,
+      "existing_evidence_preserved": true,
+      "passed": true
+    },
+    {
+      "tag": "reject_OO",
+      "command": [
+        "/workspace/shared/dmde-upstream/nudec-venv/bin/python",
+        "-B",
+        "-OO",
+        "/workspace/shared/dmde-adapter-runtime/source_adapter_diagnostic.py",
+        "declare",
+        "--out",
+        "/workspace/shared/dmde-adapter-runtime/cli-checks/reject_OO_output"
+      ],
+      "environment_override": {},
+      "returncode": 1,
+      "output_created": false,
+      "existing_evidence_preserved": true,
+      "passed": true
+    },
+    {
+      "tag": "reject_PYTHONOPTIMIZE",
+      "command": [
+        "/workspace/shared/dmde-upstream/nudec-venv/bin/python",
+        "-B",
+        "/workspace/shared/dmde-adapter-runtime/source_adapter_diagnostic.py",
+        "declare",
+        "--out",
+        "/workspace/shared/dmde-adapter-runtime/cli-checks/reject_env_output"
+      ],
+      "environment_override": {
+        "PYTHONOPTIMIZE": "1"
+      },
+      "returncode": 1,
+      "output_created": false,
+      "existing_evidence_preserved": true,
+      "passed": true
+    },
+    {
+      "tag": "reject_existing",
+      "command": [
+        "/workspace/shared/dmde-upstream/nudec-venv/bin/python",
+        "-B",
+        "/workspace/shared/dmde-adapter-runtime/source_adapter_diagnostic.py",
+        "declare",
+        "--out",
+        "/workspace/shared/dmde-adapter-runtime/results-serialization-fix"
+      ],
+      "environment_override": {},
+      "returncode": 2,
+      "output_created": true,
+      "existing_evidence_preserved": true,
+      "passed": true
+    },
+    {
+      "tag": "atomic_fresh_directory_race",
+      "command": [
+        "/workspace/shared/dmde-upstream/nudec-venv/bin/python",
+        "-B",
+        "/workspace/shared/dmde-adapter-runtime/source_adapter_diagnostic.py",
+        "declare",
+        "--out",
+        "/workspace/shared/dmde-adapter-runtime/cli-checks/atomic_fresh_output_race"
+      ],
+      "returncodes": [
+        1,
+        0
+      ],
+      "passed": true
+    },
+    {
+      "tag": "actual_first_run_serialization_failure_propagated",
+      "returncode": 1,
+      "error": "NumPy boolean JSON serialization; same scientific inputs retained",
+      "passed": true
+    }
+  ],
+  "wrapper_sha256": "5bb1ab652581ff07db3cca9ea3bce697b717253719df3ca711246f0ca0e9dd18",
+  "scope": "Optimization/fresh-output/actual failure-exit controls; no physics calculation"
+}

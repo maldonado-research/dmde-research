@@ -2,8 +2,12 @@
 
 [Readable project overview](https://maldonado-research.github.io/projects/dmde/) · [All research projects](https://maldonado-research.github.io/)
 
+[Project links and verified publication status](research/PUBLICATION_STATUS.md) distinguishes the current GitHub research checkpoints from the preserved Zenodo archive and records the repaired repository integration.
+
 
 **Dark matter–dark energy working hypothesis · v0.9.20 methods/software checkpoint**
+
+Latest reviewed GitHub research: [2 October 2026 source-adapter preflight](research/rounds/2026-10-02-source-adapter-preflight/README.md). The preserved Zenodo archive remains v0.9.20.
 
 Research by **Ricardo Maldonado**. This repository makes the published DMDE source specification and validation tools easier to inspect, cite, and reproduce.
 
@@ -40,7 +44,11 @@ The wider physical model, including its complete microscopic origin and connecti
 
 The [1 October 2026 numerical-control supplement](research/README.md) adds a six-process equilibrium diagnostic and fresh official PRIMAT Standard Model controls. It preserves v0.9.20 and supplies no injected-scenario cosmological predictions.
 
-[Recurring research protocol and numerical checks](research/CONTINUOUS_RESEARCH.md) defines bounded research rounds and a six-hour public maintenance workflow. The workflow requires default-branch activation; it does not launch an AI researcher.
+[Recurring research protocol and numerical checks](research/CONTINUOUS_RESEARCH.md) defines bounded research rounds and a six-hour public maintenance workflow, now registered on the default branch. A completed scheduled-event run has not yet been verified; the workflow does not launch an AI researcher.
+
+The [transport-source diagnostic round](research/rounds/2026-10-01-transport-source-audit/README.md) executes a candidate backend's native emitter and local collision-coupled RHS. It preserves momentum clipping, endpoint rounding and normalization corrections; it supplies no evolved injected spectra or cosmological predictions.
+
+The [2 October source-adapter preflight](research/rounds/2026-10-02-source-adapter-preflight/README.md) executes the exact source with explicit entropy/coordinate mapping and actual-time cutoff. Twelve fixed-state adapter checks pass, while dense source-grid tests, a mixed-source witness mismatch and two QED formula defects establish prerequisites before a physical evolution. Separately labeled pressure-consistent QED components and independent computational reviews are included; no new cosmological prediction or Zenodo version is claimed.
 
 1. [Public explanation in more basic terms](releases/v0.9.20/DMDE_v0920_README_IN_MORE_BASIC_TERMS.md).
 2. [Provider dispatch overview](provider/README_PROVIDER_DISPATCH.md).

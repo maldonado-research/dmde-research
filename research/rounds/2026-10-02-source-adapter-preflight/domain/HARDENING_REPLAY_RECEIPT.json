@@ -1,0 +1,24 @@
+{
+  "schema": "DMDE-source-grid-hardening-replay-v1",
+  "controls": {
+    "python_O_refused": true,
+    "PYTHONOPTIMIZE_1_refused": true,
+    "refusal_exit_status": 1,
+    "source_git_status_uses_untracked_files_all": true,
+    "explicit_clean_pinned_guard": true
+  },
+  "new_wrapper_hashes": {
+    "source_grid_diagnostic.py": "046f8f23ccd785111683ff91d43779f39a3b400109856386c4f2683865efd22e",
+    "source_grid_refinement.py": "ad155c7cb14a705c5e564b6358b3301f661e195e2872d2600645a78de14e4955"
+  },
+  "old_receipts_produced_new_wrapper_bytes": false,
+  "prior_executed_wrapper_snapshots_unchanged": true,
+  "emitter_moment_rows_exactly_replayed": true,
+  "symmetric_arrays_npz_bytes_exactly_replayed": true,
+  "phase_rows_exactly_replayed": true,
+  "phase_npz_bytes_exactly_replayed": true,
+  "outputs": [
+    "results-hardened-declared-replay",
+    "results-hardened-phase-replay"
+  ]
+}

@@ -1,0 +1,3 @@
+usage: source_adapter_diagnostic.py [-h] --out OUT [--source SOURCE]
+                                    {declare,run,worker}
+source_adapter_diagnostic.py: error: --out must be fresh; existing evidence will never be overwritten

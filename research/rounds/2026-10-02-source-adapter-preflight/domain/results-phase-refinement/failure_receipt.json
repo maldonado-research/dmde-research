@@ -1,0 +1,7 @@
+{
+  "status": "failed_after_source_computation_before_result_serialization",
+  "wrapper_sha256": "97c9844567dc489b53cf5d24adc2d8787337f693d9c948e99c395334cc02ec99",
+  "cause": "NumPy int64 worst_k was not converted to built-in int before JSON serialization",
+  "numerical_result_retained": false,
+  "fix": "explicit int conversion; fresh output directory preserves failed attempt"
+}

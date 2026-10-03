@@ -1,0 +1,110 @@
+{
+  "classification": "public_copy_reproduction_not_new_physics",
+  "native_jobs_completed": 11,
+  "source_unchanged": true,
+  "wrapper_snapshot_matches_published_wrapper": true,
+  "raw_file_comparisons": {
+    "emission_clipped_n65/source_samples.csv": {
+      "replay_sha256": "0222ccd3e39862d6c5092d7a5144bfadd368cf2964e2473fa6bf31ac1a379122",
+      "baseline_sha256": "0222ccd3e39862d6c5092d7a5144bfadd368cf2964e2473fa6bf31ac1a379122",
+      "byte_identical": true,
+      "baseline": "native-probe/results-2026-10-01/emission_clipped_n65/source_samples.csv"
+    },
+    "emission_clipped_n129/source_samples.csv": {
+      "replay_sha256": "4cc05128b6b3e69b21e2edc1afd440073918819c5c2b29b7b2346d25c2045550",
+      "baseline_sha256": "4cc05128b6b3e69b21e2edc1afd440073918819c5c2b29b7b2346d25c2045550",
+      "byte_identical": true,
+      "baseline": "native-probe/results-2026-10-01/emission_clipped_n129/source_samples.csv"
+    },
+    "emission_clipped_n257/source_samples.csv": {
+      "replay_sha256": "f8481e33be4925e6a3bfa81df5d64439ccb5f30d19589fb42484fa7e8780ef39",
+      "baseline_sha256": "f8481e33be4925e6a3bfa81df5d64439ccb5f30d19589fb42484fa7e8780ef39",
+      "byte_identical": true,
+      "baseline": "native-probe/results-2026-10-01/emission_clipped_n257/source_samples.csv"
+    },
+    "emission_clipped_n513/source_samples.csv": {
+      "replay_sha256": "a9e14aac1ade2ce4cf88262b3c22ecc6c62cd817c26fc58f4d9f3606c807918e",
+      "baseline_sha256": "a9e14aac1ade2ce4cf88262b3c22ecc6c62cd817c26fc58f4d9f3606c807918e",
+      "byte_identical": true,
+      "baseline": "native-probe/results-2026-10-01/emission_clipped_n513/source_samples.csv"
+    },
+    "emission_clipped_n1025/source_samples.csv": {
+      "replay_sha256": "d9cdce65fa8e0deec6e027e71d6a75d605c57a0f4681e7649f9ff497695c55c9",
+      "baseline_sha256": "d9cdce65fa8e0deec6e027e71d6a75d605c57a0f4681e7649f9ff497695c55c9",
+      "byte_identical": true,
+      "baseline": "native-probe/results-2026-10-01/emission_clipped_n1025/source_samples.csv"
+    },
+    "emission_complete_n65/source_samples.csv": {
+      "replay_sha256": "e8bd1e572deb557002a6bcc82f3bfc760736dac820608d1828c56242b90fea34",
+      "baseline_sha256": "e8bd1e572deb557002a6bcc82f3bfc760736dac820608d1828c56242b90fea34",
+      "byte_identical": true,
+      "baseline": "native-probe/results-2026-10-01/emission_complete_n65/source_samples.csv"
+    },
+    "emission_complete_n129/source_samples.csv": {
+      "replay_sha256": "eed5b3dc6356092cfad2098eba2d83c119d42c122ac64f4e941f5b67c465ec94",
+      "baseline_sha256": "eed5b3dc6356092cfad2098eba2d83c119d42c122ac64f4e941f5b67c465ec94",
+      "byte_identical": true,
+      "baseline": "native-probe/results-2026-10-01/emission_complete_n129/source_samples.csv"
+    },
+    "emission_complete_n257/source_samples.csv": {
+      "replay_sha256": "cc4b85f5789200b527dc6ed680549fce68ba6795fca9edfcfc12e52803f59a67",
+      "baseline_sha256": "cc4b85f5789200b527dc6ed680549fce68ba6795fca9edfcfc12e52803f59a67",
+      "byte_identical": true,
+      "baseline": "native-probe/results-2026-10-01/emission_complete_n257/source_samples.csv"
+    },
+    "emission_complete_n513/source_samples.csv": {
+      "replay_sha256": "5fc675948732246768a9224143cf32aaaf063563c7bd54757d9de8ab4955245f",
+      "baseline_sha256": "5fc675948732246768a9224143cf32aaaf063563c7bd54757d9de8ab4955245f",
+      "byte_identical": true,
+      "baseline": "native-probe/results-2026-10-01/emission_complete_n513/source_samples.csv"
+    },
+    "emission_complete_n1025/source_samples.csv": {
+      "replay_sha256": "d52109099215402c53e4d6b38b0423af96df486edd07e007b8d25aba45d0c79d",
+      "baseline_sha256": "d52109099215402c53e4d6b38b0423af96df486edd07e007b8d25aba45d0c79d",
+      "byte_identical": true,
+      "baseline": "native-probe/results-2026-10-01/emission_complete_n1025/source_samples.csv"
+    },
+    "rhs_n21/fixed_state.csv": {
+      "replay_sha256": "c527e490d7581cdf9444331b463b63a7edd078011eafaaf7f798e154e0cccb9c",
+      "baseline_sha256": "c527e490d7581cdf9444331b463b63a7edd078011eafaaf7f798e154e0cccb9c",
+      "byte_identical": true,
+      "baseline": "native-probe/results-2026-10-01-final-rhs/rhs_n21/fixed_state.csv"
+    },
+    "rhs_n21/rhs_zero_off.csv": {
+      "replay_sha256": "e2d1b28fceac12cb20df9d5d5a39a91ec25ad9c4b5ed143c75001590fba08a9e",
+      "baseline_sha256": "e2d1b28fceac12cb20df9d5d5a39a91ec25ad9c4b5ed143c75001590fba08a9e",
+      "byte_identical": true,
+      "baseline": "native-probe/results-2026-10-01-final-rhs/rhs_n21/rhs_zero_off.csv"
+    },
+    "rhs_n21/rhs_zero_on.csv": {
+      "replay_sha256": "e2d1b28fceac12cb20df9d5d5a39a91ec25ad9c4b5ed143c75001590fba08a9e",
+      "baseline_sha256": "e2d1b28fceac12cb20df9d5d5a39a91ec25ad9c4b5ed143c75001590fba08a9e",
+      "byte_identical": true,
+      "baseline": "native-probe/results-2026-10-01-final-rhs/rhs_n21/rhs_zero_on.csv"
+    },
+    "rhs_n21/rhs_positive_off.csv": {
+      "replay_sha256": "06cd54b708e0ad008f122d3d2cf5b8efc2874b5224373a5280c3b79dda4f9872",
+      "baseline_sha256": "06cd54b708e0ad008f122d3d2cf5b8efc2874b5224373a5280c3b79dda4f9872",
+      "byte_identical": true,
+      "baseline": "native-probe/results-2026-10-01-final-rhs/rhs_n21/rhs_positive_off.csv"
+    },
+    "rhs_n21/rhs_positive_on.csv": {
+      "replay_sha256": "f90f12f50b264927837490e2a0fe119176b31cdeaa98d8d016813bfa63428d23",
+      "baseline_sha256": "f90f12f50b264927837490e2a0fe119176b31cdeaa98d8d016813bfa63428d23",
+      "byte_identical": true,
+      "baseline": "native-probe/results-2026-10-01-final-rhs/rhs_n21/rhs_positive_on.csv"
+    },
+    "rhs_n21/delta_positive_on_minus_off.csv": {
+      "replay_sha256": "2f9cbcece883586fb9fb56c8564c9ef1d4a13172371e9f4dafa8fd8dff3dbeb5",
+      "baseline_sha256": "2f9cbcece883586fb9fb56c8564c9ef1d4a13172371e9f4dafa8fd8dff3dbeb5",
+      "byte_identical": true,
+      "baseline": "native-probe/results-2026-10-01-final-rhs/rhs_n21/delta_positive_on_minus_off.csv"
+    }
+  },
+  "scope": "Full declared emitter refinements and corrected local RHS replayed from the public-copy code; no time integration or weak/BBN solve. Raw replay numerical files exactly equal the retained baseline files named here.",
+  "initial_attempt": {
+    "status": "failed_before_native_execution",
+    "reason": "Native artifacts were not yet copied: initial manifest-copy handling expected a flat map instead of file_sha256 envelope; no diagnostic worker ran. Initial command output is preserved.",
+    "log": "initial-command.log"
+  }
+}

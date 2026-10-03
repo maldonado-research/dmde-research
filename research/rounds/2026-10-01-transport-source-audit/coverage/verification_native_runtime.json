@@ -1,0 +1,62 @@
+{
+  "controls_all_assertions_passed": true,
+  "default_json_matches_saved_receipt_except_runtime": true,
+  "default_stdout_matches_saved_receipt_byte_exact": false,
+  "default_and_repeat_replay_leave_dossier_unchanged": true,
+  "explicit_new_output_matches_current_execution_byte_exact": true,
+  "overwrite_rejection_exit_code": 2,
+  "rejected_output_unchanged": true,
+  "PYTHONOPTIMIZE_zero_replay_passed": true,
+  "optimization_refusals": [
+    {
+      "mode": "-O",
+      "exit_code": 2,
+      "stdout_empty": true,
+      "requested_output_absent": true
+    },
+    {
+      "mode": "-OO",
+      "exit_code": 2,
+      "stdout_empty": true,
+      "requested_output_absent": true
+    },
+    {
+      "mode": "environment_nonzero",
+      "exit_code": 2,
+      "stdout_empty": true,
+      "requested_output_absent": true
+    },
+    {
+      "mode": "runtime_environment_nonzero",
+      "exit_code": 2,
+      "stdout_empty": true,
+      "requested_output_absent": true
+    }
+  ],
+  "previous_scientific_receipt_comparison": {
+    "previous_receipt_sha256": "a227ade90447274aee82e6e493d0b013c837b82019ddd8ba622feeb5bfca3335",
+    "all_fields_except_executed_script_hash_unchanged": true
+  },
+  "input_artifact_sha256": {
+    "source_coverage.py": "09f2fe1b744b0314af8795b933af5a4b82fc6dca3b921f7c1776eb28ceb01734",
+    "source_coverage.json": "b83df3c52d6a085da8d38569bc279a007ef0e5e04ab5278370c25c09402953e5",
+    "README.md": "7bcf9b365a3bbc6db9f30aa10b4aeae8073725da8e911c4c8ea1c0abd9c43919",
+    "verify_coverage.py": "4b3b547a0a0f37a74c16635b08fc7f3d5e6bbdc11033ee4f407eecef351abb9f"
+  },
+  "baseline_runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "executed_runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.16.3"
+  },
+  "allowed_runtime_differences": {
+    "scipy": {
+      "baseline": "1.17.0",
+      "executed": "1.16.3"
+    }
+  }
+}

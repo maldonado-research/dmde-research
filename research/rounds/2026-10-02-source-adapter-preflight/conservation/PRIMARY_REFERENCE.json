@@ -1,0 +1,22 @@
+{
+  "arxiv": "2210.10307v2",
+  "authors": [
+    "Kensuke Akita",
+    "Masahide Yamaguchi"
+  ],
+  "equations": {
+    "2.51": "rho2=-P2+Tgamma*dP2/dTgamma",
+    "2.53": "P3=e^3*Tgamma*I^(3/2)/(12*pi^4); rho3=e^3*Tgamma^2*sqrt(I)*dI/dTgamma/(8*pi^4)",
+    "2.54": "I=integral dp (p^2+E_p^2)/E_p*N_F(p), N_F=2/(exp(E_p/Tgamma)+1)"
+  },
+  "first_page_version_date": "2 Nov 2022",
+  "original_negative_receipt_sha256": "166e9148ec2cdd15932b3c3a8df7d00e64730c800a2fea0e9fcfd4936aa146d1",
+  "pinned_citation_url": "https://arxiv.org/abs/2210.10307v2",
+  "pinned_pdf_url": "https://arxiv.org/pdf/2210.10307v2",
+  "printed_page": 20,
+  "retained_raw_location": "/tmp/dmde-qed-primary-reference; excluded from public review bundle",
+  "retrieved_pdf_sha256": "b969a8fec0bce91fba69008fff1d2bbb936be073bf54cdaeccc9ba33ed2e7392",
+  "retrieved_url": "https://arxiv.org/pdf/2210.10307",
+  "title": "A review of neutrino decoupling from the early universe to the current universe",
+  "version_evidence": "Extracted first page reads arXiv:2210.10307v2 [hep-ph] 2 Nov 2022"
+}

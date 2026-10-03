@@ -1,0 +1,132 @@
+{
+  "output": "/workspace/shared/dmde-adapter-component-peer/portability/qed_component_reference_copied_replay.json",
+  "source_unchanged": true,
+  "default_n81": [
+    {
+      "x": 0.1,
+      "z": 1.00003,
+      "native_QED_n": 81,
+      "corrected_component_reference": {
+        "P2_native": -0.0015747745554039686,
+        "dP2dz_pressure_consistent": -0.0063279737266500645,
+        "rho2_pressure_consistent": -0.004753389010457895,
+        "P3_paper": 0.00014159599934092772,
+        "rho3_pressure_consistent": 0.00042514330743216523
+      },
+      "native_components_preserved": {
+        "dP2dz": -0.01750522242039675,
+        "rho2": -0.015930973021665393,
+        "rho3": 4.251177999815603e-06
+      },
+      "native_minus_reference_rho2": -0.011177584011207498,
+      "native_minus_reference_rho3": -0.0004208921294323496,
+      "native_minus_reference_rho2_over_reference": 2.3514978442992525,
+      "native_minus_reference_rho3_over_reference": -0.990000599973001,
+      "native_minus_reference_rho2_over_photon": -0.016985852240163947,
+      "native_minus_reference_rho3_over_photon": -0.0006396025753344824,
+      "reference_dP2dz_minus_complex_step_actual_P2": 3.469446951953614e-18,
+      "rho2_reference_minus_complex_step_pressure_identity": 3.469446951953614e-18,
+      "rho3_reference_minus_complex_step_pressure_identity": 1.0842021724855044e-19,
+      "finite_difference_checks": [
+        {
+          "h_over_z": 0.001,
+          "dP2dz_five_point": -0.006327973726649953,
+          "rho2_reference_minus_finite_diff_pressure_identity": -1.1188966420050406e-16,
+          "dP3dz_five_point": 0.0005667223051039296,
+          "rho3_reference_minus_finite_diff_pressure_identity": 1.0191500421363742e-17
+        },
+        {
+          "h_over_z": 0.0005,
+          "dP2dz_five_point": -0.0063279737266504045,
+          "rho2_reference_minus_finite_diff_pressure_identity": 3.400058012914542e-16,
+          "dP3dz_five_point": 0.0005667223051039771,
+          "rho3_reference_minus_finite_diff_pressure_identity": -3.729655473350135e-17
+        }
+      ]
+    },
+    {
+      "x": 1.0,
+      "z": 1.1,
+      "native_QED_n": 81,
+      "corrected_component_reference": {
+        "P2_native": -0.0015268049067817687,
+        "dP2dz_pressure_consistent": -0.006408822650516431,
+        "rho2_pressure_consistent": -0.005522900008786306,
+        "P3_paper": 0.0001722683702369285,
+        "rho3_pressure_consistent": 0.000579330944655384
+      },
+      "native_components_preserved": {
+        "dP2dz": -0.015683003586345223,
+        "rho2": -0.01572449903819798,
+        "rho3": 0.000478785904673871
+      },
+      "native_minus_reference_rho2": -0.010201599029411673,
+      "native_minus_reference_rho3": -0.00010054503998151306,
+      "native_minus_reference_rho2_over_reference": 1.84714534269715,
+      "native_minus_reference_rho3_over_reference": -0.1735537190082647,
+      "native_minus_reference_rho2_over_photon": -0.01058983083844527,
+      "native_minus_reference_rho3_over_photon": -0.00010437137962188111,
+      "reference_dP2dz_minus_complex_step_actual_P2": -8.673617379884035e-19,
+      "rho2_reference_minus_complex_step_pressure_identity": 0.0,
+      "rho3_reference_minus_complex_step_pressure_identity": 1.0842021724855044e-19,
+      "finite_difference_checks": [
+        {
+          "h_over_z": 0.001,
+          "dP2dz_five_point": -0.006408822650517295,
+          "rho2_reference_minus_finite_diff_pressure_identity": 9.506284648352903e-16,
+          "dP3dz_five_point": 0.0006832721044476344,
+          "rho3_reference_minus_finite_diff_pressure_identity": -8.53267109746092e-17
+        },
+        {
+          "h_over_z": 0.0005,
+          "dP2dz_five_point": -0.006408822650516441,
+          "rho2_reference_minus_finite_diff_pressure_identity": 1.0408340855860843e-17,
+          "dP3dz_five_point": 0.0006832721044476263,
+          "rho3_reference_minus_finite_diff_pressure_identity": -7.643625316022806e-17
+        }
+      ]
+    },
+    {
+      "x": 4.0,
+      "z": 1.4,
+      "native_QED_n": 81,
+      "corrected_component_reference": {
+        "P2_native": -0.0008277535482464122,
+        "dP2dz_pressure_consistent": -0.00384157076082121,
+        "rho2_pressure_consistent": -0.004550445516903282,
+        "P3_paper": 0.00011632096071403661,
+        "rho3_pressure_consistent": 0.0006550803058444803
+      },
+      "native_components_preserved": {
+        "dP2dz": -0.005645358886263115,
+        "rho2": -0.0070757488925219485,
+        "rho3": 0.00534759433342433
+      },
+      "native_minus_reference_rho2": -0.002525303375618667,
+      "native_minus_reference_rho3": 0.004692514027579849,
+      "native_minus_reference_rho2_over_reference": 0.5549573918065969,
+      "native_minus_reference_rho3_over_reference": 7.163265306122449,
+      "native_minus_reference_rho2_over_photon": -0.0009990631263289038,
+      "native_minus_reference_rho3_over_photon": 0.00185645723994949,
+      "reference_dP2dz_minus_complex_step_actual_P2": 8.673617379884035e-19,
+      "rho2_reference_minus_complex_step_pressure_identity": 8.673617379884035e-19,
+      "rho3_reference_minus_complex_step_pressure_identity": -1.0842021724855044e-19,
+      "finite_difference_checks": [
+        {
+          "h_over_z": 0.001,
+          "dP2dz_five_point": -0.003841570760822203,
+          "rho2_reference_minus_finite_diff_pressure_identity": 1.3895135042574225e-15,
+          "dP3dz_five_point": 0.0005510009046853008,
+          "rho3_reference_minus_finite_diff_pressure_identity": -9.041161916356621e-16
+        },
+        {
+          "h_over_z": 0.0005,
+          "dP2dz_five_point": -0.0038415707608205766,
+          "rho2_reference_minus_finite_diff_pressure_identity": -8.873110579621368e-16,
+          "dP3dz_five_point": 0.0005510009046846392,
+          "rho3_reference_minus_finite_diff_pressure_identity": 2.200930410145574e-17
+        }
+      ]
+    }
+  ]
+}

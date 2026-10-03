@@ -1,0 +1,115 @@
+{
+  "all_six_refusals_passed": true,
+  "refusals": [
+    {
+      "command": [
+        "/workspace/shared/dmde-upstream/nudec-venv/bin/python",
+        "-B",
+        "-O",
+        "/workspace/shared/dmde-adapter-review/review_domain_artifacts.py",
+        "--upstream",
+        "/workspace/shared/dmde-upstream/nudec",
+        "--domain",
+        "/workspace/shared/dmde-adapter-domain",
+        "--output",
+        "/workspace/shared/dmde-adapter-review/optimized-guard-refusals/domain_flag_must_not_exist"
+      ],
+      "output_directory_created": false,
+      "passed": true,
+      "returncode": 1,
+      "script": "review_domain_artifacts.py",
+      "script_sha256": "681666c80679d3968e3ec2036bfb4cb5e6aec7a139149981780efd7f6d9585db",
+      "variant": "flag"
+    },
+    {
+      "command": [
+        "/workspace/shared/dmde-upstream/nudec-venv/bin/python",
+        "-B",
+        "/workspace/shared/dmde-adapter-review/review_domain_artifacts.py",
+        "--upstream",
+        "/workspace/shared/dmde-upstream/nudec",
+        "--domain",
+        "/workspace/shared/dmde-adapter-domain",
+        "--output",
+        "/workspace/shared/dmde-adapter-review/optimized-guard-refusals/domain_environment_must_not_exist"
+      ],
+      "output_directory_created": false,
+      "passed": true,
+      "returncode": 1,
+      "script": "review_domain_artifacts.py",
+      "script_sha256": "681666c80679d3968e3ec2036bfb4cb5e6aec7a139149981780efd7f6d9585db",
+      "variant": "environment"
+    },
+    {
+      "command": [
+        "/workspace/shared/dmde-upstream/nudec-venv/bin/python",
+        "-B",
+        "-O",
+        "/workspace/shared/dmde-adapter-review/review_runtime_artifacts.py",
+        "--runtime-results",
+        "/workspace/shared/dmde-adapter-runtime/results-serialization-fix",
+        "--output",
+        "/workspace/shared/dmde-adapter-review/optimized-guard-refusals/runtime_flag_must_not_exist"
+      ],
+      "output_directory_created": false,
+      "passed": true,
+      "returncode": 1,
+      "script": "review_runtime_artifacts.py",
+      "script_sha256": "6f22b4ec73796f81d3eb32e3a6a02e185cc606868d8fa36d7ac3ecfebd68f3eb",
+      "variant": "flag"
+    },
+    {
+      "command": [
+        "/workspace/shared/dmde-upstream/nudec-venv/bin/python",
+        "-B",
+        "/workspace/shared/dmde-adapter-review/review_runtime_artifacts.py",
+        "--runtime-results",
+        "/workspace/shared/dmde-adapter-runtime/results-serialization-fix",
+        "--output",
+        "/workspace/shared/dmde-adapter-review/optimized-guard-refusals/runtime_environment_must_not_exist"
+      ],
+      "output_directory_created": false,
+      "passed": true,
+      "returncode": 1,
+      "script": "review_runtime_artifacts.py",
+      "script_sha256": "6f22b4ec73796f81d3eb32e3a6a02e185cc606868d8fa36d7ac3ecfebd68f3eb",
+      "variant": "environment"
+    },
+    {
+      "command": [
+        "/workspace/shared/dmde-upstream/nudec-venv/bin/python",
+        "-B",
+        "-O",
+        "/workspace/shared/dmde-adapter-review/frozen_stepper_mixing_probe.py",
+        "--upstream",
+        "/workspace/shared/dmde-upstream/nudec",
+        "--output",
+        "/workspace/shared/dmde-adapter-review/optimized-guard-refusals/mixing_flag_must_not_exist"
+      ],
+      "output_directory_created": false,
+      "passed": true,
+      "returncode": 1,
+      "script": "frozen_stepper_mixing_probe.py",
+      "script_sha256": "ec2704872ddc6948aa1bdd043ccc05ba49cab2cb5c97770b1cfabd032b01a81a",
+      "variant": "flag"
+    },
+    {
+      "command": [
+        "/workspace/shared/dmde-upstream/nudec-venv/bin/python",
+        "-B",
+        "/workspace/shared/dmde-adapter-review/frozen_stepper_mixing_probe.py",
+        "--upstream",
+        "/workspace/shared/dmde-upstream/nudec",
+        "--output",
+        "/workspace/shared/dmde-adapter-review/optimized-guard-refusals/mixing_environment_must_not_exist"
+      ],
+      "output_directory_created": false,
+      "passed": true,
+      "returncode": 1,
+      "script": "frozen_stepper_mixing_probe.py",
+      "script_sha256": "ec2704872ddc6948aa1bdd043ccc05ba49cab2cb5c97770b1cfabd032b01a81a",
+      "variant": "environment"
+    }
+  ],
+  "scope": "optimization must be rejected before output creation; no native physics callable executed"
+}

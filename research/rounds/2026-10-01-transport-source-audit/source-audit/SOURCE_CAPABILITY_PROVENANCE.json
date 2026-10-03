@@ -1,0 +1,1026 @@
+{
+  "all_worktree_bytes_match_pinned_git_objects": true,
+  "commit": "0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62",
+  "commit_metadata": [
+    "0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62",
+    "2025-08-21T21:07:09+02:00",
+    "Fixed typo in the collision integral"
+  ],
+  "default_branch_observation": "Fetched origin/HEAD and origin/master equal the inspected commit. Other branches exist; no claim of unpublished-work absence.",
+  "execution_scope": {
+    "bbn_evolution_executed": false,
+    "blind_payloads_read": false,
+    "dependency_installation_verified": false,
+    "frozen_provider_modified": false,
+    "private_archive_read": false,
+    "scope_note": "Any native-emitter probe performed elsewhere is a separate artifact and does not change this source-inspection receipt.",
+    "source_callable_executed": false,
+    "transport_solve_executed": false,
+    "upstream_backend_code_executed": false,
+    "upstream_modified": false,
+    "upstream_modules_imported": false,
+    "weak_rates_computed": false
+  },
+  "fetched_remote_refs": [
+    "refs/remotes/origin/HEAD 0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62",
+    "refs/remotes/origin/master 0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62",
+    "refs/remotes/origin/temp-version 02888cf8f337c6acfb39cec3cd1cfbc0a71fa0d5"
+  ],
+  "immutable_citation_anchors": [
+    {
+      "finding": "native_constants",
+      "first_line": 8,
+      "immutable_url": "https://github.com/baugid/Nudec_LLP_Solver/blob/0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62/Constants.py#L8-L10",
+      "last_line": 10,
+      "path": "Constants.py"
+    },
+    {
+      "finding": "native_primary_multiplicity",
+      "first_line": 5,
+      "immutable_url": "https://github.com/baugid/Nudec_LLP_Solver/blob/0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62/LLP_parameters.py#L5-L9",
+      "last_line": 9,
+      "path": "LLP_parameters.py"
+    },
+    {
+      "finding": "batch_direct_neutrino_presence",
+      "first_line": 34,
+      "immutable_url": "https://github.com/baugid/Nudec_LLP_Solver/blob/0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62/BatchLauncher.py#L34-L44",
+      "last_line": 44,
+      "path": "BatchLauncher.py"
+    },
+    {
+      "finding": "prompt_decay_probability_default",
+      "first_line": 57,
+      "immutable_url": "https://github.com/baugid/Nudec_LLP_Solver/blob/0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62/Core.py#L57-L58",
+      "last_line": 58,
+      "path": "Core.py"
+    },
+    {
+      "finding": "domain_rule",
+      "first_line": 66,
+      "immutable_url": "https://github.com/baugid/Nudec_LLP_Solver/blob/0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62/Core.py#L66-L74",
+      "last_line": 74,
+      "path": "Core.py"
+    },
+    {
+      "finding": "reference_table_cutoff",
+      "first_line": 76,
+      "immutable_url": "https://github.com/baugid/Nudec_LLP_Solver/blob/0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62/Core.py#L76-L89",
+      "last_line": 89,
+      "path": "Core.py"
+    },
+    {
+      "finding": "start_state_and_comoving_density",
+      "first_line": 136,
+      "immutable_url": "https://github.com/baugid/Nudec_LLP_Solver/blob/0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62/Core.py#L136-L155",
+      "last_line": 155,
+      "path": "Core.py"
+    },
+    {
+      "finding": "full_solution_and_shipped_output",
+      "first_line": 172,
+      "immutable_url": "https://github.com/baugid/Nudec_LLP_Solver/blob/0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62/Core.py#L172-L209",
+      "last_line": 209,
+      "path": "Core.py"
+    },
+    {
+      "finding": "native_michel_emitter",
+      "first_line": 40,
+      "immutable_url": "https://github.com/baugid/Nudec_LLP_Solver/blob/0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62/Distributions.py#L40-L58",
+      "last_line": 58,
+      "path": "Distributions.py"
+    },
+    {
+      "finding": "uniform_momentum_grid",
+      "first_line": 72,
+      "immutable_url": "https://github.com/baugid/Nudec_LLP_Solver/blob/0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62/Momentum_Grid.py#L72-L90",
+      "last_line": 90,
+      "path": "Momentum_Grid.py"
+    },
+    {
+      "finding": "default_discretization",
+      "first_line": 5,
+      "immutable_url": "https://github.com/baugid/Nudec_LLP_Solver/blob/0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62/GlobalParameters.py#L5-L7",
+      "last_line": 7,
+      "path": "GlobalParameters.py"
+    },
+    {
+      "finding": "charge_symmetry",
+      "first_line": 76,
+      "immutable_url": "https://github.com/baugid/Nudec_LLP_Solver/blob/0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62/System_Nudecoupling.py#L76-L84",
+      "last_line": 84,
+      "path": "System_Nudecoupling.py"
+    },
+    {
+      "finding": "background_energy",
+      "first_line": 90,
+      "immutable_url": "https://github.com/baugid/Nudec_LLP_Solver/blob/0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62/System_Nudecoupling.py#L90-L108",
+      "last_line": 108,
+      "path": "System_Nudecoupling.py"
+    },
+    {
+      "finding": "native_source",
+      "first_line": 110,
+      "immutable_url": "https://github.com/baugid/Nudec_LLP_Solver/blob/0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62/System_Nudecoupling.py#L110-L120",
+      "last_line": 120,
+      "path": "System_Nudecoupling.py"
+    },
+    {
+      "finding": "injection_mixing_collision_order",
+      "first_line": 122,
+      "immutable_url": "https://github.com/baugid/Nudec_LLP_Solver/blob/0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62/System_Nudecoupling.py#L122-L143",
+      "last_line": 143,
+      "path": "System_Nudecoupling.py"
+    },
+    {
+      "finding": "temperature_energy_coupling",
+      "first_line": 145,
+      "immutable_url": "https://github.com/baugid/Nudec_LLP_Solver/blob/0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62/System_Nudecoupling.py#L145-L160",
+      "last_line": 160,
+      "path": "System_Nudecoupling.py"
+    },
+    {
+      "finding": "physical_time_rhs",
+      "first_line": 162,
+      "immutable_url": "https://github.com/baugid/Nudec_LLP_Solver/blob/0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62/System_Nudecoupling.py#L162-L164",
+      "last_line": 164,
+      "path": "System_Nudecoupling.py"
+    },
+    {
+      "finding": "six_species_energy",
+      "first_line": 11,
+      "immutable_url": "https://github.com/baugid/Nudec_LLP_Solver/blob/0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62/Thermodynamics/Thermodynamics_ideal_gas.py#L11-L20",
+      "last_line": 20,
+      "path": "Thermodynamics/Thermodynamics_ideal_gas.py"
+    },
+    {
+      "finding": "dependencies",
+      "first_line": 1,
+      "immutable_url": "https://github.com/baugid/Nudec_LLP_Solver/blob/0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62/requirements.txt#L1-L3",
+      "last_line": 3,
+      "path": "requirements.txt"
+    },
+    {
+      "finding": "gpl_license",
+      "first_line": 1,
+      "immutable_url": "https://github.com/baugid/Nudec_LLP_Solver/blob/0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62/LICENSE.txt#L1-L17",
+      "last_line": 17,
+      "path": "LICENSE.txt"
+    }
+  ],
+  "inspection_method": "Read-only text and immutable Git-blob inspection, SHA-256 hashing, and stdlib AST parsing. No upstream Python module imported or called.",
+  "observed_utc": "2026-10-02T05:52:46.080081+00:00",
+  "official_repository": "https://github.com/baugid/Nudec_LLP_Solver",
+  "prepared_with_ai_assistance": true,
+  "public_specification_files_read": [
+    {
+      "bytes": 3419,
+      "path": "provider/docs/DMDE_v0920_PUBLIC_BACKEND_INTEGRATION_AUDIT.md",
+      "sha256": "b6ed2b2bd43f11428a9ce79789b70388413bd8651a50edbd06e8e1ead491bcce"
+    },
+    {
+      "bytes": 2306,
+      "path": "provider/docs/DMDE_v0920_SPECTRAL_TO_BBN_BRIDGE_CONTRACT.md",
+      "sha256": "dcb27a141f6d2d6990a516df5177fddd7c8430ad2e91a6123ade4bba184e8fb4"
+    },
+    {
+      "bytes": 1461,
+      "path": "provider/docs/DMDE_v0920_NATIVE_ADAPTER_AND_DENSITY_MAPPING.md",
+      "sha256": "86d90759b2799f730c91f4dc852934fc1ed54de7b12fd9521a3cce1dbb00ac4e"
+    },
+    {
+      "bytes": 2048,
+      "path": "provider/docs/DMDE_v0920_ENDPOINT_DOMAIN_AND_KERNEL_GATE.md",
+      "sha256": "e99f62f75e89c86ec63a3cb44569d622ca381e3f45d48b9a3d1c6201312b943c"
+    },
+    {
+      "bytes": 3992,
+      "path": "provider/docs/DMDE_v0920_SOURCE_OPERATOR_CLOSURE_GATE.md",
+      "sha256": "55c2c59567b61680959161839335a8b777bb354a08eff86f5b53d840bf45df59"
+    },
+    {
+      "bytes": 3857,
+      "path": "provider/docs/DMDE_v0920_CAUSAL_CLOSURE_CONTRACT.md",
+      "sha256": "6e495ff27c54b299302c2cd0f948a0f8cc99dcc6aa76a0808bcec6468dd2d257"
+    },
+    {
+      "bytes": 1729,
+      "path": "provider/docs/DMDE_v0920_RAW_EVIDENCE_CONTRACT.md",
+      "sha256": "722780ed9d229d7351330e8b99a4be0fec5f64221b4083ccb03a59c2fc0e6fdb"
+    }
+  ],
+  "record_type": "public_upstream_source_capability_inspection",
+  "research_program": "Ricardo Maldonado, DMDE",
+  "source_derived_constants_arithmetic": {
+    "frozen_m_mu_MeV": 105.6583755,
+    "frozen_michel_endpoint_MeV": 52.82918775,
+    "native_m_e_MeV": 0.5109989,
+    "native_m_mu_MeV": 105.7,
+    "native_michel_endpoint_MeV": 52.85,
+    "native_upper_physical_momentum_at_x_stop_when_muon_domain_term_dominates_MeV": 27.006291865,
+    "note": "Arithmetic on inspected constants and public specification; no transport calculation."
+  },
+  "static_python_structure": [
+    {
+      "ast_parse": "passed_without_execution",
+      "functions": [],
+      "imports": [
+        {
+          "line": 8,
+          "modules": [
+            "os"
+          ]
+        },
+        {
+          "line": 9,
+          "modules": [
+            "sys"
+          ]
+        },
+        {
+          "line": 10,
+          "modules": [
+            "time"
+          ]
+        },
+        {
+          "line": 12,
+          "module": "Core",
+          "names": [
+            "Simulator"
+          ]
+        },
+        {
+          "line": 13,
+          "module": "GlobalParameters",
+          "names": [
+            "*"
+          ]
+        }
+      ],
+      "path": "BatchLauncher.py"
+    },
+    {
+      "ast_parse": "passed_without_execution",
+      "functions": [
+        {
+          "end_line": 175,
+          "name": "Collision_term_diagonal",
+          "start_line": 14
+        }
+      ],
+      "imports": [
+        {
+          "line": 6,
+          "modules": [
+            "numpy"
+          ]
+        },
+        {
+          "line": 7,
+          "module": "numba",
+          "names": [
+            "jit"
+          ]
+        },
+        {
+          "line": 8,
+          "module": "Collision_term.D_function",
+          "names": [
+            "D_function"
+          ]
+        },
+        {
+          "line": 9,
+          "module": "Constants",
+          "names": [
+            "*"
+          ]
+        },
+        {
+          "line": 10,
+          "modules": [
+            "Momentum_Grid"
+          ]
+        }
+      ],
+      "path": "Collision_term/Collision_term_diagonal.py"
+    },
+    {
+      "ast_parse": "passed_without_execution",
+      "functions": [
+        {
+          "end_line": 234,
+          "name": "D_function",
+          "start_line": 15
+        }
+      ],
+      "imports": [
+        {
+          "line": 4,
+          "module": "numba",
+          "names": [
+            "jit"
+          ]
+        },
+        {
+          "line": 5,
+          "module": "numba.core.errors",
+          "names": [
+            "NumbaDeprecationWarning"
+          ]
+        },
+        {
+          "line": 6,
+          "modules": [
+            "warnings"
+          ]
+        }
+      ],
+      "path": "Collision_term/D_function.py"
+    },
+    {
+      "ast_parse": "passed_without_execution",
+      "functions": [],
+      "imports": [
+        {
+          "line": 4,
+          "modules": [
+            "numpy"
+          ]
+        }
+      ],
+      "path": "Constants.py"
+    },
+    {
+      "ast_parse": "passed_without_execution",
+      "functions": [
+        {
+          "end_line": 31,
+          "name": "calcNeff",
+          "start_line": 17
+        },
+        {
+          "end_line": 64,
+          "name": "__init__",
+          "start_line": 39
+        },
+        {
+          "end_line": 74,
+          "name": "calcMaximalComoving",
+          "start_line": 66
+        },
+        {
+          "end_line": 89,
+          "name": "limitInjection",
+          "start_line": 76
+        },
+        {
+          "end_line": 100,
+          "name": "initializeSolver",
+          "start_line": 91
+        },
+        {
+          "end_line": 134,
+          "name": "loadDecayProbabilities",
+          "start_line": 102
+        },
+        {
+          "end_line": 155,
+          "name": "simulate",
+          "start_line": 136
+        },
+        {
+          "end_line": 162,
+          "name": "finalNeff",
+          "start_line": 157
+        },
+        {
+          "end_line": 170,
+          "name": "exportTimeScaleFactor",
+          "start_line": 164
+        },
+        {
+          "end_line": 177,
+          "name": "getSolution",
+          "start_line": 172
+        },
+        {
+          "end_line": 209,
+          "name": "exportResults",
+          "start_line": 179
+        },
+        {
+          "end_line": 132,
+          "name": "handler",
+          "start_line": 112
+        }
+      ],
+      "imports": [
+        {
+          "line": 5,
+          "modules": [
+            "os"
+          ]
+        },
+        {
+          "line": 7,
+          "modules": [
+            "numpy"
+          ]
+        },
+        {
+          "line": 8,
+          "module": "scipy.integrate",
+          "names": [
+            "solve_ivp"
+          ]
+        },
+        {
+          "line": 10,
+          "module": "GlobalParameters",
+          "names": [
+            "*"
+          ]
+        },
+        {
+          "line": 11,
+          "module": "Constants",
+          "names": [
+            "*"
+          ]
+        },
+        {
+          "line": 12,
+          "modules": [
+            "Momentum_Grid"
+          ]
+        },
+        {
+          "line": 13,
+          "module": "Distributions",
+          "names": [
+            "initDistributions"
+          ]
+        },
+        {
+          "line": 14,
+          "module": "System_Nudecoupling",
+          "names": [
+            "System_Nudec"
+          ]
+        }
+      ],
+      "path": "Core.py"
+    },
+    {
+      "ast_parse": "passed_without_execution",
+      "functions": [
+        {
+          "end_line": 37,
+          "name": "deltaDistribution",
+          "start_line": 17
+        },
+        {
+          "end_line": 58,
+          "name": "muonDistribution",
+          "start_line": 40
+        },
+        {
+          "end_line": 72,
+          "name": "pionDistribution",
+          "start_line": 64
+        },
+        {
+          "end_line": 83,
+          "name": "initDistributions",
+          "start_line": 74
+        },
+        {
+          "end_line": 35,
+          "name": "distribution",
+          "start_line": 27
+        }
+      ],
+      "imports": [
+        {
+          "line": 12,
+          "modules": [
+            "numpy"
+          ]
+        },
+        {
+          "line": 13,
+          "module": "Constants",
+          "names": [
+            "*"
+          ]
+        },
+        {
+          "line": 14,
+          "modules": [
+            "Momentum_Grid"
+          ]
+        }
+      ],
+      "path": "Distributions.py"
+    },
+    {
+      "ast_parse": "passed_without_execution",
+      "functions": [],
+      "imports": [],
+      "path": "GlobalParameters.py"
+    },
+    {
+      "ast_parse": "passed_without_execution",
+      "functions": [],
+      "imports": [],
+      "path": "LLP_parameters.py"
+    },
+    {
+      "ast_parse": "passed_without_execution",
+      "functions": [
+        {
+          "end_line": 25,
+          "name": "getIntegrationWeights",
+          "start_line": 8
+        },
+        {
+          "end_line": 45,
+          "name": "summedWeights",
+          "start_line": 28
+        },
+        {
+          "end_line": 64,
+          "name": "convertRegions",
+          "start_line": 48
+        },
+        {
+          "end_line": 97,
+          "name": "setupGrid",
+          "start_line": 72
+        }
+      ],
+      "imports": [
+        {
+          "line": 4,
+          "modules": [
+            "numpy"
+          ]
+        },
+        {
+          "line": 5,
+          "modules": [
+            "numpy.polynomial.polynomial"
+          ]
+        }
+      ],
+      "path": "Momentum_Grid.py"
+    },
+    {
+      "ast_parse": "passed_without_execution",
+      "functions": [],
+      "imports": [
+        {
+          "line": 7,
+          "modules": [
+            "time"
+          ]
+        },
+        {
+          "line": 9,
+          "modules": [
+            "Core"
+          ]
+        },
+        {
+          "line": 10,
+          "module": "LLP_parameters",
+          "names": [
+            "*"
+          ]
+        },
+        {
+          "line": 11,
+          "module": "GlobalParameters",
+          "names": [
+            "*"
+          ]
+        },
+        {
+          "line": 12,
+          "module": "Constants",
+          "names": [
+            "*"
+          ]
+        }
+      ],
+      "path": "SingleShot.py"
+    },
+    {
+      "ast_parse": "passed_without_execution",
+      "functions": [
+        {
+          "end_line": 42,
+          "name": "rotationMatrix",
+          "start_line": 18
+        },
+        {
+          "end_line": 65,
+          "name": "calcMixingMatrixes",
+          "start_line": 45
+        },
+        {
+          "end_line": 168,
+          "name": "System_Nudec",
+          "start_line": 72
+        }
+      ],
+      "imports": [
+        {
+          "line": 6,
+          "modules": [
+            "time"
+          ]
+        },
+        {
+          "line": 7,
+          "modules": [
+            "numpy"
+          ]
+        },
+        {
+          "line": 9,
+          "module": "Thermodynamics.Thermodynamics_ideal_gas",
+          "names": [
+            "*"
+          ]
+        },
+        {
+          "line": 10,
+          "module": "Thermodynamics.Thermal_QED_corrections",
+          "names": [
+            "*"
+          ]
+        },
+        {
+          "line": 11,
+          "module": "Collision_term.Collision_term_diagonal",
+          "names": [
+            "*"
+          ]
+        },
+        {
+          "line": 12,
+          "module": "Constants",
+          "names": [
+            "*"
+          ]
+        },
+        {
+          "line": 13,
+          "modules": [
+            "Momentum_Grid"
+          ]
+        },
+        {
+          "line": 14,
+          "modules": [
+            "Distributions"
+          ]
+        },
+        {
+          "line": 15,
+          "module": "GlobalParameters",
+          "names": [
+            "*"
+          ]
+        }
+      ],
+      "path": "System_Nudecoupling.py"
+    },
+    {
+      "ast_parse": "passed_without_execution",
+      "functions": [
+        {
+          "end_line": 17,
+          "name": "Thermal_QED_corrections_to_energy_density",
+          "start_line": 12
+        },
+        {
+          "end_line": 29,
+          "name": "P_2",
+          "start_line": 20
+        },
+        {
+          "end_line": 47,
+          "name": "dP_2dz",
+          "start_line": 32
+        },
+        {
+          "end_line": 58,
+          "name": "I",
+          "start_line": 50
+        },
+        {
+          "end_line": 69,
+          "name": "dIdz",
+          "start_line": 61
+        },
+        {
+          "end_line": 79,
+          "name": "Thermal_QED_corrections_to_me",
+          "start_line": 72
+        },
+        {
+          "end_line": 103,
+          "name": "Thermal_QED_corrections_to_z",
+          "start_line": 82
+        },
+        {
+          "end_line": 116,
+          "name": "K",
+          "start_line": 106
+        },
+        {
+          "end_line": 129,
+          "name": "J",
+          "start_line": 119
+        },
+        {
+          "end_line": 142,
+          "name": "Y",
+          "start_line": 132
+        },
+        {
+          "end_line": 155,
+          "name": "k",
+          "start_line": 145
+        },
+        {
+          "end_line": 168,
+          "name": "j",
+          "start_line": 158
+        },
+        {
+          "end_line": 184,
+          "name": "dKdw",
+          "start_line": 171
+        },
+        {
+          "end_line": 199,
+          "name": "dJdw",
+          "start_line": 187
+        },
+        {
+          "end_line": 214,
+          "name": "dYdw",
+          "start_line": 202
+        },
+        {
+          "end_line": 229,
+          "name": "djdw",
+          "start_line": 217
+        }
+      ],
+      "imports": [
+        {
+          "line": 5,
+          "modules": [
+            "numpy"
+          ]
+        },
+        {
+          "line": 6,
+          "module": "scipy",
+          "names": [
+            "integrate"
+          ]
+        },
+        {
+          "line": 7,
+          "module": "Constants",
+          "names": [
+            "*"
+          ]
+        },
+        {
+          "line": 8,
+          "modules": [
+            "Momentum_Grid"
+          ]
+        }
+      ],
+      "path": "Thermodynamics/Thermal_QED_corrections.py"
+    },
+    {
+      "ast_parse": "passed_without_execution",
+      "functions": [
+        {
+          "end_line": 22,
+          "name": "Energy_density_ideal_gas",
+          "start_line": 11
+        },
+        {
+          "end_line": 29,
+          "name": "Functions_in_z_ideal_gas",
+          "start_line": 25
+        },
+        {
+          "end_line": 41,
+          "name": "Functions_in_z_ideal_gas_mu_pi",
+          "start_line": 32
+        },
+        {
+          "end_line": 54,
+          "name": "J",
+          "start_line": 44
+        },
+        {
+          "end_line": 67,
+          "name": "Y",
+          "start_line": 57
+        },
+        {
+          "end_line": 81,
+          "name": "Jmu",
+          "start_line": 70
+        },
+        {
+          "end_line": 95,
+          "name": "Jpi",
+          "start_line": 84
+        },
+        {
+          "end_line": 109,
+          "name": "Ymu",
+          "start_line": 98
+        },
+        {
+          "end_line": 123,
+          "name": "Ypi",
+          "start_line": 112
+        }
+      ],
+      "imports": [
+        {
+          "line": 5,
+          "modules": [
+            "numpy"
+          ]
+        },
+        {
+          "line": 6,
+          "module": "scipy",
+          "names": [
+            "integrate"
+          ]
+        },
+        {
+          "line": 7,
+          "module": "Constants",
+          "names": [
+            "*"
+          ]
+        },
+        {
+          "line": 8,
+          "modules": [
+            "Momentum_Grid"
+          ]
+        }
+      ],
+      "path": "Thermodynamics/Thermodynamics_ideal_gas.py"
+    }
+  ],
+  "tracked_member_count": 21,
+  "upstream_tracked_files": [
+    {
+      "bytes": 92,
+      "immutable_url": "https://github.com/baugid/Nudec_LLP_Solver/blob/0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62/.gitignore",
+      "path": ".gitignore",
+      "sha256": "14933a2dcc3b89f009f3a1bc3e5720a6b45bc324eb2a73c73ec501b74bb2424c"
+    },
+    {
+      "bytes": 2994,
+      "immutable_url": "https://github.com/baugid/Nudec_LLP_Solver/blob/0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62/BatchLauncher.py",
+      "path": "BatchLauncher.py",
+      "sha256": "9fbedf0c17d3309e97acfc8e6a7e63ae6d39e74ce8b6d0de1854bb9a0d7515d2"
+    },
+    {
+      "bytes": 10037,
+      "immutable_url": "https://github.com/baugid/Nudec_LLP_Solver/blob/0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62/Collision_term/Collision_term_diagonal.py",
+      "path": "Collision_term/Collision_term_diagonal.py",
+      "sha256": "a95c4b60a3dce826c84d9d3fc6b40685b26195fafc7d8097b384151703f664d7"
+    },
+    {
+      "bytes": 13542,
+      "immutable_url": "https://github.com/baugid/Nudec_LLP_Solver/blob/0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62/Collision_term/D_function.py",
+      "path": "Collision_term/D_function.py",
+      "sha256": "9794175598d1fa26f834a202b4d76f9c0f894882a2d5eeb24c2c5d98f8d65648"
+    },
+    {
+      "bytes": 1839,
+      "immutable_url": "https://github.com/baugid/Nudec_LLP_Solver/blob/0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62/Constants.py",
+      "path": "Constants.py",
+      "sha256": "0dac68fb57b1425aece579a859072b72f6b4533276e4baf01d5f7d9d85953807"
+    },
+    {
+      "bytes": 8544,
+      "immutable_url": "https://github.com/baugid/Nudec_LLP_Solver/blob/0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62/Core.py",
+      "path": "Core.py",
+      "sha256": "a08dc41a892811ee053c10eae336e13edf773887097e34a6f16d90ef071d47e0"
+    },
+    {
+      "bytes": 3399,
+      "immutable_url": "https://github.com/baugid/Nudec_LLP_Solver/blob/0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62/Distributions.py",
+      "path": "Distributions.py",
+      "sha256": "f14dfb1347ee741935bef5c5b00cbfee4d5fbaa169f1b999f5c61b2df9fafa27"
+    },
+    {
+      "bytes": 1246,
+      "immutable_url": "https://github.com/baugid/Nudec_LLP_Solver/blob/0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62/GlobalParameters.py",
+      "path": "GlobalParameters.py",
+      "sha256": "962453b5e9dcdbd15429636cd6a6941181136bdbf9bb69e09a0dcadf12f23a7c"
+    },
+    {
+      "bytes": 4926,
+      "immutable_url": "https://github.com/baugid/Nudec_LLP_Solver/blob/0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62/HowToUse.md",
+      "path": "HowToUse.md",
+      "sha256": "48a41e12d73e784f8ae4a452a4cc06f602b2966bbefad5b2e272d879361b37bd"
+    },
+    {
+      "bytes": 35129,
+      "immutable_url": "https://github.com/baugid/Nudec_LLP_Solver/blob/0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62/LICENSE.txt",
+      "path": "LICENSE.txt",
+      "sha256": "605e9047a563c5c8396ffb18232aa4304ec56586aee537c45064c6fb425e44ad"
+    },
+    {
+      "bytes": 764,
+      "immutable_url": "https://github.com/baugid/Nudec_LLP_Solver/blob/0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62/LLP_parameters.py",
+      "path": "LLP_parameters.py",
+      "sha256": "1473ada47c0e4f13ef686cffbd9afeeb3e1370a8622b8b4b6bf662d9318e244c"
+    },
+    {
+      "bytes": 3570,
+      "immutable_url": "https://github.com/baugid/Nudec_LLP_Solver/blob/0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62/Momentum_Grid.py",
+      "path": "Momentum_Grid.py",
+      "sha256": "c05b77e72044b6efd525d94dc0e5c8a62bf49f9a3698a4c1ee25debfa3a68ec2"
+    },
+    {
+      "bytes": 1855,
+      "immutable_url": "https://github.com/baugid/Nudec_LLP_Solver/blob/0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62/README.md",
+      "path": "README.md",
+      "sha256": "95c9833ec7c85b1c01ebba899e3c7b6c0342ef4f8ba1df387a73e2e33528d1b8"
+    },
+    {
+      "bytes": 1272,
+      "immutable_url": "https://github.com/baugid/Nudec_LLP_Solver/blob/0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62/SingleShot.py",
+      "path": "SingleShot.py",
+      "sha256": "b2e3659579b993e1f7814fa5c90a5800f06a4e32b75f0837cf6878da1cad912e"
+    },
+    {
+      "bytes": 6487,
+      "immutable_url": "https://github.com/baugid/Nudec_LLP_Solver/blob/0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62/System_Nudecoupling.py",
+      "path": "System_Nudecoupling.py",
+      "sha256": "e285d33e4ab0f823593a850701be1f90a5ec12c3685834cac68372457ccbaad6"
+    },
+    {
+      "bytes": 7896,
+      "immutable_url": "https://github.com/baugid/Nudec_LLP_Solver/blob/0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62/Thermodynamics/Thermal_QED_corrections.py",
+      "path": "Thermodynamics/Thermal_QED_corrections.py",
+      "sha256": "16f38da386e9be0f777c0b53ecb8806d9619300fef56b7a7470e9243a4a888c6"
+    },
+    {
+      "bytes": 3700,
+      "immutable_url": "https://github.com/baugid/Nudec_LLP_Solver/blob/0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62/Thermodynamics/Thermodynamics_ideal_gas.py",
+      "path": "Thermodynamics/Thermodynamics_ideal_gas.py",
+      "sha256": "e3797b88dd504970b4d0d9f66b68b4cce2f78c96fa68d1eb7c6d210b7010ddd7"
+    },
+    {
+      "bytes": 28915,
+      "immutable_url": "https://github.com/baugid/Nudec_LLP_Solver/blob/0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62/decayProbabilities.csv",
+      "path": "decayProbabilities.csv",
+      "sha256": "383fd7cc74b3637534f80fa2f91fa37d4ef04ae0ca9d2829daad43ede0501356"
+    },
+    {
+      "bytes": 181,
+      "immutable_url": "https://github.com/baugid/Nudec_LLP_Solver/blob/0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62/parameters.csv",
+      "path": "parameters.csv",
+      "sha256": "6cc7f394552014dbb89de445eae327a1c1b0e3bd26b280dab8d316e2c4f23958"
+    },
+    {
+      "bytes": 18,
+      "immutable_url": "https://github.com/baugid/Nudec_LLP_Solver/blob/0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62/requirements.txt",
+      "path": "requirements.txt",
+      "sha256": "1dbc45c3897b98b55862bf987e1308c2f80bca02cecf02730a60e512d5c43ab7"
+    },
+    {
+      "bytes": 25000,
+      "immutable_url": "https://github.com/baugid/Nudec_LLP_Solver/blob/0a4b7a0e174c2320cc7e9549a51f22ccb9e40d62/scaleFactorTime.csv",
+      "path": "scaleFactorTime.csv",
+      "sha256": "48d94b40a638d11a2a596e6668eedc24182aba74fa02d84c14d8d08b2909e778"
+    }
+  ],
+  "working_tree_clean": true
+}

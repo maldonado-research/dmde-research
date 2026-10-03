@@ -1,0 +1,12 @@
+{
+  "executed_wrapper_sha256": "046f8f23ccd785111683ff91d43779f39a3b400109856386c4f2683865efd22e",
+  "predeclaration_sha256": "098ef98348cd9b128943103c1e5d71e88dcf377fb3b725f3c04af1b26d2ac01f",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "public_inputs": [
+    "/workspace/shared/dmde-adapter-domain/predeclaration.json",
+    "/workspace/shared/dmde-adapter-domain/source_grid_diagnostic.py"
+  ],
+  "private_inputs": false,
+  "scope": "single frozen-source callback, coordinate, canonical mapping and native-grid source moments only; no production RHS, collision JIT, stepper, transport trajectory, weak rates or nuclear evolution"
+}

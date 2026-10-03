@@ -1,0 +1,19 @@
+{
+  "uniform": {
+    "valid_triples": 6100,
+    "max_absolute_l_defect": 8.881784197001252e-16,
+    "nonzero_above_roundoff_count": 0,
+    "rms_l_defect": 2.8160886020132866e-16
+  },
+  "nonuniform_negative": {
+    "valid_triples": 5796,
+    "max_absolute_l_defect": 0.14388804564578495,
+    "nonzero_above_roundoff_count": 4951,
+    "rms_l_defect": 0.062466270912689206
+  },
+  "custom_weight_negative": {
+    "changed_single_node_factor": 1.1,
+    "change_in_measure_sum_relative": 0.0033333333333334103,
+    "collision_product_measure_changed": true
+  }
+}

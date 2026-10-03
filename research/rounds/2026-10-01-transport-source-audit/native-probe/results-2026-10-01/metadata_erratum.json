@@ -1,0 +1,8 @@
+{
+  "affected_field": "branching_scope",
+  "affected_file": "rhs_n21/result.json",
+  "correction": "The native branch0.4 is an externally predeclared fixture input. SingleShot passes its llp_muonBranching input unchanged, and LLP_parameters.py describes it as average primary muons. No native0.8-to0.4 conversion occurs; multiplicity0.8 is an external label, not a validated mapping.",
+  "numerical_effect": "None: recorded native branch input was0.4 throughout.",
+  "original_text": "Primary muon multiplicity0.8 maps to native branch0.4 following SingleShot/Core interface.",
+  "preservation": "The raw result metadata is preserved; native_probe.py wording was corrected after execution."
+}

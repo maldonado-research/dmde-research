@@ -1,0 +1,11 @@
+{
+  "python": "3.12.14",
+  "package_versions": {
+    "numpy": "2.3.5",
+    "scipy": "1.16.3",
+    "numba": "0.63.1",
+    "llvmlite": "0.46.0"
+  },
+  "collision_jit_execution": false,
+  "native_transport_execution": false
+}

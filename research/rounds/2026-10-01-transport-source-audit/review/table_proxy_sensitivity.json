@@ -1,0 +1,201 @@
+{
+  "classification": "reference_table_proxy_quadrature_and_interpolation_sensitivity_only",
+  "scope": "fixed native upper code coordinate, continuum Michel source, public table x(t); upper-domain omitted injected source moments only, no lower-grid cutoff or subsequent redshifting, no transport, evolved spectra, rate or abundance result",
+  "x_stop_policy": "fixed to native Core piecewise-linear table x(18tau) for every comparison",
+  "reference_stop_t_s": 749.5007109380424,
+  "reference_stop_x": 16.993868549367075,
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.16.3"
+  },
+  "cases": {
+    "e_k0": {
+      "piecewise_linear": {
+        "panel_GL16": 0.00045900435103259074,
+        "panel_adaptive_quad": 0.0004590043510325907,
+        "quad_internal_abs_error_sum": 5.095971989195104e-18,
+        "abs_GL_quad_difference": 5.421010862427522e-20
+      },
+      "PCHIP": {
+        "panel_GL16": 0.00045901181336401866,
+        "panel_adaptive_quad": 0.0004590118133640185,
+        "quad_internal_abs_error_sum": 5.096074200548765e-18,
+        "abs_GL_quad_difference": 1.6263032587282567e-19
+      },
+      "uniform_time_resolution": [
+        {
+          "n_times": 5001,
+          "uniform_Simpson_loss": 0.00045900435372084114
+        },
+        {
+          "n_times": 10001,
+          "uniform_Simpson_loss": 0.00045900435089253605
+        },
+        {
+          "n_times": 20001,
+          "uniform_Simpson_loss": 0.0004590043510664738
+        }
+      ],
+      "abs_PCHIP_linear_difference": 7.462331427809422e-09,
+      "PCHIP_comparison_interpretation": "Interpolation sensitivity, not a production-history uncertainty bound."
+    },
+    "e_k1": {
+      "piecewise_linear": {
+        "panel_GL16": 0.00068082355370283,
+        "panel_adaptive_quad": 0.0006808235537028304,
+        "quad_internal_abs_error_sum": 7.55865985028004e-18,
+        "abs_GL_quad_difference": 4.336808689942018e-19
+      },
+      "PCHIP": {
+        "panel_GL16": 0.0006808346202063168,
+        "panel_adaptive_quad": 0.0006808346202063168,
+        "quad_internal_abs_error_sum": 7.558782713149768e-18,
+        "abs_GL_quad_difference": 0.0
+      },
+      "uniform_time_resolution": [
+        {
+          "n_times": 5001,
+          "uniform_Simpson_loss": 0.0006808235580400581
+        },
+        {
+          "n_times": 10001,
+          "uniform_Simpson_loss": 0.0006808235534504528
+        },
+        {
+          "n_times": 20001,
+          "uniform_Simpson_loss": 0.0006808235537507109
+        }
+      ],
+      "abs_PCHIP_linear_difference": 1.1066503486376403e-08,
+      "PCHIP_comparison_interpretation": "Interpolation sensitivity, not a production-history uncertainty bound."
+    },
+    "e_k5": {
+      "piecewise_linear": {
+        "panel_GL16": 0.0016151388871346866,
+        "panel_adaptive_quad": 0.0016151388871346868,
+        "quad_internal_abs_error_sum": 1.7931643804643818e-17,
+        "abs_GL_quad_difference": 2.168404344971009e-19
+      },
+      "PCHIP": {
+        "panel_GL16": 0.0016151651238315488,
+        "panel_adaptive_quad": 0.0016151651238315492,
+        "quad_internal_abs_error_sum": 1.7931935090493263e-17,
+        "abs_GL_quad_difference": 4.336808689942018e-19
+      },
+      "uniform_time_resolution": [
+        {
+          "n_times": 5001,
+          "uniform_Simpson_loss": 0.0016151389002604531
+        },
+        {
+          "n_times": 10001,
+          "uniform_Simpson_loss": 0.0016151388860702822
+        },
+        {
+          "n_times": 20001,
+          "uniform_Simpson_loss": 0.0016151388872573307
+        }
+      ],
+      "abs_PCHIP_linear_difference": 2.6236696862389636e-08,
+      "PCHIP_comparison_interpretation": "Interpolation sensitivity, not a production-history uncertainty bound."
+    },
+    "mu_k0": {
+      "piecewise_linear": {
+        "panel_GL16": 0.0013794090973537625,
+        "panel_adaptive_quad": 0.0013794090973537627,
+        "quad_internal_abs_error_sum": 1.5314517402595535e-17,
+        "abs_GL_quad_difference": 2.168404344971009e-19
+      },
+      "PCHIP": {
+        "panel_GL16": 0.0013794316035094525,
+        "panel_adaptive_quad": 0.0013794316035094525,
+        "quad_internal_abs_error_sum": 1.531476727111796e-17,
+        "abs_GL_quad_difference": 0.0
+      },
+      "uniform_time_resolution": [
+        {
+          "n_times": 5001,
+          "uniform_Simpson_loss": 0.0013794092338244657
+        },
+        {
+          "n_times": 10001,
+          "uniform_Simpson_loss": 0.0013794091471491703
+        },
+        {
+          "n_times": 20001,
+          "uniform_Simpson_loss": 0.001379409122178804
+        }
+      ],
+      "abs_PCHIP_linear_difference": 2.2506155689756488e-08,
+      "PCHIP_comparison_interpretation": "Interpolation sensitivity, not a production-history uncertainty bound."
+    },
+    "mu_k1": {
+      "piecewise_linear": {
+        "panel_GL16": 0.001837245189397191,
+        "panel_adaptive_quad": 0.001837245189397191,
+        "quad_internal_abs_error_sum": 2.0397519111505684e-17,
+        "abs_GL_quad_difference": 0.0
+      },
+      "PCHIP": {
+        "panel_GL16": 0.0018372751726695826,
+        "panel_adaptive_quad": 0.0018372751726695822,
+        "quad_internal_abs_error_sum": 2.0397851992699308e-17,
+        "abs_GL_quad_difference": 4.336808689942018e-19
+      },
+      "uniform_time_resolution": [
+        {
+          "n_times": 5001,
+          "uniform_Simpson_loss": 0.0018372453836743667
+        },
+        {
+          "n_times": 10001,
+          "uniform_Simpson_loss": 0.0018372452605614183
+        },
+        {
+          "n_times": 20001,
+          "uniform_Simpson_loss": 0.001837245224851013
+        }
+      ],
+      "abs_PCHIP_linear_difference": 2.998327239115729e-08,
+      "PCHIP_comparison_interpretation": "Interpolation sensitivity, not a production-history uncertainty bound."
+    },
+    "mu_k5": {
+      "piecewise_linear": {
+        "panel_GL16": 0.0032937187343056442,
+        "panel_adaptive_quad": 0.0032937187343056447,
+        "quad_internal_abs_error_sum": 3.6567623754653544e-17,
+        "abs_GL_quad_difference": 4.336808689942018e-19
+      },
+      "PCHIP": {
+        "panel_GL16": 0.0032937725461816515,
+        "panel_adaptive_quad": 0.0032937725461816515,
+        "quad_internal_abs_error_sum": 3.656822118649098e-17,
+        "abs_GL_quad_difference": 0.0
+      },
+      "uniform_time_resolution": [
+        {
+          "n_times": 5001,
+          "uniform_Simpson_loss": 0.0032937191735768314
+        },
+        {
+          "n_times": 10001,
+          "uniform_Simpson_loss": 0.0032937188976651897
+        },
+        {
+          "n_times": 20001,
+          "uniform_Simpson_loss": 0.003293718815464668
+        }
+      ],
+      "abs_PCHIP_linear_difference": 5.381187600682e-08,
+      "PCHIP_comparison_interpretation": "Interpolation sensitivity, not a production-history uncertainty bound."
+    }
+  },
+  "inputs_sha256": {
+    "nudec/scaleFactorTime.csv": "48d94b40a638d11a2a596e6668eedc24182aba74fa02d84c14d8d08b2909e778",
+    "provider/public_source_cards": "bcc692b7a00a0e4abda928f41d03fd297a897cda073eb2dbc826679d654faa8b"
+  },
+  "piecewise_linear_total_energy_loss": 0.0013035121267690243,
+  "PCHIP_total_energy_loss": 0.0013035333792249981,
+  "total_energy_loss_abs_interpolation_difference": 2.1252455973883033e-08
+}

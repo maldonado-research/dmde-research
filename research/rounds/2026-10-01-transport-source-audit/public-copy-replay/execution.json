@@ -1,0 +1,222 @@
+{
+  "all_jobs_completed_successfully": true,
+  "jobs": [
+    {
+      "command": [
+        "/workspace/shared/dmde-upstream/nudec-venv/bin/python",
+        "-B",
+        "/workspace/dmde-research/research/rounds/2026-10-01-transport-source-audit/native-probe/native_probe_final.py",
+        "emission",
+        "--domain",
+        "clipped",
+        "--n",
+        "65",
+        "--out",
+        "/workspace/dmde-research/generated/transport-native-public-replay/emission_clipped_n65",
+        "--source",
+        "/workspace/shared/dmde-upstream/nudec"
+      ],
+      "elapsed_seconds": 0.09084425599940005,
+      "name": "emission_clipped_n65",
+      "returncode": 0,
+      "timeout": false
+    },
+    {
+      "command": [
+        "/workspace/shared/dmde-upstream/nudec-venv/bin/python",
+        "-B",
+        "/workspace/dmde-research/research/rounds/2026-10-01-transport-source-audit/native-probe/native_probe_final.py",
+        "emission",
+        "--domain",
+        "clipped",
+        "--n",
+        "129",
+        "--out",
+        "/workspace/dmde-research/generated/transport-native-public-replay/emission_clipped_n129",
+        "--source",
+        "/workspace/shared/dmde-upstream/nudec"
+      ],
+      "elapsed_seconds": 0.09780472100101179,
+      "name": "emission_clipped_n129",
+      "returncode": 0,
+      "timeout": false
+    },
+    {
+      "command": [
+        "/workspace/shared/dmde-upstream/nudec-venv/bin/python",
+        "-B",
+        "/workspace/dmde-research/research/rounds/2026-10-01-transport-source-audit/native-probe/native_probe_final.py",
+        "emission",
+        "--domain",
+        "clipped",
+        "--n",
+        "257",
+        "--out",
+        "/workspace/dmde-research/generated/transport-native-public-replay/emission_clipped_n257",
+        "--source",
+        "/workspace/shared/dmde-upstream/nudec"
+      ],
+      "elapsed_seconds": 0.12204703199859068,
+      "name": "emission_clipped_n257",
+      "returncode": 0,
+      "timeout": false
+    },
+    {
+      "command": [
+        "/workspace/shared/dmde-upstream/nudec-venv/bin/python",
+        "-B",
+        "/workspace/dmde-research/research/rounds/2026-10-01-transport-source-audit/native-probe/native_probe_final.py",
+        "emission",
+        "--domain",
+        "clipped",
+        "--n",
+        "513",
+        "--out",
+        "/workspace/dmde-research/generated/transport-native-public-replay/emission_clipped_n513",
+        "--source",
+        "/workspace/shared/dmde-upstream/nudec"
+      ],
+      "elapsed_seconds": 0.12408099099957326,
+      "name": "emission_clipped_n513",
+      "returncode": 0,
+      "timeout": false
+    },
+    {
+      "command": [
+        "/workspace/shared/dmde-upstream/nudec-venv/bin/python",
+        "-B",
+        "/workspace/dmde-research/research/rounds/2026-10-01-transport-source-audit/native-probe/native_probe_final.py",
+        "emission",
+        "--domain",
+        "clipped",
+        "--n",
+        "1025",
+        "--out",
+        "/workspace/dmde-research/generated/transport-native-public-replay/emission_clipped_n1025",
+        "--source",
+        "/workspace/shared/dmde-upstream/nudec"
+      ],
+      "elapsed_seconds": 0.1605838430004951,
+      "name": "emission_clipped_n1025",
+      "returncode": 0,
+      "timeout": false
+    },
+    {
+      "command": [
+        "/workspace/shared/dmde-upstream/nudec-venv/bin/python",
+        "-B",
+        "/workspace/dmde-research/research/rounds/2026-10-01-transport-source-audit/native-probe/native_probe_final.py",
+        "emission",
+        "--domain",
+        "complete",
+        "--n",
+        "65",
+        "--out",
+        "/workspace/dmde-research/generated/transport-native-public-replay/emission_complete_n65",
+        "--source",
+        "/workspace/shared/dmde-upstream/nudec"
+      ],
+      "elapsed_seconds": 0.08985431200017047,
+      "name": "emission_complete_n65",
+      "returncode": 0,
+      "timeout": false
+    },
+    {
+      "command": [
+        "/workspace/shared/dmde-upstream/nudec-venv/bin/python",
+        "-B",
+        "/workspace/dmde-research/research/rounds/2026-10-01-transport-source-audit/native-probe/native_probe_final.py",
+        "emission",
+        "--domain",
+        "complete",
+        "--n",
+        "129",
+        "--out",
+        "/workspace/dmde-research/generated/transport-native-public-replay/emission_complete_n129",
+        "--source",
+        "/workspace/shared/dmde-upstream/nudec"
+      ],
+      "elapsed_seconds": 0.1031842600004893,
+      "name": "emission_complete_n129",
+      "returncode": 0,
+      "timeout": false
+    },
+    {
+      "command": [
+        "/workspace/shared/dmde-upstream/nudec-venv/bin/python",
+        "-B",
+        "/workspace/dmde-research/research/rounds/2026-10-01-transport-source-audit/native-probe/native_probe_final.py",
+        "emission",
+        "--domain",
+        "complete",
+        "--n",
+        "257",
+        "--out",
+        "/workspace/dmde-research/generated/transport-native-public-replay/emission_complete_n257",
+        "--source",
+        "/workspace/shared/dmde-upstream/nudec"
+      ],
+      "elapsed_seconds": 0.10985766399971908,
+      "name": "emission_complete_n257",
+      "returncode": 0,
+      "timeout": false
+    },
+    {
+      "command": [
+        "/workspace/shared/dmde-upstream/nudec-venv/bin/python",
+        "-B",
+        "/workspace/dmde-research/research/rounds/2026-10-01-transport-source-audit/native-probe/native_probe_final.py",
+        "emission",
+        "--domain",
+        "complete",
+        "--n",
+        "513",
+        "--out",
+        "/workspace/dmde-research/generated/transport-native-public-replay/emission_complete_n513",
+        "--source",
+        "/workspace/shared/dmde-upstream/nudec"
+      ],
+      "elapsed_seconds": 0.1364758689996961,
+      "name": "emission_complete_n513",
+      "returncode": 0,
+      "timeout": false
+    },
+    {
+      "command": [
+        "/workspace/shared/dmde-upstream/nudec-venv/bin/python",
+        "-B",
+        "/workspace/dmde-research/research/rounds/2026-10-01-transport-source-audit/native-probe/native_probe_final.py",
+        "emission",
+        "--domain",
+        "complete",
+        "--n",
+        "1025",
+        "--out",
+        "/workspace/dmde-research/generated/transport-native-public-replay/emission_complete_n1025",
+        "--source",
+        "/workspace/shared/dmde-upstream/nudec"
+      ],
+      "elapsed_seconds": 0.17170767900097417,
+      "name": "emission_complete_n1025",
+      "returncode": 0,
+      "timeout": false
+    },
+    {
+      "command": [
+        "/workspace/shared/dmde-upstream/nudec-venv/bin/python",
+        "-B",
+        "/workspace/dmde-research/research/rounds/2026-10-01-transport-source-audit/native-probe/native_probe_final.py",
+        "rhs",
+        "--out",
+        "/workspace/dmde-research/generated/transport-native-public-replay/rhs_n21",
+        "--source",
+        "/workspace/shared/dmde-upstream/nudec"
+      ],
+      "elapsed_seconds": 4.560249527999986,
+      "name": "rhs_n21",
+      "returncode": 0,
+      "timeout": false
+    }
+  ],
+  "source_unchanged": true
+}

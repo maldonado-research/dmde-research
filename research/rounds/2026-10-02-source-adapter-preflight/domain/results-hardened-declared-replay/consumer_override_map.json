@@ -1,0 +1,172 @@
+{
+  "native_mass_defaults_MeV": {
+    "me": 0.5109989,
+    "mmu": 105.7
+  },
+  "mass_roles": {
+    "transport_me": 0.5109989,
+    "source_callback_mmu": 105.6583755,
+    "frozen_weak_kernel_me_unused_here": 0.51099895
+  },
+  "global_mass_overrides": false,
+  "source_catalog": [
+    "source_grid_diagnostic.frozen_michel"
+  ],
+  "branches": "[2*B_mumu]",
+  "imported_consumers": [
+    {
+      "module": "Constants",
+      "me": 0.5109989,
+      "mmu": 105.7
+    },
+    {
+      "module": "Distributions",
+      "me": 0.5109989,
+      "mmu": 105.7
+    },
+    {
+      "module": "Thermodynamics.Thermodynamics_ideal_gas",
+      "me": 0.5109989,
+      "mmu": 105.7
+    },
+    {
+      "module": "Thermodynamics.Thermal_QED_corrections",
+      "me": 0.5109989,
+      "mmu": 105.7
+    },
+    {
+      "module": "Collision_term.Collision_term_diagonal",
+      "me": 0.5109989,
+      "mmu": 105.7
+    },
+    {
+      "module": "System_Nudecoupling",
+      "me": 0.5109989,
+      "mmu": 105.7
+    },
+    {
+      "module": "Core",
+      "me": 0.5109989,
+      "mmu": 105.7
+    }
+  ],
+  "static_all_consumers": [
+    {
+      "file": "Collision_term/Collision_term_diagonal.py",
+      "wildcard_constant_import": true,
+      "mass_load_lines": {
+        "me": [],
+        "mmu": []
+      },
+      "override": "none; native copied masses retained, source callback consumes only its exact MMU"
+    },
+    {
+      "file": "Constants.py",
+      "wildcard_constant_import": false,
+      "mass_load_lines": {
+        "me": [],
+        "mmu": []
+      },
+      "override": "none; native copied masses retained, source callback consumes only its exact MMU"
+    },
+    {
+      "file": "Core.py",
+      "wildcard_constant_import": true,
+      "mass_load_lines": {
+        "me": [
+          150,
+          187
+        ],
+        "mmu": [
+          72,
+          74
+        ]
+      },
+      "override": "none; native copied masses retained, source callback consumes only its exact MMU"
+    },
+    {
+      "file": "Distributions.py",
+      "wildcard_constant_import": true,
+      "mass_load_lines": {
+        "me": [
+          34
+        ],
+        "mmu": [
+          48,
+          50,
+          52,
+          55,
+          61
+        ]
+      },
+      "override": "none; native copied masses retained, source callback consumes only its exact MMU"
+    },
+    {
+      "file": "SingleShot.py",
+      "wildcard_constant_import": true,
+      "mass_load_lines": {
+        "me": [
+          37
+        ],
+        "mmu": []
+      },
+      "override": "none; native copied masses retained, source callback consumes only its exact MMU"
+    },
+    {
+      "file": "System_Nudecoupling.py",
+      "wildcard_constant_import": true,
+      "mass_load_lines": {
+        "me": [
+          100,
+          104,
+          108,
+          114,
+          123,
+          141,
+          142,
+          143,
+          155
+        ],
+        "mmu": []
+      },
+      "override": "none; native copied masses retained, source callback consumes only its exact MMU"
+    },
+    {
+      "file": "Thermodynamics/Thermal_QED_corrections.py",
+      "wildcard_constant_import": true,
+      "mass_load_lines": {
+        "me": [],
+        "mmu": []
+      },
+      "override": "none; native copied masses retained, source callback consumes only its exact MMU"
+    },
+    {
+      "file": "Thermodynamics/Thermodynamics_ideal_gas.py",
+      "wildcard_constant_import": true,
+      "mass_load_lines": {
+        "me": [
+          76,
+          77,
+          90,
+          91,
+          104,
+          105,
+          118,
+          119
+        ],
+        "mmu": [
+          76,
+          77,
+          104,
+          105
+        ]
+      },
+      "override": "none; native copied masses retained, source callback consumes only its exact MMU"
+    }
+  ],
+  "excluded_entrypoints": [
+    "SingleShot.py and BatchLauncher.py are never imported: executing entrypoints is outside this diagnostic"
+  ],
+  "derived_pion_energy_MeV": 26.12040740740741,
+  "collision_jit_signatures": []
+}

@@ -1,0 +1,21 @@
+{
+  "output_policy": "atomic mkdir fresh-path reservation; artifacts opened exclusively; failures retained",
+  "python_executable": "/workspace/shared/dmde-upstream/nudec-venv/bin/python",
+  "thread_environment": {
+    "MKL_NUM_THREADS": "1",
+    "NUMBA_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "versions": {
+    "llvmlite": "0.46.0",
+    "numba": "0.63.1",
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "scipy": "1.16.3"
+  },
+  "wrapper_path": "/workspace/shared/dmde-adapter-runtime/source_adapter_diagnostic.py",
+  "wrapper_sha256": "2be9ac38a8939b4376a87331e79627af286750bba5898da189d5647f82b68931"
+}

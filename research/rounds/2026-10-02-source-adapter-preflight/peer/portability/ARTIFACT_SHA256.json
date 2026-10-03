@@ -1,0 +1,15 @@
+{
+  "files": {
+    "README.md": "e1d67228c8cf2c4604a6fd9396aa18d79184d163736996b76293a785dfc93095",
+    "cli_import_trace.stderr.txt": "c87aaeee6a1edbfee38e16fdc094d814976f5f343bfd39e60236ce44c856281f",
+    "cli_stdout.json": "df717b0438eae5d48dae82a3453b8e20dde65d62d0365b67a9abb4c556fe000d",
+    "copied_public_helper/COPYING": "605e9047a563c5c8396ffb18232aa4304ec56586aee537c45064c6fb425e44ad",
+    "copied_public_helper/conservation_review.py": "106a8edd182ea2e2dfeadcd257a165f2e896ff1553b9456858a684fe40a7fadb",
+    "copied_public_helper/qed_component_reference.py": "dd563ab9d0401e9855bde45fa7bf71030db1354898ef3f86971e173f7471b88b",
+    "copied_public_helper/qed_identity_review.json": "166e9148ec2cdd15932b3c3a8df7d00e64730c800a2fea0e9fcfd4936aa146d1",
+    "copied_public_helper/qed_identity_review.py": "8336b8540af5c087e4be6eed93d51e41905f689f464e0c94322ad7303f37a710",
+    "portability_receipt.json": "800693ecb9b42f9603e2853c76c6a475b307ac14abb9a06cfc52e49d72436c87",
+    "qed_component_reference_copied_replay.json": "ce76984eb928696b2940737a3096a8f6d6b26d3f1fafaee8ed7e0e4bd7122a6e"
+  },
+  "scope": "Copied-location public QED component helper CLI portability evidence; no raw primary PDF"
+}

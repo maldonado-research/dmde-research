@@ -1,0 +1,124 @@
+{
+  "classification": "independent_continuum_and_reference_table_proxy",
+  "limits": [
+    "The reported final-domain fractions are the x->x_stop- active-source limit; native injection is off at x_stop itself.",
+    "Final-domain moment loss is instantaneous and is not integrated energy loss.",
+    "Reference table weighting does not use an injected production background.",
+    "Reference-table losses count upper-domain omissions in injected source moments only; lower-grid cutoffs and subsequent cosmological redshifting are absent.",
+    "No collisions, oscillations, blocking, weak rates or BBN prediction are computed.",
+    "No upstream Python module or producer validator is imported."
+  ],
+  "constants": {
+    "me_native_MeV": 0.5109989,
+    "mmu_native_MeV": 105.7,
+    "mmu_frozen_MeV": 105.6583755
+  },
+  "runtime": {
+    "python": "3.12.14"
+  },
+  "coordinate_convention": "q is the numerical native code coordinate in p=q*me/x; no upstream MeV label is adopted for q; x=a*me and physical p is in MeV.",
+  "time_quadrature_steps": 100000,
+  "reference_stop": {
+    "t_s": 749.5007109380424,
+    "x": 16.993868549367072
+  },
+  "endpoint": {
+    "qmax_native_formula_code_coordinate": 898.1259528340497,
+    "qmax_frozen_formula_code_coordinate": 897.7722721933333,
+    "qmax_frozen_complete_code_coordinate": 1756.896682543413,
+    "native_Emax_final_MeV": 27.006291865,
+    "frozen_formula_Emax_final_MeV": 26.995656828143478,
+    "native_profile_endpoint_MeV": 52.85,
+    "frozen_profile_endpoint_MeV": 52.82918775,
+    "native_cut_fraction_u": 0.5109989,
+    "clip_start_x_reference": 8.68384813547117,
+    "clip_start_t_s_reference": 198.76549260311418,
+    "clip_start_t_over_tau_reference": 4.7735496639866595
+  },
+  "active_limit_x_to_stop_moment_retained_fraction": {
+    "e": [
+      0.3291771085949018,
+      0.20155099068342067,
+      0.12002998335337427,
+      0.0700414092663195,
+      0.04023995183342374,
+      0.022835938157301963
+    ],
+    "mu": [
+      0.19868034906667056,
+      0.1062885612941483,
+      0.05613880027748909,
+      0.029412383506260527,
+      0.015326286867669587,
+      0.007955717568701937
+    ]
+  },
+  "native_frozen_mass_mismatch": {
+    "relative_mass": 0.0003939536246229114,
+    "native_moment_relative_error_full_endpoint": [
+      0.0,
+      0.0003939536246229114,
+      0.0007880624487042187,
+      0.0011823265333852362,
+      0.001576745939831481,
+      0.001971320729232451
+    ],
+    "number_mass_above_frozen_endpoint": {
+      "e": 9.299750054481137e-07,
+      "mu": 0.0007875968504492681
+    },
+    "full_continuum_normalized_shape_L1": {
+      "e": 0.0009969986622486715,
+      "mu": 0.0015751937008985362
+    },
+    "full_continuum_CDF_max": {
+      "e": 0.0004984993311243358,
+      "mu": 0.0007875968504492681
+    },
+    "e_density_crossing_energy_MeV": 39.62969284454892
+  },
+  "reference_table_weighted_moment_loss": {
+    "e_k0": {
+      "loss": 0.00045900435103416175,
+      "abs_coarse_fine_difference": 6.699160540538096e-14
+    },
+    "e_k1": {
+      "loss": 0.0006808235537045386,
+      "abs_coarse_fine_difference": 9.960944829384699e-14
+    },
+    "e_k5": {
+      "loss": 0.001615138887132438,
+      "abs_coarse_fine_difference": 2.3391271558592663e-13
+    },
+    "mu_k0": {
+      "loss": 0.0013794091005219808,
+      "abs_coarse_fine_difference": 5.615195808328366e-12
+    },
+    "mu_k1": {
+      "loss": 0.0018372451939225843,
+      "abs_coarse_fine_difference": 8.002352469907437e-12
+    },
+    "mu_k5": {
+      "loss": 0.0032937187446704557,
+      "abs_coarse_fine_difference": 1.8198483952430733e-11
+    }
+  },
+  "reference_table_weighted_total_number_loss": 0.0009192067257780712,
+  "reference_table_weighted_total_energy_loss": 0.0013035121292065631,
+  "reference_start": {
+    "T_MeV": 5.11014229967,
+    "s_MeV3": 629.2520994400936,
+    "card_nstart_MeV3": {
+      "DMDE-SPEC-V099-4Q7N": 0.005575476048304115,
+      "DMDE-SPEC-V099-8M2K": 0.00566580072094066
+    }
+  },
+  "public_inputs_sha256": {
+    "provider/public_source_cards": "bcc692b7a00a0e4abda928f41d03fd297a897cda073eb2dbc826679d654faa8b",
+    "nudec/scaleFactorTime.csv": "48d94b40a638d11a2a596e6668eedc24182aba74fa02d84c14d8d08b2909e778",
+    "nudec/Constants.py": "0dac68fb57b1425aece579a859072b72f6b4533276e4baf01d5f7d9d85953807",
+    "nudec/Core.py": "a08dc41a892811ee053c10eae336e13edf773887097e34a6f16d90ef071d47e0",
+    "nudec/System_Nudecoupling.py": "e285d33e4ab0f823593a850701be1f90a5ec12c3685834cac68372457ccbaad6",
+    "nudec/Distributions.py": "f14dfb1347ee741935bef5c5b00cbfee4d5fbaa169f1b999f5c61b2df9fafa27"
+  }
+}

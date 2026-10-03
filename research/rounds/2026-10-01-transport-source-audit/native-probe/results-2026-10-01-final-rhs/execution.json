@@ -1,0 +1,22 @@
+{
+  "all_jobs_completed_successfully": true,
+  "jobs": [
+    {
+      "command": [
+        "/workspace/shared/dmde-upstream/nudec-venv/bin/python",
+        "-B",
+        "/workspace/shared/dmde-native-probe/native_probe_final.py",
+        "rhs",
+        "--out",
+        "/workspace/shared/dmde-native-probe/results-2026-10-01-final-rhs/rhs_n21",
+        "--source",
+        "/workspace/shared/dmde-upstream/nudec"
+      ],
+      "elapsed_seconds": 4.528412841000318,
+      "name": "rhs_n21",
+      "returncode": 0,
+      "timeout": false
+    }
+  ],
+  "source_unchanged": true
+}
