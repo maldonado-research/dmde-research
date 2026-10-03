@@ -1,0 +1,126 @@
+{
+  "audit_timestamp_utc": "2026-10-03T00:36:02.752887+00:00",
+  "concept_doi": "10.5281/zenodo.18135951",
+  "integration_repair": {
+    "date": "2026-10-02",
+    "dmde_repository_enabled": true,
+    "new_github_release_created": false,
+    "new_zenodo_version_created": false,
+    "source": "User-authorized handoff from signed-in browser repair task",
+    "stale_private_archive_entry_removed": true
+  },
+  "metadata_link_repair": {
+    "browser_fallback": "Open existing Zenodo record22399940 in the signed-in account, continue its current Edit draft, add only the reviewed related links and verify existing metadata/files before publishing",
+    "credential_failure": false,
+    "draft_metadata_nonempty": true,
+    "draft_state": "inprogress",
+    "failed_request": {
+      "body_bytes": 5686,
+      "body_sha256": "4de1ee48fd5195151e6b675fb253f8a5daa99e07d595cda23b6bda7f5df03cf4",
+      "content_type": "application/json",
+      "json_parseable": true,
+      "metadata_present": false,
+      "method": "PUT",
+      "response_bytes": 228,
+      "response_content_type": "application/json",
+      "status": 500,
+      "url": "https://zenodo.org/api/deposit/depositions/22399940"
+    },
+    "files_uploaded": false,
+    "metadata_links_published": false,
+    "new_version_created": false,
+    "proposed_links": [
+      {
+        "identifier": "https://github.com/maldonado-research/dmde-research",
+        "relation": "isSupplementedBy"
+      },
+      {
+        "identifier": "https://maldonado-research.github.io/projects/dmde/",
+        "relation": "isDocumentedBy"
+      }
+    ],
+    "protected_metadata_fields_unchanged": 15,
+    "public_state": "done",
+    "public_submitted": true,
+    "server_message": "The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.",
+    "status": "SAFE_EXISTING_RECORD_METADATA_SAVE_BLOCKED",
+    "timestamp_utc": "2026-10-03T00:56:43.279903+00:00",
+    "write_failure_http_status": 500
+  },
+  "metadata_present": true,
+  "owned_family_listing_accessible": true,
+  "ownership_read_confirmed": true,
+  "published_file_checks": [
+    {
+      "bytes": 3977,
+      "filename": "DMDE_v0920_PUBLIC_VERIFICATION_2026-09-05.json",
+      "filename_size_checksum_match": true,
+      "local_sha256": "a4dace9f44a77a7caca8b35be276e73adbbd70230e2f21ab7739d052578d6253",
+      "zenodo_checksum": "md5:d0551ab4ef21e3dba1c91297a9bcb844"
+    },
+    {
+      "bytes": 5079,
+      "filename": "DMDE_v0920_README_IN_MORE_BASIC_TERMS.md",
+      "filename_size_checksum_match": true,
+      "local_sha256": "facc9c58c9ebc5513dfb1ee641a5e93e09b75cabccbdc1cadd6b708b9a2e1896",
+      "zenodo_checksum": "md5:7e174cdc828aa1a0ffc1a2137b8b69d7"
+    },
+    {
+      "bytes": 510,
+      "filename": "DMDE_v0920_PUBLIC_ARTIFACT_SHA256.csv",
+      "filename_size_checksum_match": true,
+      "local_sha256": "b8bfd85b5bf428be8ae32fcf5cd1e3b7260040ed2ce65bfeee94057704038e83",
+      "zenodo_checksum": "md5:93ce1534c114acf85d441b898a9bf7bd"
+    },
+    {
+      "bytes": 6316,
+      "filename": "DMDE_v0920_RELEASE_NOTE_IN_MORE_BASIC_TERMS.pdf",
+      "filename_size_checksum_match": true,
+      "local_sha256": "32372a78d89347251e4dc2dbe4a320d5bc1f00d26af10dc9dfb22e277e60507f",
+      "zenodo_checksum": "md5:00603bf26b999da48605d185e38410f3"
+    },
+    {
+      "bytes": 377648,
+      "filename": "DMDE_v0920_PROVIDER_DISPATCH_READY_SOURCE_FROZEN_WEAK5_GATED.zip",
+      "filename_size_checksum_match": true,
+      "local_sha256": "2daa4fa4c9d8654520ac8be0bd7a13197f447e85d4f10f36e7ba944c15d22b9b",
+      "zenodo_checksum": "md5:9d869ec616c4daa29e6fd84d1e835966"
+    }
+  ],
+  "published_record_id": 22399940,
+  "published_state": "done",
+  "request_checks": [
+    {
+      "http_status": 200,
+      "json_parseable": true,
+      "method": "GET",
+      "url": "https://zenodo.org/api/records/22399940"
+    },
+    {
+      "http_status": 200,
+      "json_parseable": true,
+      "method": "GET",
+      "url": "https://zenodo.org/api/records/22399940/versions/latest"
+    },
+    {
+      "http_status": 200,
+      "json_parseable": true,
+      "method": "GET",
+      "url": "https://zenodo.org/api/deposit/depositions?q=conceptrecid%3A18135951&size=100&page=1"
+    },
+    {
+      "http_status": 200,
+      "json_parseable": true,
+      "method": "GET",
+      "url": "https://zenodo.org/api/deposit/depositions/22399940"
+    }
+  ],
+  "status": "PASS",
+  "submitted": true,
+  "unsubmitted_family_drafts_returned": 0,
+  "user_facing_verification_date": "2026-10-02",
+  "version": "0.9.20",
+  "version_doi": "10.5281/zenodo.22399940",
+  "writes_performed": true,
+  "writes_scope": "Opened metadata edit of existing record; reviewed link-only save failed; no publication, new version or file upload"
+}

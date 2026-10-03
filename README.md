@@ -2,8 +2,12 @@
 
 [Readable project overview](https://maldonado-research.github.io/projects/dmde/) · [All research projects](https://maldonado-research.github.io/)
 
+[Project links and verified publication status](research/PUBLICATION_STATUS.md) distinguishes the current GitHub research checkpoints from the preserved Zenodo archive and records the repaired repository integration.
+
 
 **Dark matter–dark energy working hypothesis · v0.9.20 methods/software checkpoint**
+
+Latest reviewed GitHub research: [2 October 2026 source-adapter preflight](research/rounds/2026-10-02-source-adapter-preflight/README.md). The preserved Zenodo archive remains v0.9.20.
 
 Research by **Ricardo Maldonado**. This repository makes the published DMDE source specification and validation tools easier to inspect, cite, and reproduce.
 
