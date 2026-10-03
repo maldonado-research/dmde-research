@@ -1,4 +1,5 @@
 {
+  "archive_verification_status": "PASS",
   "audit_timestamp_utc": "2026-10-03T00:36:02.752887+00:00",
   "concept_doi": "10.5281/zenodo.18135951",
   "integration_repair": {
@@ -19,10 +20,10 @@
       "body_sha256": "4de1ee48fd5195151e6b675fb253f8a5daa99e07d595cda23b6bda7f5df03cf4",
       "content_type": "application/json",
       "json_parseable": true,
-      "metadata_present": false,
       "method": "PUT",
       "response_bytes": 228,
       "response_content_type": "application/json",
+      "response_metadata_present": false,
       "status": 500,
       "url": "https://zenodo.org/api/deposit/depositions/22399940"
     },
@@ -115,7 +116,7 @@
       "url": "https://zenodo.org/api/deposit/depositions/22399940"
     }
   ],
-  "status": "PASS",
+  "status": "ARCHIVE_VERIFIED_METADATA_LINK_SAVE_BLOCKED",
   "submitted": true,
   "unsubmitted_family_drafts_returned": 0,
   "user_facing_verification_date": "2026-10-02",
