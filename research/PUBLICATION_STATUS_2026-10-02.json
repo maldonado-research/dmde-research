@@ -1,14 +1,74 @@
 {
   "archive_verification_status": "PASS",
   "audit_timestamp_utc": "2026-10-03T00:36:02.752887+00:00",
+  "automatic_github_archiving": {
+    "confirmed_after_reload": true,
+    "existing_records_and_drafts_preserved": true,
+    "public_repository_count": 8,
+    "publication_route": "Existing authorized token/API workflow preserving concept DOI 10.5281/zenodo.18135951",
+    "re_enable_automatic_archiving": false,
+    "research_repository_count": 7,
+    "shared_website_repository_count": 1,
+    "source": "User-authorized signed-in browser handoff superseding the earlier enabled state",
+    "state": "OFF",
+    "switches_independently_verified_by_api_in_this_task": false,
+    "zenodo_github_release_histories_empty": true
+  },
   "concept_doi": "10.5281/zenodo.18135951",
-  "integration_repair": {
+  "integration_history": {
     "date": "2026-10-02",
-    "dmde_repository_enabled": true,
+    "dmde_repository_enabled_during_initial_repair": true,
     "new_github_release_created": false,
     "new_zenodo_version_created": false,
     "source": "User-authorized handoff from signed-in browser repair task",
-    "stale_private_archive_entry_removed": true
+    "stale_private_archive_entry_removed": true,
+    "superseded_by_current_off_policy": true
+  },
+  "manual_publication_followup": {
+    "active_edit": {
+      "concept_record_id": "18135951",
+      "kind": "Existing published version metadata edit, not a new unsubmitted version",
+      "metadata_links_saved": false,
+      "original_metadata_field_count": 15,
+      "original_metadata_fields_unchanged": true,
+      "record_id": 22399940,
+      "state": "inprogress",
+      "submitted": true
+    },
+    "all_five_release_file_sizes_and_checksums_match": true,
+    "audit_timestamp_utc": "2026-10-03T01:32:56.341048+00:00",
+    "concept_record_id": "18135951",
+    "latest_published_record_id": 22399940,
+    "latest_published_state": "done",
+    "latest_published_version": "0.9.20",
+    "new_version_created": false,
+    "publish_action_performed": false,
+    "records_or_drafts_deleted": false,
+    "request_checks": [
+      {
+        "http_status": 200,
+        "method": "GET",
+        "url": "https://zenodo.org/api/records/22399940"
+      },
+      {
+        "http_status": 200,
+        "method": "GET",
+        "url": "https://zenodo.org/api/records/22399940/versions/latest"
+      },
+      {
+        "http_status": 200,
+        "method": "GET",
+        "url": "https://zenodo.org/api/deposit/depositions?q=conceptrecid%3A18135951&size=100&page=1"
+      },
+      {
+        "http_status": 200,
+        "method": "GET",
+        "url": "https://zenodo.org/api/deposit/depositions/22399940"
+      }
+    ],
+    "separate_unsubmitted_family_versions_returned": 0,
+    "test_github_release_created": false,
+    "writes_performed": false
   },
   "metadata_link_repair": {
     "browser_fallback": "Open existing Zenodo record22399940 in the signed-in account, continue its current Edit draft, add only the reviewed related links and verify existing metadata/files before publishing",
