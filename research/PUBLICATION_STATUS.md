@@ -32,18 +32,27 @@ history, injected BBN abundance or observational prediction is supplied.
 The original Zenodo files and citation version remain frozen; later GitHub
 diagnostics do not become part of that archive merely by linking them.
 
-## GitHub integration repair
+## Current publication workflow: automatic archiving off
 
-The authorized signed-in browser task reports that Zenodo's repository sync
-removed a stale entry pointing to the private research archive and enabled
-the seven public research repositories, including `dmde-research`. This
-repairs the integration toggle; it created no release or archival version.
-The API checks in this task independently confirm working authentication
-and the existing DMDE record's ownership and published-file identity.
+The earlier signed-in browser repair synced repository access, removed a
+stale entry pointing to the private archive, and temporarily enabled seven
+research repositories. That state has been superseded. The authorized browser
+task now reports automatic GitHub-to-Zenodo archiving **OFF** for all eight
+public repositories: the seven research repositories and the shared website.
+It confirmed the switches remained off after reload and their Zenodo GitHub
+release histories were empty. Existing repositories, credentials, published
+records and valid drafts were preserved. These switch/history observations
+come from that browser handoff; the API reads here verify DMDE authentication,
+record state and file identity separately.
 
-Enabling GitHub integration does not establish that a future automatic
-GitHub archive belongs to this existing manually created DOI family. Keep
-the concept DOI above. Do not create a GitHub release just to test the toggle.
+Keep automatic archiving off. Future approved publications use the existing
+authorized Zenodo connection and DMDE concept DOI `10.5281/zenodo.18135951`.
+Do not create a test GitHub release, re-enable automatic archiving, or create
+a second standalone record for the same work. Intended versions within one
+family and genuinely separate scientific supplements are distinct from
+duplicate publications. Do not delete records or drafts based on similar
+titles. [The current publication handoff](PUBLICATION_HANDOFF.md) records the
+latest published version and linked edit.
 
 ## Existing-record link repair and browser fallback
 
@@ -87,9 +96,14 @@ progresses. A new Zenodo version needs an explicitly prepared, reviewed
 scientific package and accurate scope/version metadata. Numerical maintenance
 and isolated component corrections alone do not warrant a new physics release.
 
-Before uploading, inspect the latest published record and its returned
-`newversion` action, then reuse any existing current draft. Compare the
-approved local filenames, byte sizes and checksums with uploaded files;
+Before uploading, inspect the latest published record, linked draft and
+returned `newversion` action. Reuse a compatible existing unpublished version
+draft; otherwise create the reviewed version through the latest published
+version's returned action. Verify the draft belongs to concept family
+`18135951` before writing. The current edit of record `22399940` is an existing
+version's metadata repair, not an unsubmitted scientific version. Preserve
+it and use its existing edit route for that repair. Compare the approved
+local filenames, byte sizes and checksums with uploaded files;
 read saved metadata back and require it to be nonempty and correct. Use
 JSON for metadata and the documented binary-upload route for files. Publish
 only a complete reviewed package. A reserved draft DOI or HTTP 200 alone

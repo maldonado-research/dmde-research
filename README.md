@@ -2,7 +2,7 @@
 
 [Readable project overview](https://maldonado-research.github.io/projects/dmde/) · [All research projects](https://maldonado-research.github.io/)
 
-[Project links and verified publication status](research/PUBLICATION_STATUS.md) distinguishes the current GitHub research checkpoints from the preserved Zenodo archive and records the repaired repository integration.
+[Project links and verified publication status](research/PUBLICATION_STATUS.md) distinguishes the current GitHub research checkpoints from the preserved Zenodo archive and records the manual publication workflow. [The publication handoff](research/PUBLICATION_HANDOFF.md) identifies the existing DOI family and active metadata edit.
 
 
 **Dark matter–dark energy working hypothesis · v0.9.20 methods/software checkpoint**
